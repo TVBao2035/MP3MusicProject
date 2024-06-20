@@ -17,42 +17,36 @@
 </head>
 <body>
     <header>
-        <div id="left">
-            <div id="img">
-                <div>
-                    <img id="list-music" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAVRJREFUWEft169OxEAQx/HPhWAgKAwvgMKhMIQEeAYeAQEKTwi8AApHcDg0CkgwCDwWRbAoFCH82eQgTdPe7rXXppd0k6ZiZ2e++5uZ7nagY2PQMR49UCwjvUJdU+gAJ1jIgf1nKp+y49gOKsxnfb5jvsBHKdB3hYCxJdlNl/nvBFBhQ7WdsqxCSUAx+evOTz9Q0102tkJtdllSDXUOqHMpq9tFsfVj11DMYd35sYGqpOwe4cmPULSrWMcrHobvP7vGijqc3vmNbOAcyyMkbQ1o81eVu4TcJgHVTdkcnrE0KaAEPyNNtnCb6CRJoURfpWbhRnia4OQTs0V2k7h+ZLtsH2cJQG9YTAGqcnRku2wFTwlAV9hpAyjEuMF2BGoNjylAdbssxAgddj38KOZjfmAPF2XATf0ozmAXR0PAL1ziEC+j1GsKKKGMik16oJh0vUJTp9APyHA7JbXskV4AAAAASUVORK5CYII="/>
-                    <div id="title-library">
-                        <h3>Thư viện</h3>
-                    </div>
-                </div>
-                <div >
-                    <img id="list-music-two" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsFJREFUWEftllnIT0EYxn8f4UJISFH2C6Hs4pqQK1EoJUvWlCxFlEtLIUV2ScqSLRcuKBdyIZQte0h2ibgQUZgn76nxdc5/5szfxVfO1OnMOTPvM8888y7TQBNrDU2MDxWh0IlUCv13CvUF+gPdbOfPgbvAg5ASReMpPtQGWAPMBDoXAL8BDgDrgC9lyJUlNB44BHSMXOStU2sacDFyfqk8NN8pshP+svkE3LRj0poDgEFAO4/AT2A6cDSGVKxCo4BLQHMDfQ0scQROFCwiVbZ5Sn4DhnnEC7nFEGoFPPIc9x4wBpCf1Go9gQuA3mpSciggxeoitBLYYAgvgOHAOw+xFzDOvs8DT7yxHsA1TykFwsF6CEnB907+DgYyEThj/ZZuoe3A3EYL7AUWA9/t/zxgt/VvAEPqITTS7f6yAeiIunhge3LIZMMiJSJqOvIPQGv77urG5IO5LeRDCyyyZLzPI9AbeFxrpy49aM5Tm3MWmGD9ycCpVEKr3A7Xm7Heq62/ENgRILTI28xWi0qZLAX0naTQcmCTWW4GViQSku0ysxXmllRCyidHzPg4MMX6iiw/mvLw+3hzTgKTbJIwhJWkkHJI5gefgfbAL0OKdWol049OlbZmJ8xnqYRkd9+lfVV1NZWAw9aPDfs5FhAyu2WlpdD9QlEmQ9WwXYbwChjRKGwVTWNt/JynqH7paK/8y8QoUEl+G+hni6qMjAZeFm7zz4CIqnR0t3nXrZ5lR57kQ5mRKvhVoIX9UJJU+B7LQZXqs4GNXob/6jL8YOBhYBOlrh+zgP051w+VgztAM2CgPbrEZe2H88Op7v/pEBmNx/iQj6OjUhroFAMOqBgrM6vARrWyhASq8F3rnHdGDWIiooKqhKi7UHRLIeSDy9H16JIvZ1V+UWhnuSuaSDaxXkKlFwwZVIQqhUIKhMYrHwop9BvWO3olYNGXnAAAAABJRU5ErkJggg=="/>
-                    <div id="title-khampha">
-                        <h3>Khám phá</h3>
-                    </div>
-                </div>
-                <div >
-                    <img id="list-music-three"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA7JJREFUWEfdmGnoTWsUxn//hHTNuQpfUIokxEUyhDKVZEhI6F5y63YzRiTkAz6gDPlgTBGZPpAyZshYZilTSkKZyTy/j9ar17b32Xufk/pnfdnnvMNaz17Ds9Y5ZZQzKStnePjtAHUBZgGtzNPn3XMOcLxYz5fioYHA9hjDX4DewL5iQBULqCpwH9AzTh4B9YEPeUEVC2gMsMqM3QUG2+dtbr2BfR4NrP/VgBoC84GhgaElwAT7vhT4P9jbAMwEbmcFlsdDw4F1QKWI8htAT/hWsQeAxpH914C8tTULqKyA5gHTA4WfgJdAjQQjz4BqQIVgfzYwNw1UFkCTnPJFgaLrFrLKwP6YxH4B9HB08BnYCDQN7v4HrCgEKg1Qe1fCpwIFCtm/wHtbawYsA/50IWkOHHPVNw64ZvsK70pglH0XJfwFnE0ClQboINDdLisxBeBNmtsj+wJ1xnFWC1vfazwVqyYJUB1grEtg5Y6XbsDhnGD8cb2IWFxhlkwD1gLiqx8kDtBIYDVQMTipBO4EXCwSkFrLEaB6cF+kKVubQ51RQAqPwhQnTwHllMo8jyiplYdJFdkROOkVRgEddYA62+ZDQMTWP+AWccmQPGiAHc6zA+zOTWAXMMIKQct7gD5JgB4DtW2zNXDB0X8j59pbtiYv+f2suJ4HoRLTqzgUQuWU5F7Qbn6ah7RZzw42cW+iN9JT3CMR4dXKisTOiZdEkpI4nQUBqTkOsssq1UPWOOUlySYHTi0kj+iO733ytEYW5WobU6KkHpYUMoXpXII1ub6DU341DxrjrtOBl8LrIkrx05UkQFpXKYojwj6k3OnqvHc5Jxh/XDkjFv8juP/ObG0JdSYRY13gbxs1dF6X9SZ5S97b6utaxu7A8FRgDfAk+oJprUPjhBqlRP2nnTXNPI5Sn1NI9JRotO2VpCANkHLmO2kB0RFCOadpQPO1RJyzMGB0FYN4R43XS9tSmquUxE2BM2xmlgejc7WSX14VX4lIQ4ZeDEwu5N40D+muklsd2odOa+pDr4CaCcpVBNoL9Wt2EiNruEuULIB0WSPEcpsAosruAC1tUVXoh/zwnIay8W6+/piWfFkBeT0izSnGR34tDIM+TwyMngAWWB6lYfm2nxeQV6pZSZOg5JKFQqFVaftB7B/js0xA/KFiAVUBHhT4oaiep574NheaEjwkO/2AnTEG1Q60FxJhZlzFesgb0OykPxtEmKo8kae4KvxhkBlMKTmUy0iew6V6KI+tTGfLHaCvVQ+jJVVaTPkAAAAASUVORK5CYII="/>
-                    <div id="title-zingchart">
-                        <h3>#zingchart</h3>
-                    </div>
-                </div>
-                <div id="list-music-container" onmouseover="showRadioIcon()" onmouseout="hideRadioIcon()">
-                    <img id="list-music-four"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABPVJREFUWEfdl1XIdUUUhp9fsVuxGxMD+8IWFeyOC7EFExXsTgwwwEIFsQMbFQsVbL2xA7G7WzEx5vldc1jub39n76Ne/PjC4czee2bNmhXvWjOBSQwTJjF9+N8otCawEbAGMB8wZ1j6Y+AD4BHgLuCxUT0wioUmA3YqG5wALNRzozeB44Frgd/7rOmr0CrAZcDSfYS2zHkR2BV4qmt9H4VOLKc7riFIt1wB3Al8Er/vgUXCfZsCOwPzNtYpSwuPiy6FLgT2TquNkf2Bm7pOGt+3Ac4H5krzlbnveOuHKXQacERaeAlwMPBtQ9g0JUYWB4yxV4AfG99nBM4FdknvTwWOblNqPIXWKxl0f1pg/OyenheMmNgMWKkh+BngZuBM4Of07VJgt/S8PvBAU6k2hTzxa8n/D5U0VsHfYvGOxQUXAdN1uO1r4Bjggpg3eSiwdjwbh0sCxt4AbQrpFk8nfogU/yyezRStlfFOsdbb8UI60HoZrjEBxOwxd9p4Pqwc7IwuhV6PbHGeftbfYnPgtrTYVD45ArxyjHFkIPt+iZir2zYEHoznI5PMd+PAf1S5TQstCzwfH38FZiuB/B0wVSHFN5IbHwbWTW5sGIXpgbuDyf2mBVXwF2AG4POi1JSxaHngufEUMsVNS3FLnNbxXhE3jr8J4fLPMMwNvFrcr3LC2Lsmxgb91jGWAuqeY4rrVbHQudsXZr4xFkmAGyeTn540OS9SWmtfXUhyn/Tt2EIHJ8XzdUXBHWK8HXBDjN1TEp2Ipsuk9hXj26LhJh8/jYB0vHAKYvlFosy4OJGpzG1MCt3m2irDOiekibrnGIUkthqMVnAVEaa8ASv8r0H4JTBLQyGJsWaRB64B/xMgpQizrcrWrXXPMQq9F+2Ei1ysEOG/gS0MRgNedCk0M/BVzDXbpo6x/5XR3XOBeqimy14qvl0qPs4PvB9jzWo2iNWBx2Pc5TJ7JvsioexlkmxTvvl+jIXkGflGyCdmmpCL5A9hYTUoK4YFteVHlheS7aEx3jYljHtuWYU1LSRrHpJOf2CM7YMkwgoFmrrDsEdxvwW5YoWy8bPxcE5x9wEtio6xkKltigsJ0bbB8iEsGZYBcXZU/nUKA/vLeAK4FzDb9owPV6Zqb2zKYRKkcE9JdCKaFrIAfgjMEd89hS4RCpKhVw6Ck+iMN2Mjw+r/dFhQ8jP+VksJIk0Ye8Ia6aEH7W1bcT2oaH9WLPgCWC4ad1+ZNcaF7zcIYR81FKo8Ze3yEM6z8ot5Smy+UBSaNZ4t5Fp7gDaFpgjKr428ZLlqSnXbDplVuneu9SnDhkx37xduri537pOJBO0SFktyW11WBedY8t2tUVKq8KyAHWSNB/mpFs08R0tZx7ZKL/8WO/X9sBbWGmQtqjDLFCKRZbyVrkX23BbVDO9t9zRuLCO3sApU2TuATZJ0uzubdulBlha5/r2cNjZODo+GvlZ855uBEuagB8rad906nNvGxpYSO0Pr0X2A/bF4tLSp3mqtVTJxLRV1T2VVbmsY8q/HPgo5T1dJctkdZp/N3PXRqjjv9pLmW4SVMpHqSi8JA75p1WYEhVw/U9C/PY3V3GZdXsp3t8vjZrEW4OXAJLBHsne2setEXws1Beki+xt7nVNK6h8VEyqD2wfJR/kq1anMKC4bJsy2JN+/em38X7jsX23Ud/E/dVlf+SPP+xO3Yf4lgehd1gAAAABJRU5ErkJggg=="/>
-                    <div id="title-radio">
-                        <h3>Radio</h3>
-                    </div>
-                    <img id="radio-icon" src="iconphatnhac.jpg" alt="Radio Icon" style="display:none;">
-                    <script language="JavaScript">
-                        function showRadioIcon() {
-                        document.getElementById("radio-icon").style.display = "inline-block";
-                        }
+        <div class="left">
+            <div class="img">
+                
+            </div>
 
-                        function hideRadioIcon() {
-                        document.getElementById("radio-icon").style.display = "none";
-                        }
-
-                    </script>
+            <div class="list_items">
+                <div class="item">
+                    <div class="title">
+                        <i class='bx bx-library icon' ></i>
+                        <p>Thư viện</p>
+                    </div>
+                </div>
+                <div class="item">
+            
+                    <div class="title">
+                        <i class='bx bx-doughnut-chart icon'></i>
+                        <p>Khám phá</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <i class='bx bx-pie-chart-alt icon' ></i>
+                        <p>#zingchart</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <i class='bx bx-podcast icon'></i>
+                        <p>Radio</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,7 +67,7 @@
             </div>
             <div class="side_right">
                 <button class="btn_update btn_action--right"><span>Nâng cấp tài khoản</span></button>
-                <button class="btn_download btn_action--right">
+                <button class="btn_download btn_action--right" style="padding: 10px 21px">
                     <i class='bx bx-download icon_download'></i>
                     <span>Tải bản Windows</span>
                 </button>

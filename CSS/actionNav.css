@@ -75,7 +75,7 @@
 
 .btn_action--right{
     border: none;
-    padding: 12px 15px;
+    padding: 12px 21px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -90,14 +90,13 @@
     background-color: hsla(0, 0%, 100%, 0.1);
     color: var(--primary-color);
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .icon_download{
     width: 20px;
     height: 20px;
     font-size: 20px;
-    position: relative;
-    top: 3px;
+
 }
 
 .btn_setting{
