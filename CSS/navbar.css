@@ -1,87 +1,101 @@
-#left {
+body{
+    background-color: var(--primary-color-strong);
+}
+
+.left {
     width: 240px;
-    height: 1000px;
+    height: 710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
     
 }
-#img {
-    width: 150px;
-    height: 150px;
+.img {
+    height: 72px;
+    width: 140px;
+    padding: 0 25px 0 0;
     background-image: var(--img-logo-mp3);
-    background-size: 120px;
+    background-size: 115px;
     background-repeat: no-repeat;
     background-position: center 20px; /* Dịch chuyển hình nền xuống dưới một chút */
 }
 
 /* ==============================THU VIEN================================== */
-#list-music {
-    margin-top: 80px;
-    margin-left: 15px;
+.icon{
+
+    font-weight: 100;
 }
-#title-library h3 {
-    color: #ded7d7;
-    margin-top: -33px;
-    margin-left: 60px;
+.title{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 19px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
-#title-library h3:hover {
-    color: #fefcfc; 
-    cursor: pointer;  
+.list_items{
+    display: flex;
+    flex-direction: column;
+    
+}
+.item{
+    padding: 12px 21px;
+    cursor: pointer;
+    color: white;
+    opacity: 0.6;
+    font-size: 14px;
 }
 
-/* ==============================KHAM PHA================================== */
-#list-music-two {
-    margin-top: 20px;
-    margin-left: 15px;
+.item:hover{
+    opacity: 1;
 }
-#title-khampha h3 {
+/* .title-library h3:hover {
+    color: #fefcfc; 
+    cursor: pointer;  
+} */
+
+/* ==============================KHAM PHA================================== */
+
+.title-khampha h3 {
     color: #ded7d7;
     margin-top: -33px;
     margin-left: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
-#title-khampha h3:hover {
+.title-khampha h3:hover {
     color: #fefcfc; 
     cursor: pointer;  
 }
 
 /* ==============================Zing Chart================================== */
-#list-music-three {
-    margin-top: 20px;
-    margin-left: 15px;
-}
-#title-zingchart h3 {
+
+.title-zingchart h3 {
     color: #ded7d7;
     margin-top: -33px;
     margin-left: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
 }
-#title-zingchart h3:hover {
+.title-zingchart h3:hover {
     color: #fefcfc; 
     cursor: pointer;  
 }
 
 /* ==============================Radio================================== */
-#list-music-four {
+.list-music-four {
     margin-top: 20px;
     margin-left: 15px;
 }
-#title-radio h3 {
+.title-radio h3 {
     color: #ded7d7;
     margin-top: -33px;
     margin-left: 60px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-#title-radio h3:hover {
+.title-radio h3:hover {
     color: #fefcfc; 
     cursor: pointer;  
 }
-#radio-icon {
+.radio-icon {
     display: none; /* Ban đầu ẩn biểu tượng radio */
     width: 20px; /* Điều chỉnh chiều rộng */
     height: 20px; /* Điều chỉnh chiều cao */
@@ -91,7 +105,7 @@
 }
 
 
-#list-music-container:hover #radio-icon {
+.list-music-container:hover .radio-icon {
     display: inline-block; /* Hiển thị biểu tượng radio khi trỏ chuột vào */
 }
 
