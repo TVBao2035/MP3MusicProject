@@ -9,10 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="Javascript/Setting.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -71,15 +76,145 @@
                     <i class='bx bx-download icon_download'></i>
                     <span>Tải bản Windows</span>
                 </button>
-                <button class="btn_setting"><i class='bx bx-cog icon_setting'></i></button>
-                <img class="img_user" src="./photos/user.png" alt="user">
 
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="btn_setting btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class='bx bx-cog icon_setting'></i>
+                    </button>
+                    <div class="menu__setting dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <a class="dropdown-item dropdown-item--menu" href="#" style="color: white;">
+                            <div class="menu-doc">
+                                <i class="fa-regular fa-circle-play"></i>
+                                Trình phát nhạc
+                                <i class="fa-solid fa-chevron-right icon_next"></i>
+                                <ul class="sub-menu-doc">
+                                    <li>
+                                        <div>
+                                            Chuyển bài 
+                                             <button type="button" class="btn btn-primary btn-sm btn-plus">Plus</button>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <label>Chuyển bài mượt mà (Crossfade)</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                    </li>
+                                    <li>
+                                        <p class="text-center">8 giây</p>
+                                    </li>
+                                    <li>
+                                        <label>Bỏ qua khoảng lặng (Gapless)</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                                        </div>
+                                        
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>Chất lượng nhạc</h4>
+                                    </li>
+                                    <li>
+                                        <label for="">Thường(128 kbps)</label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">Cao(320 kbps)</label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">Lossless(320kbps)
+                                            <button type="button" class="btn btn-primary btn-sm btn-plus">Plus</button>
+                                        </label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </a>
+                        <a class="dropdown-item dropdown-item--menu" href="#" style="color: white;">
+                            <div class="menu-doc">
+                                <i class="fa-solid fa-brush"></i>
+                                Giao diện
+                                <i class="fa-solid fa-chevron-right icon_next"></i>
+                                <ul class="sub-menu-doc">
+                                    <li>
+                                        <label for="">Chủ đề</label>
+                                        <i class="fa-solid fa-chevron-right icon_next"></i>
+                                    </li>
+                                    <li style="padding-bottom: 80px;">
+                                        <div>
+                                            <img src="photos/GiaoDien1.jpg" alt="">
+                                            <label for="">Tím</label>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <label>Hiệu ứng chuyển động</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            
+                        </a>
+
+                      <hr>
+
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-exclamation"></i>
+                            Giới thiệu
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-regular fa-file"></i>
+                            Thỏa thuận sử dụng
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-shield"></i>
+                            Chính sách bảo mật
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-regular fa-flag"></i>
+                            Báo cáo vi phạm bản quyền
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                            Quảng cáo
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            Liên hệ
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img class="img_user" src="./photos/user.png" alt="user">
+                
             </div>
         </div>
+
     </header>
 
     <main>
-     
+
     </main>
 
     <footer>
