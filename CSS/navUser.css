@@ -6,8 +6,8 @@
 }
 .btn:hover {
     background:#5a4c70 ;
-    color:#3b3a3d;
-    opacity: 1;
+    color:black;
+    
 }
 .dropdown-menu {
     margin-top: 20px;
@@ -85,12 +85,12 @@
     margin-left: 15px;
 }
 
-.text-dark {
+.text-body {
     margin-left: 15px;
     font-size: 14px;
     font-family: 900;
 }
-.text-muted {
+.text-body-2 {
     margin-top: -15px;
     margin-left: 15px;
     font-size: 14px;
