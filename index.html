@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/actionNav.css">
+    <link rel="stylesheet" href="./CSS/navUser.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="web icon" type="png" href="./photos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
+    <script src="../JS/navUser.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="left">
-            <div class="img">
-                
-            </div>
-
+            <div class="img"></div>
             <div class="list_items">
                 <div class="item">
                     <div class="title">
@@ -31,7 +33,6 @@
                     </div>
                 </div>
                 <div class="item">
-            
                     <div class="title">
                         <i class='bx bx-doughnut-chart icon'></i>
                         <p>Khám phá</p>
@@ -49,6 +50,11 @@
                         <p>Radio</p>
                     </div>
                 </div>
+            </div>
+            <div class="partition"></div>
+            <div class="footer">
+                
+                <p>+ Tạo playlist mới</p>
             </div>
         </div>
         <div class="action">
@@ -73,8 +79,64 @@
                     <span>Tải bản Windows</span>
                 </button>
                 <button class="btn_setting"><i class='bx bx-cog icon_setting'></i></button>
-                <img class="img_user" src="./photos/user.png" alt="user">
+                
 
+                <div class="dropdown">
+                    <img class="img_user dropdown-toggle" src="./photos/user.png" alt="user" data-toggle="dropdown" >
+                    <div class="dropdown-menu">
+                        <div class="dropdown-dialog">
+                            <div class="dropdown-content"></div>
+                            <div class="dropdown-header">
+                                <button class="btn text-white btn-m" style="width: 240px;">Đăng nhập</button>
+                            </div>
+                            <div class="dropdown-header">
+                                <button class="btn text-white btn-m" style="width: 240px;">Đăng ký</button>
+                            </div>
+                            <div class="dropdown-body">
+                                <div class="dropdown-title dropdwon-title-md text-white">
+                                    Đăng ký gói
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-bg">
+                                        <div class="text-title">
+                                            <h3 class="text-item">Zing MP3</h3>
+                                            <button class="btn-2 text-white" style="margin-top: 2px;">
+                                                <p style="margin-top: 1px;">PLUS</p>
+                                            </button>
+                                        </div>
+                                        <div class="text-subtitle">
+                                            <p class="text-dark"><b>Chỉ từ 13,000đ/tháng</b></p>
+                                            <p class="text-muted">Nghe nhạc với chất lượng cao <br> nhất, không quảng cáo</p>
+                                            <button class="btn_action text-white" style="text-align: center;">
+                                                <p class="text-white" style="margin-top: 4px; font-size: 14px;">
+                                                    <b>Tìm hiểu thêm</b>
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="dropdown-bg-2">
+                                        <div class="text-title">
+                                            <h3 class="text-item" style="color:#ee9a00">Zing MP3</h3>
+                                            <button class="btn-3 text-white" style="margin-top: 2px;">
+                                                <p style="margin-top: 1px;">PREMIUM</p>
+                                            </button>
+                                        </div>
+                                        <div class="text-subtitle">
+                                            <p class="text-dark"><b>Chỉ từ 41,000đ/tháng</b></p>
+                                            <p class="text-muted">Toàn bộ đặc quyền Plus cùng <br> kho nhạc Premium</p>
+                                            <button class="btn_action--2 text-white" style="text-align: center;">
+                                                <p class="text-white" style="margin-top: 4px; font-size: 14px;">
+                                                    <b>Tìm hiểu thêm</b>
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
