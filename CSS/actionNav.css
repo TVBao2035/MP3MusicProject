@@ -3,11 +3,13 @@
 .action{
     display: flex;
     background-color: var(--primary-color-strong);
-    width: 1296px;
+    width: 1135px;
     height: 70px;
     box-sizing: border-box;
-    padding: 0 59px;
-   
+    padding: 0 30px;
+    z-index: 1;
+   position: fixed;
+   left: 240px;
 }
 
 .side_left{

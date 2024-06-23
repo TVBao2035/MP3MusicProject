@@ -1,13 +1,14 @@
 body{
-    background-color: var(--primary-color-strong);
+    background-color: var(--primary-color-strong) !important;
 }
 
 .left {
-    width: 240px;
+    width: 217px;
     height: 710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
-    
+    z-index: 2;
+    position: fixed;
 }
 .img {
     height: 72px;
@@ -41,8 +42,11 @@ body{
     color: white;
     opacity: 0.6;
     font-size: 14px;
+    margin: 0;
 }
-
+.item p{
+    margin: 0;
+}
 .item:hover{
     opacity: 1;
 }
