@@ -3,10 +3,9 @@
     background-color: var(--primary-color-strong);
 }
 .list_title {
-        padding-bottom: 10px;
-    }
+    padding-bottom: 10px;
+    
     h3 {
-        
         color: rgb(255, 253, 251);
     }
     a {
@@ -15,9 +14,14 @@
         color: rgb(145, 143, 143);
         font-size: 17px;
     }
+}
+.list_title a {
+    
+}
 
 .list_item_title{
-    
+    font-size: 18px;
+    text-align: left;
     padding-top: 10px;
     color: #959595;
 }
@@ -28,8 +32,8 @@
 
 .list_item_img img {
     position: relative;
-    min-width: 100%;
-    height: auto;
+    width: 275px;
+    height: 275px;
     transition: transform 0.3s ease;
 }
 .list_item_img:hover img {
