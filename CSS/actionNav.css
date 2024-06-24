@@ -196,6 +196,42 @@
 .sub-menu-doc li img{
     width: 100px;
     height: 80px;
+=======
+
+.model_search_input{
+    background-color: var(--background-input);
+    top: 55px;
+    left: 361px;
+    width: 440px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: none;
+}
+.search_input_onclick{
+    background-color: var(--background-input);
+}
+.search_onclick{
+    border: unset;
+    background-color: var(--background-input);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.item_search:hover{
+    background-color: #ffffff4f;
+    
+}
+
+
+.text_input{
+    font-size: 14px;
+}
+
+.container_input{
+    z-index: 0;
+
 }
 
 .model_search_input{
