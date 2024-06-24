@@ -119,6 +119,7 @@
     color:#d5d5d6;
 }
 
+
 .model_search_input{
     background-color: var(--background-input);
     top: 55px;
@@ -153,3 +154,4 @@
 .container_input{
     z-index: 0;
 }
+

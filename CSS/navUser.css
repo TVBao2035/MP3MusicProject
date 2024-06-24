@@ -1,0 +1,131 @@
+.btn {
+    background: var(--primary-color);
+    border-radius: 50px;
+    font-weight: 700;
+    margin-left: -10px;
+}
+.btn:hover {
+    background:#5a4c70 ;
+    color:black;
+    
+}
+.dropdown-menu {
+    margin-top: 20px;
+    margin-left: -200px;
+    width: 270px;
+    height: 400px;
+    background: #342944;
+    position: fixed;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+    white-space: nowrap;
+    
+}
+.dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
+.dropdown-menu {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
+.dropdown-title {
+    padding-top: 10px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.dropdown-bg {
+    width: 240px;
+    height: 200px; 
+    background: linear-gradient(45deg, #a2b5cd, white ); /* Hiệu ứng gradient từ màu #ff7e5f đến #feb47b */
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.text-title {
+    display: flex; /* cho ngang hàng */
+}
+.dropdown-bg-2{
+    margin-top: 10px;
+    width: 240px;
+    height: 200px; 
+    background: linear-gradient(45deg,#eedc82, white ); /* Hiệu ứng gradient từ màu #ff7e5f đến #feb47b */
+    margin-left: 15px;
+    color: white; 
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.btn-2 {
+    background: var(--primary-color);
+    border-radius: 7px;
+    margin-left: 5px;
+    width: 60px;
+    height: 20px;
+    border: white 0px solid;
+    text-align: center;
+}
+.btn-2 p {
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.text-item {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.text-body {
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: 900;
+}
+.text-body-2 {
+    margin-top: -15px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: 900;
+}
+.btn_action {
+    background: var(--primary-color);
+    margin-left: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: white 0px solid;
+}
+
+.btn-3 {
+    background: #ee9a00;
+    border-radius: 7px;
+    margin-left: 5px;
+    width: 80px;
+    height: 20px;
+    border: white 0px solid;
+    text-align: center;
+}
+.btn-3 p {
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.btn_action--2 {
+    background: #ee9a00;
+    margin-left: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: white 0px solid;
+}
