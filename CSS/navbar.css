@@ -8,7 +8,17 @@ body{
     height:710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
-    position: fixed;
+=======
+    background-color: var(--primary-color-strong) !important;
+}
+
+.left {
+    width: 217px;
+    height: 710px;
+    color: var(--primary-color);
+    background-color: var(--background-navbar);
+    z-index: 2;
+
 }
 .img {
     height: 72px;
@@ -45,9 +55,12 @@ body{
     margin: 2px;
 }
 .item p {
-    margin-bottom: -2px;
+    margin: 0;
 }
+.item p{
+    margin: 0;
 
+}
 .item:hover{
     opacity: 1;
     background-color: #807f815d;
