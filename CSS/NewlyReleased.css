@@ -1,0 +1,267 @@
+
+.card {
+    background: var(--primary-color-strong) !important;
+    height: 500px;
+}
+.card-title h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.publication_new{
+    z-index: 1;
+    width: var(--width-main) !important;
+    background: var(--primary-color-strong);
+}
+.btn_all {
+    background: var(--primary-color);
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: var(--primary-color-strong) 0px solid;
+}
+.btn_all p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.btn_all:hover {
+    background: #8540c1;
+}
+.btn_all p:hover {
+    color: rgb(197, 190, 190);
+}
+
+
+.btn_vn {
+    margin-left: 12px;
+    background: var(--primary-color-strong);
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: var(--primary-color-strong) 0px solid;
+}
+.btn_vn p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.btn_vn:hover {
+    background: var(--primary-color-strong);
+}
+.btn_vn p:hover {
+    color: rgb(197, 190, 190);
+}
+
+
+.btn_internat {
+    margin-left: 12px;
+    background: var(--primary-color-strong);
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: var(--primary-color-strong) 0px solid;
+}
+.btn_internat p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+.btn_internat:hover {
+    background: var(--primary-color-strong);
+}
+.btn_internat p:hover {
+    color: rgb(197, 190, 190);
+}
+.card-img .row {
+    display:flex;
+    
+}
+.card-img .col {
+    flex: 1;
+    padding: 5px;
+}
+
+.box-first {
+    background:#36303e;
+    width:95%;
+    height:80px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+   
+}
+.img-container {
+    position: relative;
+    display: inline-block; /* Đảm bảo container bao bọc kích thước của ảnh */
+}
+
+.img-item-first {
+    display: block; /* Đảm bảo hình ảnh chiếm toàn bộ không gian của container */
+    opacity: 0.5; /* Làm mờ hình ảnh */
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%; /* Đặt icon ở giữa theo chiều dọc */
+    left: 50%; /* Đặt icon ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển icon vào đúng giữa */
+    color: white; /* Màu của icon, có thể thay đổi theo ý muốn */
+    font-size: 2em; /* Kích thước của icon, điều chỉnh theo ý muốn */
+    pointer-events: none; /* Đảm bảo icon không chặn các sự kiện chuột trên hình ảnh */
+}
+.box:hover .play-icon-2 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 2em; 
+    pointer-events: none; 
+}
+.img-item {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.img-item-first {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.box {
+    width:95%;
+    height: 80px;
+    background: var(--primary-color-strong);
+    border-radius: 5px;
+    display: flex;
+    margin-left: 0 !important;
+}
+.box:hover {
+    background:#36303e;
+}
+
+.img-title{
+    margin-left: -6px;
+    position: relative; /* Đảm bảo các phần tử con có thể dựa vào vị trí này */
+}
+.title-1 {
+    font-size: 14px;
+    color:white;
+}
+.title-1:hover{
+    color: var(--primary-color);
+}
+.tt {
+    position: relative;
+}
+
+.title-2 {
+    font-size: 12px;
+   padding-top: -55px;
+    color: gray;
+}
+.title-2:hover{
+    color: var(--primary-color);
+}
+.title-2:hover .underline {
+    text-decoration: underline;
+}
+.underline {
+    display: inline;
+}
+
+
+.title-3 {
+    font-size: 12px;
+    margin-top: -px;
+}
+
+.title-4 {
+    font-size: 13px;
+   padding-top: -65px;
+    color: gray;
+}
+.title-4:hover{
+    color: var(--primary-color);
+}
+.title-4:hover .underline {
+    text-decoration: underline;
+}
+.underline {
+    display: inline;
+}
+
+.title-5 {
+    font-size: 12px;
+    margin-top: -4px;
+}
+.icon-dots {
+    font-size: 20px;
+    display:none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    right: 0px; /* Điều chỉnh theo layout của bạn */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.icon-dots {
+    position: absolute;
+
+}
+
+.icon-dots:hover {
+    position: absolute;
+    background: #4d4556;
+    border-radius: 50px;
+}
+
+.box:hover .icon-dots{
+    opacity: 1;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px; /* Căn giữa nội dung trong icon */
+    padding: 5px; /* Tăng khu vực bấm */
+}
+/* chữ Khác */
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(61, 60, 60);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Vị trí của tooltip phía trên icon */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    
+  }
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Khoảng cách giữa hình tam giác và tooltip */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(61, 60, 60) transparent transparent transparent;
+}
+  .icon-dots:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+   
+  }
+  
+  
