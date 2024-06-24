@@ -4,11 +4,11 @@ body{
 }
 
 .left {
-    width: 25%;
-    height:750px;
+    width: 240px;
+    height:710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
-    
+    position: fixed;
 }
 .img {
     height: 72px;
