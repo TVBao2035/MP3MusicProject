@@ -149,6 +149,9 @@
 .icon_next {
     float: right;
 }
+.menu-doc{
+    position: relative;
+}
 
 .menu-doc ul{
     list-style-type: none;
@@ -167,17 +170,17 @@
 
 .menu-doc .sub-menu-doc {
     position: absolute;
-    width: 400px;
-    min-height: 300px;
+    width: 400px ;
+    min-height: 300px ;
     display: none;
-    right: 378px;
     top: 0;
-    background-color: #4b0f72;
+    background-color: #4b0f72 !important;
 }
 
 .menu-doc:hover .sub-menu-doc 
 {
     display:  block;
+    z-index: 2;
 }
 .menu-doc .sub-menu-doc li{
     padding: 20px 0;;
@@ -196,7 +199,7 @@
 .sub-menu-doc li img{
     width: 100px;
     height: 80px;
-=======
+}
 
 .model_search_input{
     background-color: var(--background-input);
