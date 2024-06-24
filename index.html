@@ -2,32 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/actionNav.css">
+
     <link rel="stylesheet" href="chill.css">
+
+
+    <link rel="stylesheet" href="./CSS/navUser.css">
+    <link rel="stylesheet" href="./CSS/NewlyReleased.css">
+
+    <link rel="stylesheet" href="./CSS/rank.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="web icon" type="png" href="./photos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="Javascript/Setting.js">
+
+
+    <script src="../JS/navUser.js"></script>
+    <script src="./JS/NewlyReleased.js"></script>
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="">
         <div class="left">
-            <div class="img">
-                
-            </div>
-
+            <div class="img"></div>
             <div class="list_items">
                 <div class="item">
                     <div class="title">
@@ -36,7 +63,6 @@
                     </div>
                 </div>
                 <div class="item">
-            
                     <div class="title">
                         <i class='bx bx-doughnut-chart icon'></i>
                         <p>Khám phá</p>
@@ -55,7 +81,13 @@
                     </div>
                 </div>
             </div>
+            <div class="partition"></div>
+            <div class="footer">
+                
+                <p>+ Tạo playlist mới</p>
+            </div>
         </div>
+        <div class="container_input position-fixed w-100 h-100 "></div>
         <div class="action">
             <div class="side_left">
                 <button class="btn_left btn_action--left">
@@ -70,6 +102,39 @@
                         <input class="search_input" type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
                     </div>
                 </div>
+               
+            
+                <div class="model_search_input position-absolute">
+                    <div class="cotainer p-3" >
+                        <p class="text-white text_input"><b>Đề xuất cho bạn</b></p>
+                        <ul class="nav flex-column text-white fw-light">
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                anh thôi nhân nhượng
+                            </li>
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                cô phòng
+                            </li>
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                bật nhạc đón hè
+                            </li>
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                hoa nở bên dường
+                            </li>
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                cẩm tú cầu
+                            </li>
+                            <li class="item_search pt-1 pb-1 ps-4 pe-4 nav-item">
+                                <i class='bx bx-right-top-arrow-circle me-2' ></i>
+                                tâm trạng ngày mưa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="side_right">
                 <button class="btn_update btn_action--right"><span>Nâng cấp tài khoản</span></button>
@@ -77,6 +142,7 @@
                     <i class='bx bx-download icon_download'></i>
                     <span>Tải bản Windows</span>
                 </button>
+
 
                 <div class="dropdown">
                     <button onclick="myFunction()" class="btn_setting btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -122,11 +188,11 @@
                                     <li>
                                         <label for="">Thường(128 kbps)</label>
                                         <div class="form-check">
-<<<<<<< HEAD
+
                                             <input type="radio" class="form-check-input" id="rd128" name="optradio" value="option1" checked>
-=======
+
                                             <input type="radio" class="form-check-input text-danger" id="radio1" name="optradio" value="option1" checked>
->>>>>>> 8c16351e07c0ca7861ff13ec594fc6af67f8f4a2
+
                                         </div>
                                     </li>
                                     <li>
@@ -213,13 +279,325 @@
 
                 <img class="img_user" src="./photos/user.png" alt="user">
                 
+
+                <button class="btn_setting"><i class='bx bx-cog icon_setting'></i></button>
+                
+
+                <div class="dropdown">
+                    <img class="img_user dropdown-toggle" src="./photos/user.png" alt="user" data-toggle="dropdown" >
+                    <div class="dropdown-menu">
+                        <div class="dropdown-dialog">
+                            <div class="dropdown-content"></div>
+                            <div class="dropdown-header">
+                                <button class="btn text-white btn-m" style="width: 240px;">Đăng nhập</button>
+                            </div>
+                            <div class="dropdown-header">
+                                <button class="btn text-white btn-m" style="width: 240px;">Đăng ký</button>
+                            </div>
+                            <div class="dropdown-body">
+                                <div class="dropdown-title dropdwon-title-md text-white">
+                                    Đăng ký gói
+                                </div>
+                                <div class="dropdown-text">
+                                    <div class="dropdown-bg">
+                                        <div class="text-title">
+                                            <h3 class="text-item">Zing MP3</h3>
+                                            <button class="btn-2 text-white" style="margin-top: 2px;">
+                                                <p style="margin-top: 1px;">PLUS</p>
+                                            </button>
+                                        </div>
+                                        <div class="text-subtitle">
+                                            <p class="text-body text-dark"><b>Chỉ từ 13,000đ/tháng</b></p>
+                                            <p class="text-body-2 text-muted">Nghe nhạc với chất lượng cao <br> nhất, không quảng cáo</p>
+                                            <button class="btn_action text-white" style="text-align: center;">
+                                                <p class="text-white" style="margin-top: 4px; font-size: 14px;">
+                                                    <b>Tìm hiểu thêm</b>
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="dropdown-bg-2">
+                                        <div class="text-title">
+                                            <h3 class="text-item" style="color:#ee9a00">Zing MP3</h3>
+                                            <button class="btn-3 text-white" style="margin-top: 2px;">
+                                                <p style="margin-top: 1px;">PREMIUM</p>
+                                            </button>
+                                        </div>
+                                        <div class="text-subtitle">
+                                            <p class="text-body text-dark"><b>Chỉ từ 41,000đ/tháng</b></p>
+                                            <p class="text-body-2 text-muted">Toàn bộ đặc quyền Plus cùng <br> kho nhạc Premium</p>
+                                            <button class="btn_action--2 text-white" style="text-align: center;">
+                                                <p class="text-white" style="margin-top: 4px; font-size: 14px;">
+                                                    <b>Tìm hiểu thêm</b>
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </header>
 
-    <main>
-        <!-- Chill + Remix cực bốc + mưa tháng 6 -->
+    <main class="position-absolute ">
+         <!-- Mới phát hành -->
+         <div class=" publication_new container p-0">
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="d-flex justify-content-between text-white">
+                        <h5 class="fw-bolder">BXH Nhạc Mới</h5>
+                        <div class="d-flex align-items-center fs-4">
+                            <p class="text_all--rank fw-bold mb-0 ">TẤT CẢ </p>
+                            <i class='bx bx-chevron-right icon_all--rank fw-light'></i>
+                        </div>
+                    </div>
+                    <div class="card-subtitle mt-4">
+                        <button class="btn_all text-white"><p>TẤT CẢ</p></button>
+                        <button class="btn_vn text-white"><p>VIỆT NAM</p></button>
+                        <button class="btn_internat text-white"><p>QUỐC TẾ</p></button>
+                    </div>
+                    <div class="card-img mt-3">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="box ">
+                                    <div class="img-container">
+                                        <img class="img-item-first p-2"  src="./photos/MoiKhiToiBuon.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Mỗi Khi Tôi Buồn</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-2"><span class="underline">Dương Edward</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-3 text-secondary">Hôm qua</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/TheBoyIsMine.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">The Boy Is Mine</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Ariana Grande, Brandy, Monica</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/DungLamTraiTimAnhDau.jpg" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Đừng Làm Trái Tim Anh</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Sơn Tùng M-TP</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col ">
+                                <div class="box">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/BaiHatDanhChoCon.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    
+                                    <div class="img-title w-100 p-2 w-100">
+                                        <h5 class="title-1">Bài Hát Dành Cho Con</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-2"><span class="underline">Hồ Ngọc Hà, Nguyễn Hồng Thuận</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-3 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/SummerBack.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Summer's Back</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Alok,Jess Glynne</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/SaoPhaiKhoc.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Sao Phải Khóc</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Phan Duy Anh, ACV</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col ">
+                                <div class="box" style="margin-left: 34px;">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/ThuXemSau.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Thử Xem Sao</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-2"><span class="underline">Keyo</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-3 text-secondary">Hôm qua</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/TheTourturedPoetsDepartment.png" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">The Tourtured Poets Department</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Taylor Swift</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/WithoutMe.jpg" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Without Me</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Halsey</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col ">
+                                <div class="box " style="margin-left: 34px;">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/GODS.jfif" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">GODS</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-2"><span class="underline">League Of Legends,...</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-3 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/TuongHo.jpg" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Tương Hổ</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Khanh Khanh, ...</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box ml-5 ">
+                                    <div class="img-container">
+                                        <img class="img-item p-2"  src="./photos/NhamMatThayMuaHe.jfif" alt="">
+                                        <i class='bx bx-play play-icon-2'></i>
+                                    </div>
+                                    <div class="img-title w-100 p-2">
+                                        <h5 class="title-1">Nhắm Mắt Thấy M...</h5>
+                                        <div class="tt" >
+                                            <h6 class="title-4"><span class="underline">Nguyên Hà</span></h6>
+                                            <i class='bx bx-dots-horizontal-rounded icon-dots'>
+                                                <span class="tooltip">Khác</span>
+                                            </i>
+                                        </div>
+                                        <h6 class="title-5 text-secondary">3 ngày trước</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- Chill  + Nhạc Remix cực bốc + mưa tháng sáu -->
         
         <!-- Chill -->
         <div class="list">
@@ -402,17 +780,39 @@
                             </div>
                         </a>   
                         <p class="list_item_title">Gối đầu vào nhạc trong những ngày...</p>
-                    </div>
+                  </div>
+        </div>
+        <!-- BXH nhạc mới -->
+        <div class=" container_rank">
+            <div class="d-flex justify-content-between text-white">
+                <h5 class="fw-bolder">BXH Nhạc Mới</h5>
+                <div class="d-flex align-items-center fs-4">
+                    <p class="text_all--rank fw-bold mb-0 ">TẤT CẢ </p>
+                    <i class='bx bx-chevron-right icon_all--rank fw-light'></i>
                 </div>
             </div>
+
+            <div class="slide">
+                <div class="container_buttons d-flex align-items-center justify-content-between">
+                    <div class="btn_left--slide btn_arrow"><i class='bx bx-chevron-left fs-2' ></i></div>
+                    <div class="btn_right--slide btn_arrow"><i class='bx bx-chevron-left fs-2 bx-flip-horizontal' ></i></div>
+                </div>
+               <div class="list_image position-absolute d-flex">
+                    
+               </div>
+            </div>
         </div>
-        
-        
-         
+
+
     </main>
 
     <footer>
         
     </footer>
 </body>
+
 </html>
+
+<script type="module" src="./JS/index.js"></script>
+</html>
+
