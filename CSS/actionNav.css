@@ -120,6 +120,84 @@
 }
 
 
+.menu__setting {
+    width: 380px;
+    height: auto;
+}
+.menu__setting.dropdown-menu {
+    background-color: #4c1074;
+    color: white; /* Màu chữ bạn muốn */
+}
+.menu__setting.dropdown-menu .dropdown-item {
+    color: rgb(161, 160, 160); /* Màu chữ cho các mục */
+    font-size: 18px;
+}
+
+.menu__setting.dropdown-menu .dropdown-item {
+    position: relative;
+    padding: 10px;
+    padding-right: 30px; /* Đảm bảo đủ khoảng trống cho icon */
+}
+.dropdown-item i{  /* icon */
+    padding: 0 10px;
+}
+
+.menu__setting.dropdown-menu .dropdown-item:hover{
+    background-color: #8a53ae;
+}
+
+.icon_next {
+    float: right;
+}
+
+.menu-doc ul{
+    list-style-type: none;
+}
+.menu-doc ul li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 1em;
+    position: relative;
+}
+.menu-doc ul li a{
+    text-decoration: none;
+        color: whitesmoke;
+        display: block;
+}
+
+.menu-doc .sub-menu-doc {
+    position: absolute;
+    width: 400px;
+    min-height: 300px;
+    display: none;
+    right: 378px;
+    top: 0;
+    background-color: #4b0f72;
+}
+
+.menu-doc:hover .sub-menu-doc 
+{
+    display:  block;
+}
+.menu-doc .sub-menu-doc li{
+    padding: 20px 0;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-doc .sub-menu-doc li .checkbox{
+    background-color: #4b0f72;
+}
+
+.btn-plus{
+    background-color: rgb(238, 0, 0);
+}
+
+.sub-menu-doc li img{
+    width: 100px;
+    height: 80px;
+=======
+
 .model_search_input{
     background-color: var(--background-input);
     top: 55px;
@@ -153,5 +231,6 @@
 
 .container_input{
     z-index: 0;
+
 }
 

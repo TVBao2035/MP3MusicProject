@@ -11,28 +11,44 @@
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/actionNav.css">
 
+    <link rel="stylesheet" href="chill.css">
+
+
     <link rel="stylesheet" href="./CSS/navUser.css">
     <link rel="stylesheet" href="./CSS/NewlyReleased.css">
 
     <link rel="stylesheet" href="./CSS/rank.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="web icon" type="png" href="./photos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="Javascript/Setting.js">
+
+
     <script src="../JS/navUser.js"></script>
     <script src="./JS/NewlyReleased.js"></script>
     
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -126,6 +142,144 @@
                     <i class='bx bx-download icon_download'></i>
                     <span>Tải bản Windows</span>
                 </button>
+
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="btn_setting btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class='bx bx-cog icon_setting'></i>
+                    </button>
+                    <div class="menu__setting dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <a class="dropdown-item dropdown-item--menu" href="#" style="color: white;">
+                            <div class="menu-doc">
+                                <i class="fa-regular fa-circle-play"></i>
+                                Trình phát nhạc
+                                <i class="fa-solid fa-chevron-right icon_next"></i>
+                                <ul class="sub-menu-doc">
+                                    <li>
+                                        <div>
+                                            Chuyển bài 
+                                             <button type="button" class="btn btn-primary btn-sm btn-plus">Plus</button>
+                                        </div>
+                                        
+                                    </li>
+                                    <li>
+                                        <label>Chuyển bài mượt mà (Crossfade)</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="crossfade" name="darkmode" value="yes" checked>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                    </li>
+                                    <li>
+                                        <p class="text-center">8 giây</p>
+                                    </li>
+                                    <li>
+                                        <label>Bỏ qua khoảng lặng (Gapless)</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="gapless" name="darkmode" value="yes" checked>
+                                        </div>
+                                        
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>Chất lượng nhạc</h4>
+                                    </li>
+                                    <li>
+                                        <label for="">Thường(128 kbps)</label>
+                                        <div class="form-check">
+
+                                            <input type="radio" class="form-check-input" id="rd128" name="optradio" value="option1" checked>
+
+                                            <input type="radio" class="form-check-input text-danger" id="radio1" name="optradio" value="option1" checked>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">Cao(320 kbps)</label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="rd320" name="optradio" value="option1" checked>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="">Lossless(320kbps)
+                                            <button type="button" class="btn btn-primary btn-sm btn-plus">Plus</button>
+                                        </label>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="rdLossless" name="optradio" value="option1" checked>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </a>
+                        <a class="dropdown-item dropdown-item--menu" href="#" style="color: white;">
+                            <div class="menu-doc">
+                                <i class="fa-solid fa-brush"></i>
+                                Giao diện
+                                <i class="fa-solid fa-chevron-right icon_next"></i>
+                                <ul class="sub-menu-doc">
+                                    <li>
+                                        <label for="">Chủ đề</label>
+                                        <i class="fa-solid fa-chevron-right icon_next"></i>
+                                    </li>
+                                    <li style="padding-bottom: 80px;">
+                                        <div>
+                                            <img src="photos/GiaoDien1.jpg" alt="">
+                                            <label for="">Tím</label>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <label>Hiệu ứng chuyển động</label>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="" name="darkmode" value="yes" checked>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            
+                        </a>
+
+                      <hr>
+
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-exclamation"></i>
+                            Giới thiệu
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-regular fa-file"></i>
+                            Thỏa thuận sử dụng
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-shield"></i>
+                            Chính sách bảo mật
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-regular fa-flag"></i>
+                            Báo cáo vi phạm bản quyền
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                            Quảng cáo
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-phone"></i>
+                            Liên hệ
+                            <i class="fa-solid fa-arrow-up-right-from-square icon_next"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img class="img_user" src="./photos/user.png" alt="user">
+                
+
                 <button class="btn_setting"><i class='bx bx-cog icon_setting'></i></button>
                 
 
@@ -187,9 +341,8 @@
                 </div>
             </div>
         </div>
+
     </header>
-
-
 
     <main class="position-absolute ">
          <!-- Mới phát hành -->
@@ -444,9 +597,190 @@
                 </div>
             </div>
         </div>
-        <!-- Chill  + Nhạc Remix cực bốc + mưa tháng sáu -->
-        <div>
-
+      <!-- Chill  + Nhạc Remix cực bốc + mưa tháng sáu -->
+        
+        <!-- Chill -->
+        <div class="list">
+            <div class="container p-5">
+                <div class="row list_title">
+                    <div class="col-10 list_content">
+                        <h3>Chill</h3>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">Tất cả
+                           <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                   </div>
+                </div>
+                <div class="row flex-nowrap list_item gx-5" >
+                    <div class="col text-right">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/chill1.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a> 
+                         
+                        <p class="list_item_title">Ký ưc ùa về cùng nhũng giọng ca rất...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/chill2.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>   
+                        <p class="list_item_title">Tình khúc nhạc xưa mộc mạc mà thấm...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/chill3.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>  
+                        <p class="list_item_title">Va vào những giai điệu thư giản của...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/chill4.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>
+   
+                        <p class="list_item_title">Tựa đầu vào vai nhau lắng nghe những</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nhạc remix cực bốc -->
+        <div class="list">
+            <div class="container p-5">
+                <div class="row list_title">
+                    <div class="col-10 list_content">
+                        <h3>Nhạc Remix Cực Bốc</h3>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">Tất cả
+                           <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                   </div>
+                </div>
+                <div class="row flex-nowrap list_item gx-5">
+                    <div class="col text-right">
+                        <div href="" class="list_item_img">
+                            <img src="photos/Chill/remix1.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>  
+                        <p class="list_item_title">Cứ quẩy thôii, Remix hay cứ để ở đây lo</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/remix2.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>   
+                        <p class="list_item_title">Ballad Việt được remix đầy mới lạ và...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/remix3.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>  
+                        <p class="list_item_title">Những ca khúc V-Pop remix tuy cũ...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/remix4.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>   
+                        <p class="list_item_title">Lắc lư với những bản Remix hot nhất...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mưa tháng 6 -->
+        <div class="list">
+            <div class="container p-5">
+                <div class="row list_title">
+                    <div class="col-10 list_content">
+                        <h3>Mưa tháng 6</h3>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">Tất cả
+                           <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                   </div>
+                </div>
+                <div class="row flex-nowrap list_item gx-5">
+                    <div class="col text-right">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/Mua1.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>  
+                        <p class="list_item_title">Ngắm mưa rơi bên cạnh những giai...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/Mua2.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>   
+                        <p class="list_item_title">Một tách cà phê nóng, bên ngoài...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/Mua3.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>  
+                        <p class="list_item_title">Âm thanh acoustic êm ả như tiếng...</p>
+                    </div>
+                    <div class="col">
+                        <a href="" class="list_item_img">
+                            <img src="photos/Chill/Mua4.png" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a>   
+                        <p class="list_item_title">Gối đầu vào nhạc trong những ngày...</p>
+                  </div>
         </div>
         <!-- BXH nhạc mới -->
         <div class=" container_rank">
@@ -469,11 +803,16 @@
             </div>
         </div>
 
+
     </main>
 
     <footer>
         
     </footer>
 </body>
+
+</html>
+
 <script type="module" src="./JS/index.js"></script>
 </html>
+
