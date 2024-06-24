@@ -1,77 +1,70 @@
-.btn {
+.btn_m {
     background: var(--primary-color);
     border-radius: 50px;
     font-weight: 700;
-    margin-left: -10px;
+    width: 240px;
+    height: 40px;
+    margin: 5px auto;
 }
-.btn:hover {
-    background:#5a4c70 ;
-    color:black;
-    
+.btn_m:hover {
+    background: #5a4c70;
+    color: black;
 }
-.dropdown-menu {
+.dropdown-menu-2 {
     margin-top: 20px;
     margin-left: -200px;
     width: 270px;
-    height: 400px;
+    max-height: 450px;
     background: #342944;
-    position: fixed;
-    overflow-y: scroll ;
-    overflow-x: hidden;
+   
+    overflow-y: auto;
     white-space: nowrap;
-    
 }
-.dropdown-menu::-webkit-scrollbar {
+.dropdown-menu-2::-webkit-scrollbar {
     display: none;
 }
-.dropdown-menu {
-  -ms-overflow-style: none;  
-  scrollbar-width: none; 
+.dropdown-menu-2 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .dropdown-title {
     padding-top: 10px;
     margin-left: 15px;
     font-weight: 700;
 }
-.dropdown-bg {
+.dropdown-bg, .dropdown-bg-2 {
     width: 240px;
-    height: 200px; 
-    background: linear-gradient(45deg, #a2b5cd, white ); /* Hiệu ứng gradient từ màu #ff7e5f đến #feb47b */
+    height: 200px;
     margin-left: 15px;
     color: white;
     font-size: 20px;
     border-radius: 15px;
-    margin-top: 5px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    padding: 20px 0 15px;
+}
+.dropdown-bg {
+    background: linear-gradient(45deg, #a2b5cd, white);
+}
+.dropdown-bg-2 {
+    background: linear-gradient(45deg, #eedc82, white);
 }
 .text-title {
-    display: flex; /* cho ngang hàng */
+    display: flex;
 }
-.dropdown-bg-2{
-    margin-top: 10px;
-    width: 240px;
-    height: 200px; 
-    background: linear-gradient(45deg,#eedc82, white ); /* Hiệu ứng gradient từ màu #ff7e5f đến #feb47b */
-    margin-left: 15px;
-    color: white; 
-    font-size: 20px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
-.btn-2 {
-    background: var(--primary-color);
+.btn-2, .btn-3 {
     border-radius: 7px;
     margin-left: 5px;
     width: 60px;
     height: 20px;
-    border: white 0px solid;
+    border: 0;
     text-align: center;
+    background: var(--primary-color);
 }
-.btn-2 p {
+.btn-3 {
+    width: 80px;
+    background: #ee9a00;
+}
+.btn-2 p, .btn-3 p {
     font-size: 12px;
     text-align: center;
     align-items: center;
@@ -84,48 +77,27 @@
     font-weight: 700;
     margin-left: 15px;
 }
-
-.text-body {
+.text-body, .text-body-2 {
     margin-left: 15px;
     font-size: 14px;
-    font-family: 900;
 }
 .text-body-2 {
     margin-top: -15px;
-    margin-left: 15px;
-    font-size: 14px;
-    font-family: 900;
 }
-.btn_action {
-    background: var(--primary-color);
-    margin-left: 15px;
+.btn_action, .btn_action--2 {
+    border-radius: 15px;
+    border: 0;
     width: 150px;
     height: 30px;
-    border-radius: 15px;
-    border: white 0px solid;
-}
-
-.btn-3 {
-    background: #ee9a00;
-    border-radius: 7px;
-    margin-left: 5px;
-    width: 80px;
-    height: 20px;
-    border: white 0px solid;
-    text-align: center;
-}
-.btn-3 p {
-    font-size: 12px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
+    margin-left: 15px;
+    background: var(--primary-color);
 }
 .btn_action--2 {
     background: #ee9a00;
-    margin-left: 15px;
-    width: 150px;
-    height: 30px;
-    border-radius: 15px;
-    border: white 0px solid;
+}
+.btn_action p, .btn_action--2 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+    
 }
