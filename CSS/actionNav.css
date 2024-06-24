@@ -173,7 +173,8 @@
     width: 400px ;
     min-height: 300px ;
     display: none;
-    top: 0;
+    top: 0px;
+    right: 348px;
     background-color: #4b0f72 !important;
 }
 
