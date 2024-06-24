@@ -3,10 +3,10 @@
 .action{
     display: flex;
     background-color: var(--primary-color-strong);
-    width: 1135px;
+    width:  calc(var(--width-main) + 6px);
     height: 70px;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 0px 0 10px;
     z-index: 1;
    position: fixed;
    left: 240px;

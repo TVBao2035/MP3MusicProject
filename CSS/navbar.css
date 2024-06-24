@@ -1,14 +1,9 @@
-body{
-    background-color: var(--primary-color-strong);
-    
-}
 
 .left {
     width: 240px;
     height:710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
-=======
     background-color: var(--primary-color-strong) !important;
 }
 

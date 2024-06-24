@@ -1,9 +1,6 @@
-.container {
-    width: 78%;
-    
-}
+
 .card {
-    background: var(--primary-color-strong);
+    background: var(--primary-color-strong) !important;
     height: 500px;
 }
 .card-title h5 {
@@ -11,7 +8,11 @@
     font-weight: bold;
 }
 
-
+.publication_new{
+    z-index: 1;
+    width: var(--width-main) !important;
+    background: var(--primary-color-strong);
+}
 .btn_all {
     background: var(--primary-color);
     width: 100px;
@@ -83,7 +84,6 @@
     width:95%;
     height:80px;
     border-radius: 5px;
-    margin-left: 35px;
     display: flex;
     position: relative;
    
@@ -136,6 +136,7 @@
     background: var(--primary-color-strong);
     border-radius: 5px;
     display: flex;
+    margin-left: 0 !important;
 }
 .box:hover {
     background:#36303e;
@@ -146,7 +147,7 @@
     position: relative; /* Đảm bảo các phần tử con có thể dựa vào vị trí này */
 }
 .title-1 {
-    font-size: 15px;
+    font-size: 14px;
     color:white;
 }
 .title-1:hover{
@@ -157,7 +158,7 @@
 }
 
 .title-2 {
-    font-size: 13px;
+    font-size: 12px;
    padding-top: -55px;
     color: gray;
 }
@@ -208,19 +209,24 @@
     cursor: pointer;
 }
 .icon-dots {
-    margin-right:-55px;
-    margin-bottom: 12px;
-    padding-top: -66px;
+    position: absolute;
+
 }
-.img-title:hover .icon-dots{
-    opacity: 1;
-    color: white;
+
+.icon-dots:hover {
+    position: absolute;
     background: #4d4556;
     border-radius: 50px;
+}
+
+.box:hover .icon-dots{
+    opacity: 1;
+    color: white;
     width: 40px;
     height: 40px;
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 25px; /* Căn giữa nội dung trong icon */
     padding: 5px; /* Tăng khu vực bấm */
 }

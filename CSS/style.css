@@ -10,9 +10,12 @@
     --primary-color-strong: #170f23;
     --background-input: #34224f;
     --img-logo-mp3: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
+    --width-main: 1240px;
+}
+body{
+    background-color: var(--primary-color-strong) !important;
     
 }
-
 header{
     display: flex;
 }
