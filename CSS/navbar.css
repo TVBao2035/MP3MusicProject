@@ -7,7 +7,12 @@ body{
     height: 710px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
+    position: fixed;
     
+}
+
+main {
+    margin-left: 240px;
 }
 .img {
     height: 72px;
