@@ -1,5 +1,6 @@
 .btn_m {
     background: var(--primary-color);
+    border: none;
     border-radius: 50px;
     font-weight: 700;
     width: 240px;

@@ -15,25 +15,28 @@
         font-size: 17px;
     }
 }
-.list_title a {
-    
-}
 
 .list_item_title{
     font-size: 18px;
     text-align: left;
     padding-top: 10px;
     color: #959595;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
 }
 .list_item_img {
-    display: block;
+
     position: relative; 
 }
-
+.item_list_sing{
+    width: 200px !important;
+}
 .list_item_img img {
     position: relative;
-    width: 275px;
-    height: 275px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 .list_item_img:hover img {

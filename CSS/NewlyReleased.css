@@ -264,4 +264,10 @@
    
   }
   
-  
+
+
+  .block_btn_sign--in--log{
+    top: 10px !important;
+    left: -55px !important;
+    height: 500px;
+  }
