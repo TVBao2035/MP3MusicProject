@@ -1,6 +1,4 @@
 
-export const handleSignInForm = () => {
-    
     function showError(input, message) {
         let parent = input.parentElement;
         let small = parent.querySelector('small');
@@ -36,6 +34,11 @@ export const handleSignInForm = () => {
     form.addEventListener('submit', function(e) {
         e.preventDefault(); // Không load trang
 
-        let isEmptyError = checkEmptyError([username, password]); // Truyền mảng các input
     });
-}
+
+    var btnSumit = document.querySelector('.btn--Submit');
+
+    
+    btnSumit.onclick = function (){
+        console.log("Clicked");
+    }
