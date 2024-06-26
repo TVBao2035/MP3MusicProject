@@ -121,7 +121,6 @@ function createCaptcha() {
     let ctx = canvas.getContext("2d");
     ctx.font = "30px Arial";
     ctx.padding = "12px";
-    
     ctx.strokeText(captcha.join(""),30,30);
     code = captcha.join("");
     document.getElementById("captcha").appendChild(canvas);
