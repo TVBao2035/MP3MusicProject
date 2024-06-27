@@ -39,6 +39,7 @@
     var btnSumit = document.querySelector('.btn--Submit');
 
     
-    btnSumit.onclick = function (){
-        console.log("Clicked");
+    btnSumit.onclick = function (e){
+        e.preventDefault();
+        checkEmptyError([username, password]);
     }
