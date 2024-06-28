@@ -8,12 +8,13 @@ export const handleSlideRank = () => {
     var timerId 
     const startSlide = () => {
         timerId = setInterval(() => {
-            console.log(index);
             if(index >= tabs) index = 0;
             if(index === -1) index = tabs -1;
+            console.log(index);
             slide.style.transform = `translateX(${widthSlide*-1 * index++}px)`;
         }, 2000);
     }
+
     startSlide();
     const rightBtn = document.querySelector('.btn_right--slide');
     const leftBtn = document.querySelector('.btn_left--slide');
@@ -24,6 +25,8 @@ export const handleSlideRank = () => {
         slide.style.transform = `translateX(${widthSlide*-1 * index++}px)`;
         startSlide();
     };
+
+
     leftBtn.onclick = () => {
         clearInterval(timerId);
         console.log(index);
