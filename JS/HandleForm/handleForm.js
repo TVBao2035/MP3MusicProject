@@ -83,7 +83,7 @@ function checkPassword() {
 }
 function checkConfirmPassword() {
     var password = document.getElementById('password').value;
-    var confirmPassword = document.getElementById('confirm_password').value;
+    var confirmPassword = document.getElementById('confirm_password');
     var errorConfirmPassword = document.getElementById('errorconfirmpassword');
     if(!confirmPassword) {
         errorConfirmPassword.textContent = "Confirm Password can't be blank!";
@@ -121,7 +121,6 @@ function createCaptcha() {
     let ctx = canvas.getContext("2d");
     ctx.font = "30px Arial";
     ctx.padding = "12px";
-    
     ctx.strokeText(captcha.join(""),30,30);
     code = captcha.join("");
     document.getElementById("captcha").appendChild(canvas);
