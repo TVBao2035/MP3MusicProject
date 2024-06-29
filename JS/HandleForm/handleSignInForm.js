@@ -27,6 +27,7 @@
         });
         return isEmptyError
     }
+    
     var username = document.querySelector('.login_username');
     var password = document.querySelector('.login_password');
     var form = document.querySelector('.signIn_form');
