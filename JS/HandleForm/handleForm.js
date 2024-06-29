@@ -1,147 +1,146 @@
-function checkInput() {
-    const items = document.querySelectorAll(".item");
-    const captchaInput = document.getElementById("captchatext");
-    if (captchaInput.value == "") {
-        captchaInput.classList.add("error");
-        captchaInput.parentElement.classList.add("error");
-    }
-    for(const item of items) {
-        if(item.value == "") {
-            item.classList.add("error");
-            item.parentElement.classList.add("error");
-        }
-        item.addEventListener("keyup", () => {
-            if(item.value != "") {
-                item.classList.remove("error");
-                item.parentElement.classList.remove("error");
-            }
-            else {
-                item.classList.add("error");
-                item.parentElement.classList.add("error");
-            }
-        });
+function showError(input, message) {
+    let parent = input.parentElement;
+    let small = parent.querySelector('small');
+    small.innerText = message;
+    small.style.color = 'rgb(206, 30, 30)';
+    input.style.border = '2px solid rgb(206, 30, 30)'; 
+}
+
+function showSuccess(input) {
+    let parent = input.parentElement;
+    let small = parent.querySelector('small');
+    small.innerText = '';
+    input.style.border = '2px solid green';
+}
+
+function checkEmptyError(input) {
+    if (!input.value.trim()) {
+        showError(input, "Không được để trống");
+        return true;
+    } else {
+        showSuccess(input);
+        return false;
     }
 }
-function checkemail() {
-    var email = document.getElementById('input_email').value;
-    var errorEmail = document.getElementById('erroremail');
+
+function checkEmail() {
+    var email = document.getElementById('input_email');
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!email) {
-        errorEmail.textContent = "Email can't be blank!";
-        errorEmail.style.display = 'block';
-    } else if (!emailPattern.test(email)) {
-        errorEmail.textContent = "Email invalidate!";
-        errorEmail.style.display = 'block';
+    if (!email.value.trim()) {
+        showError(email, "Email can't be blank!");
+    } else if (!emailPattern.test(email.value)) {
+        showError(email, "Email invalidate!");
     } else {
-        errorEmail.textContent = '';
-        errorEmail.style.display = 'none';
-        return email;
+        showSuccess(email);
+        return email.value;
     }
 }
 
 function checkName() {
-    var name = document.getElementById('username').value;
-    var errorName = document.getElementById('errorname');
-    var regexName = /^[^\d+]*[\d+]{0}[^\d+]*$/
-    if(name == '' || name == null)
-    {
-        errorName.textContent = "Name can't be blank!";
-        errorName.style.display = 'block';
-    }
-    else if (!regexName.test(name)) {
-        errorName.textContent = "Tên không hợp lệ!";
-        errorName.style.display = 'block';
-    }
-    else {
-        errorName.textContent = '';
-        errorName.style.display = 'none';
-        return name;
+    var name = document.getElementById('username');
+    var regexName = /^[^\d+]*[\d+]{0}[^\d+]*$/;
+
+    if (!name.value.trim()) {
+        showError(name, "Name can't be blank!");
+    } else if (!regexName.test(name.value)) {
+        showError(name, "Tên không hợp lệ!");
+    } else {
+        showSuccess(name);
+        return name.value;
     }
 }
 
 function checkPassword() {
-    var password = document.getElementById('password').value;
-    var errorPassword = document.getElementById('errorpassword');
-    var minLength = 6; 
+    var password = document.getElementById('password');
+    var minLength = 6;
 
-    if (!password) {
-        errorPassword.textContent = "Password can't be blank!";
-        errorPassword.style.display = 'block';
-    } else if (password.length < minLength) {
-        errorPassword.textContent = "Mật khẩu phải có trên 5 ký tự!";
-        errorPassword.style.display = 'block';
-    }
-    else if (password.length > 5) {
-        errorPassword.style.display = 'none';
-    } 
-     else {
-        errorPassword.textContent = '';
-        errorPassword.style.display = 'none';
-        return password;
+    if (!password.value.trim()) {
+        showError(password, "Password can't be blank!");
+    } else if (password.value.length < minLength) {
+        showError(password, "Mật khẩu phải có trên 5 ký tự!");
+    } else {
+        showSuccess(password);
+        return password.value;
     }
 }
+
 function checkConfirmPassword() {
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirm_password');
-    var errorConfirmPassword = document.getElementById('errorconfirmpassword');
-    if(!confirmPassword) {
-        errorConfirmPassword.textContent = "Confirm Password can't be blank!";
-        errorConfirmPassword.style.display = 'block';
-    }
-    else if(password!= confirmPassword) {
-        errorConfirmPassword.textContent = "Xác nhận mật khẩu không đúng!";
-        errorConfirmPassword.style.display = 'block';
+
+    if (!confirmPassword.value.trim()) {
+        showError(confirmPassword, "Confirm Password can't be blank!");
+    } else if (password !== confirmPassword.value) {
+        showError(confirmPassword, "Xác nhận mật khẩu không đúng!");
     } else {
-        errorConfirmPassword.textContent = '';
-        errorConfirmPassword.style.display = 'none';
-        return confirmPassword;
+        showSuccess(confirmPassword);
+        return confirmPassword.value;
     }
 }
-let code;
+
+// Khai báo biến global để lưu trữ mã captcha
+let code = "";
+
+// Hàm tạo captcha mới
 function createCaptcha() {
+    // Xóa đi các phiên bản cũ của captcha
     document.getElementById("captcha").innerHTML = "";
+    
+    // Các ký tự có thể có trong captcha
     let charsArray = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+";
     let codelength = 6;
-    let captcha = []
+    let captcha = [];
 
-    for( let index = 0; index < codelength;index++) {
-        let arrayindex = Math.floor(Math.random() * charsArray.length +1)
-        if(captcha.indexOf(charsArray[arrayindex]) == -1) {
-            captcha.push(charsArray[arrayindex])
-        }
-        else {
-            index--;
-        }
+    // Tạo ngẫu nhiên mã captcha
+    for (let index = 0; index < codelength; index++) {
+        let arrayindex = Math.floor(Math.random() * charsArray.length);
+        captcha.push(charsArray[arrayindex]);
     }
+
+    // Tạo canvas để hiển thị captcha
     let canvas = document.createElement("canvas");
     canvas.id = "captcha";
     canvas.width = 170;
     canvas.height = 45;
     let ctx = canvas.getContext("2d");
     ctx.font = "30px Arial";
-    ctx.padding = "12px";
-    ctx.strokeText(captcha.join(""),30,30);
+    ctx.fillText(captcha.join(""), 30, 30);
     code = captcha.join("");
+
+    // Thêm canvas vào phần tử captcha trong form
     document.getElementById("captcha").appendChild(canvas);
 }
-function checkCaptcha() {
-    var captchatext = document.getElementById('captchatext').value;
-    var errorCaptcha = document.getElementById('errorcaptcha');
 
-    if (!captchatext) {
-        errorCaptcha.textContent = "Captcha can't be blank!"; // Thay đổi thông báo lỗi tiếng Việt tại đây
+// Sự kiện khi nhấn nút "Refresh Captcha"
+var refreshBtn = document.querySelector('.regenerate_captcha');
+refreshBtn.addEventListener('click', function() {
+    createCaptcha(); // Tạo captcha mới
+    document.getElementById('captchatext').value = ''; // Xóa giá trị nhập captcha cũ
+    showSuccess(document.getElementById('captchatext')); // Xóa thông báo lỗi của captcha cũ (nếu có)
+    document.getElementById("submitbtn").disabled = true; // Đặt lại disabled để không cho submit
+});
+
+// Kiểm tra captcha khi người dùng nhập vào
+function checkCaptcha() {
+    var captchatext = document.getElementById('captchatext');
+
+    if (!captchatext.value.trim()) {
+        showError(captchatext, "Captcha can't be blank!");
     } else {
-        errorCaptcha.textContent = '';
-        // Kiểm tra nếu captchatext nhập đúng
-        if (captchatext === code) {
+        showSuccess(captchatext);
+
+        // Kiểm tra xem captcha nhập vào có đúng không
+        if (captchatext.value === code) {
             Swal.fire({
                 title: "Success!",
                 text: "Bạn đã đăng ký thành công!",
                 icon: "success"
             });
+            // Đặt thuộc tính disabled của nút submit về false để cho phép submit
             document.getElementById("submitbtn").disabled = false;
-            form.reset();
+            form.reset(); // Xóa hết các trường nhập liệu trong form
+            createCaptcha(); // Tạo captcha mới sau khi submit thành công
             return false;
         } else {
             Swal.fire({
@@ -149,15 +148,64 @@ function checkCaptcha() {
                 text: "Captcha không hợp lệ!",
                 icon: "error"
             });
-            createCaptcha(); // Tạo lại captcha mới
-            document.getElementById("submitbtn").disabled = true;
+            createCaptcha(); // Tạo captcha mới để người dùng nhập lại
+            document.getElementById("submitbtn").disabled = true; // Đặt lại disabled để không cho submit
         }
     }
-    
 }
 
-form.addEventListener("submit", (e) => {
+// Sự kiện khi submit form
+var form = document.querySelector('.form_sign');
+form.addEventListener('submit', function(e) {
     e.preventDefault();
-    checkInput();
-    
+    checkEmptyError(document.getElementById('username'));
+    checkEmptyError(document.getElementById('password'));
+    // Kiểm tra captcha
+    checkCaptcha();
+});
+
+// Tạo captcha ban đầu khi trang được load
+createCaptcha();
+
+// Lắng nghe sự kiện blur của các input để kiểm tra lỗi
+var inputs = document.querySelectorAll('.form_sign input');
+inputs.forEach(input => {
+    input.addEventListener('blur', function() {
+        switch (input.id) {
+            case 'username':
+                checkName();
+                break;
+            case 'password':
+                checkPassword();
+                break;
+            case 'input_email':
+                checkEmail();
+                break;
+            case 'confirm_password':
+                checkConfirmPassword();
+                break;
+            case 'captchatext':
+                checkCaptcha();
+                break;
+            default:
+                checkEmptyError(input);
+                break;
+        }
+    });
+});
+
+// Sự kiện khi click nút Submit
+var btnSubmit = document.querySelector('.btn--Submit');
+btnSubmit.addEventListener('click', function(e) {
+    e.preventDefault();
+    checkEmptyError(document.getElementById('username'));
+    checkEmptyError(document.getElementById('password'));
+    checkEmptyError(document.getElementById('input_email'));
+    checkEmptyError(document.getElementById('confirm_password'));
+    checkEmptyError(document.getElementById('captchatext'));
+    checkEmail();
+    checkName();
+    checkPassword();
+    checkConfirmPassword();
+    checkCaptcha();
 });
