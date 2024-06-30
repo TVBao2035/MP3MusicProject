@@ -48,3 +48,32 @@ export const slideData = [
         date: "17.6.2024"
     },
 ]
+
+
+export const flexData_Top = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/4/c/f/a/4cfa28397527fd15df8483052be62d05.jpg",
+        title: "Top 100 Pop Âu Mỹ Hay Nhất",
+        actor: "Taylor Swift, Ariana Grande, Sabrina Carpenter..."
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/b/f/4/f/bf4f83959c8613947cb7c0e70e583d92.jpg",
+        title: "Top 100 Nhạc V-Pop Hay Nhất",
+        actor: "Chi Pu, Hồ Quang Hiếu, Quang Đăng Trần..."
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/f/0/d/7f0dfc8626e50179ac19e8ac75bed466.jpg",
+        title: "Top 100 Nhạc Dance Việt...",
+        actor: "CUCAK,Phát Hồ,DINHLONG..."
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/0/6/e/a06ecbc602d7e3aa6960a2fc931e33a5.jpg",
+        title: "Top 100 Nhạc R&B Âu Mỹ Hay...",
+        actor: "SZA, The Weekend, Dojo Cat..."
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/9/5/4/d/954d2d517df032fa0ef6331388ffdeec.jpg",
+        title: "Top 100 Nhạc EDM Việt Hay...",
+        actor: "Masew, Pháo, CM1X..."
+    },
+]
