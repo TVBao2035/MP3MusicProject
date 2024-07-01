@@ -5,21 +5,7 @@
 }
 :root{
     --logoColor: #9b4de0;
-    --clickChange: #9d9d9d;
-    --hoverColor: #fb5151;
-    --slideWidth: 1150px;
-    --slideHeight: 500px;
 }
-
-*{
-    margin: 0;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    
-    -webkit-user-select: none;
-    user-select: none;
-
-}
-
 body{
     width: 100%;
     height: 100%;
@@ -34,7 +20,6 @@ main
 }
 body {
     background-color: rgb(176, 175, 175);
-    height: 720px;
     display: flex;
     align-items: center;
 }
@@ -91,60 +76,10 @@ header{
     border: black 1px solid;
     width: 250px;
 }
-.form_input.error .item {
-    border-color: #d93025;
-}
-.form_input.error #captchatext {
-    border-color: #d93025;
-}
+
 .form_input input:hover{
     border: 2px solid rgb(0, 254, 68);
 }
-
-
-.form_input span{
-    color: #333;
-    font-size: 11px;
-    font-weight: 100;
-    height: 10px;
-    font-family:  sans-serif;
-    position: absolute;
-    bottom: -10px;
-}
-@media screen and (max-width: 719px) {
-    .form_sign{
-        width: 350px;
-        border-radius: 15px;
-    }
-    .form_up{
-        height: 580px;
-    }
-    .form_contain--main{
-        padding: 30px;
-    }
-}
-@media screen and (min-width: 740px) and (max-width: 1023px) {
-    .container{
-        width: 100%;
-    }
-    .main{
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 719px) {
-    .container{
-      width: 100%;
-    }
-    .main{
-      padding: 20px 5px;
-    }
-    .block_btn{
-        width: 50px;
-        height: 150px;
-    }
-  }
-
 
 .content {
     display: flex;
@@ -162,7 +97,7 @@ header{
     height: 45px;
 }
 .regenerate_captcha {
-    background-color: #9b4de0;
+    background-color: var(--logoColor);
     border:none;
     color:white;
     width:10%;
@@ -175,8 +110,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
+ 
 }
 #captchatext {
     padding:12px 20px;
@@ -192,35 +126,12 @@ header{
 #captchatext:hover {
     border: 2px solid rgb(0, 254, 68);
 }
-.container.error .item {
-    border-color: #d93025;
-}
+
 .icon-captcha {
    font-size: 24px;
 }
 
-.form_input .error-txt {
-    font-size: 14.5px;
-    color:#d93025;
-    text-align: left;
-    margin: -2px 0 10px;
-    display:none;
-}
-.form_input.error .error-txt {
-    display: block;
-}
 
-
-
-.form_input span{
-    color: #333;
-    font-size: 11px;
-    font-weight: 100;
-    height: 10px;
-    font-family:  sans-serif;
-    position: absolute;
-    bottom: -10px;
-}
 
 .form_submit{
     display: flex;
@@ -243,7 +154,6 @@ header{
 }
 
 footer{
-    
     align-items: center;
     flex-direction: column;
     gap: 12px;
@@ -255,19 +165,49 @@ footer a{
     display: flex;
     justify-content: center;
     text-align: center;
-    color:#9b4de0;
-
 }
 
 footer a:hover{
     color:  rgb(143, 31, 143);
     text-decoration: none;
 }
-.isValid{
-    color: var(--logoColor);
-    border: 2px solid var(--logoColor);
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-.border--red{
-    border: 2px solid  rgb(251, 15, 15);
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../photos/background.jpeg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.form_sign {
+    background: rgba(255, 255, 255, 0.9); /* Màu nền trắng và độ mờ cho form */
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+.btn--Submit:hover {
+    background-color:#8e45cd;
+    color:rgb(224, 219, 219);
+}
+.regenerate_captcha:hover {
+    background-color:#8e45cd;
+    color:rgb(224, 219, 219);
 }

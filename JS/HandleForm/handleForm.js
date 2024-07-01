@@ -2,7 +2,7 @@ function showError(input, message) {
     let parent = input.parentElement;
     let small = parent.querySelector('small');
     small.innerText = message;
-    small.style.color = 'rgb(206, 30, 30)';
+    small.style.color = 'rgb(206, 30, 30)'; //màu đỏ
     input.style.border = '2px solid rgb(206, 30, 30)'; 
 }
 
@@ -29,8 +29,10 @@ function checkEmail() {
 
     if (!email.value.trim()) {
         showError(email, "Email can't be blank!");
+        return false;
     } else if (!emailPattern.test(email.value)) {
         showError(email, "Email invalidate!");
+        return false;
     } else {
         showSuccess(email);
         return email.value;
@@ -43,8 +45,10 @@ function checkName() {
 
     if (!name.value.trim()) {
         showError(name, "Name can't be blank!");
+        return false;
     } else if (!regexName.test(name.value)) {
-        showError(name, "Tên không hợp lệ!");
+        showError(name, "Name invalidate!");
+        return false;
     } else {
         showSuccess(name);
         return name.value;
@@ -57,8 +61,10 @@ function checkPassword() {
 
     if (!password.value.trim()) {
         showError(password, "Password can't be blank!");
+        return false;
     } else if (password.value.length < minLength) {
-        showError(password, "Mật khẩu phải có trên 5 ký tự!");
+        showError(password, "Password must have more than 5 characters!");
+        return false;
     } else {
         showSuccess(password);
         return password.value;
@@ -71,8 +77,10 @@ function checkConfirmPassword() {
 
     if (!confirmPassword.value.trim()) {
         showError(confirmPassword, "Confirm Password can't be blank!");
+        return false;
     } else if (password !== confirmPassword.value) {
-        showError(confirmPassword, "Xác nhận mật khẩu không đúng!");
+        showError(confirmPassword, "Password was wrong!");
+        return false;
     } else {
         showSuccess(confirmPassword);
         return confirmPassword.value;
@@ -81,7 +89,6 @@ function checkConfirmPassword() {
 
 // Khai báo biến global để lưu trữ mã captcha
 let code = "";
-
 // Hàm tạo captcha mới
 function createCaptcha() {
     // Xóa đi các phiên bản cũ của captcha
@@ -97,7 +104,6 @@ function createCaptcha() {
         let arrayindex = Math.floor(Math.random() * charsArray.length);
         captcha.push(charsArray[arrayindex]);
     }
-
     // Tạo canvas để hiển thị captcha
     let canvas = document.createElement("canvas");
     canvas.id = "captcha";
@@ -127,43 +133,21 @@ function checkCaptcha() {
 
     if (!captchatext.value.trim()) {
         showError(captchatext, "Captcha can't be blank!");
+        return false;
     } else {
         showSuccess(captchatext);
 
         // Kiểm tra xem captcha nhập vào có đúng không
         if (captchatext.value === code) {
-            Swal.fire({
-                title: "Success!",
-                text: "Bạn đã đăng ký thành công!",
-                icon: "success"
-            });
-            // Đặt thuộc tính disabled của nút submit về false để cho phép submit
-            document.getElementById("submitbtn").disabled = false;
-            form.reset(); // Xóa hết các trường nhập liệu trong form
-            createCaptcha(); // Tạo captcha mới sau khi submit thành công
-            return false;
+            showSuccess(captchatext);
+            return true;
         } else {
-            Swal.fire({
-                title: "Error!",
-                text: "Captcha không hợp lệ!",
-                icon: "error"
-            });
+            showError(captchatext, "Captcha invaliate!");
             createCaptcha(); // Tạo captcha mới để người dùng nhập lại
-            document.getElementById("submitbtn").disabled = true; // Đặt lại disabled để không cho submit
+            return false;
         }
     }
 }
-
-// Sự kiện khi submit form
-var form = document.querySelector('.form_sign');
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    checkEmptyError(document.getElementById('username'));
-    checkEmptyError(document.getElementById('password'));
-    // Kiểm tra captcha
-    checkCaptcha();
-});
-
 // Tạo captcha ban đầu khi trang được load
 createCaptcha();
 
@@ -198,14 +182,23 @@ inputs.forEach(input => {
 var btnSubmit = document.querySelector('.btn--Submit');
 btnSubmit.addEventListener('click', function(e) {
     e.preventDefault();
-    checkEmptyError(document.getElementById('username'));
-    checkEmptyError(document.getElementById('password'));
-    checkEmptyError(document.getElementById('input_email'));
-    checkEmptyError(document.getElementById('confirm_password'));
-    checkEmptyError(document.getElementById('captchatext'));
-    checkEmail();
-    checkName();
-    checkPassword();
-    checkConfirmPassword();
-    checkCaptcha();
+
+    let isFormValid = [
+        checkName(),
+        checkEmail(),
+        checkPassword(),
+        checkConfirmPassword(),
+        checkCaptcha()
+    ].every(Boolean);
+
+    if (isFormValid) {
+        Swal.fire({
+            title: "Success!",
+            text: "You have successfully registered!",
+            icon: "success"
+        }).then(() => {
+            //đăng ký thành công và nhấn nút OK thì sẽ chuyển tới form Đăng Nhập
+            window.location.href = "./signIn.html"; 
+        });
+    }
 });

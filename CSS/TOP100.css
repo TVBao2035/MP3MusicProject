@@ -1,0 +1,106 @@
+.list_two {
+    margin-top: 50px;
+}
+.text-all {
+    margin-left:800px;
+}
+.list_title_top a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(145, 143, 143);
+    font-size: 17px;
+}
+
+.list_title_top a:hover {
+    color: var(--primary-color);
+}
+
+.list_top_item_title {
+    font-size: 14px;
+    padding-top: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+.list_top_item_title:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.list_top_item_actor {
+    color: rgb(145, 143, 143);
+}
+
+.list_top_item_actor span {
+    text-decoration: none;
+}
+
+.list_top_item_actor span:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.list_top_item_img {
+    position: relative;
+}
+.list_top_item_img img {
+    transform: scale(1.05);
+}
+.list_top_item_img:hover .list_top_item_icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1); 
+}
+.list_top_item_img {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 220px; 
+    border-radius: 5px;
+}
+
+.list_top_item_img img {
+    width: 100%; /* Đặt chiều rộng của ảnh bằng với phần tử chứa */
+    height: 100%; /* Đặt chiều cao của ảnh bằng với phần tử chứa */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi thay đổi kích thước */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.list_top_item_img:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+
+
+
+.list_top_item_img {
+    display: block;
+    margin-top: 20px; /* Bạn có thể thay đổi giá trị này */
+}
+
+
+.item_list_top {
+    width: 100px !important;
+    height: 50px;
+    
+}
+
+.list_top_item_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    text-align: center;
+    width: 100%;
+}
+
+/* Album Hot */
+.list_album {
+    margin-top:300px;
+    
+}
+
+

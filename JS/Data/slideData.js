@@ -53,27 +53,56 @@ export const slideData = [
 export const flexData_Top = [
     {
         img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/4/c/f/a/4cfa28397527fd15df8483052be62d05.jpg",
-        title: "Top 100 Pop Âu Mỹ Hay Nhất",
+        title: "Top 100 Pop Âu Mỹ Hay Nhất...",
         actor: "Taylor Swift, Ariana Grande, Sabrina Carpenter..."
     },
     {
         img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/b/f/4/f/bf4f83959c8613947cb7c0e70e583d92.jpg",
-        title: "Top 100 Nhạc V-Pop Hay Nhất",
+        title: "Top 100 Nhạc V-Pop Hay Nhất...",
         actor: "Chi Pu, Hồ Quang Hiếu, Quang Đăng Trần..."
     },
     {
         img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/7/f/0/d/7f0dfc8626e50179ac19e8ac75bed466.jpg",
-        title: "Top 100 Nhạc Dance Việt...",
-        actor: "CUCAK,Phát Hồ,DINHLONG..."
+        title: "Top 100 Nhạc Dance Việt Nam...",
+        actor: "CUCAK,Phát Hồ,DINHLONG, Nal..."
     },
     {
         img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/0/6/e/a06ecbc602d7e3aa6960a2fc931e33a5.jpg",
         title: "Top 100 Nhạc R&B Âu Mỹ Hay...",
-        actor: "SZA, The Weekend, Dojo Cat..."
+        actor: "SZA, The Weekend, Dojo Cat, Chris Brown..."
     },
     {
         img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/9/5/4/d/954d2d517df032fa0ef6331388ffdeec.jpg",
         title: "Top 100 Nhạc EDM Việt Hay...",
-        actor: "Masew, Pháo, CM1X..."
+        actor: "Masew, Pháo, CM1X, DJ Mie, Quinn Media..."
+    },
+]
+
+
+export const flexData_Album = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/c/0/f/4/c0f4ecbf19e30e6c88fdd116eeff7be5.jpg",
+        title: "Bao Nhiêu Loài Hoa Remix",
+        actor: "KayC, tlinh"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/1/7/1/0/17104e901f9fc8a0e6e3636a565a0bc7.jpg",
+        title: "Pop Cưới(EP)",
+        actor: "Kim Chi Sun"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/3/c/b/9/3cb999a312c4a0b01de6e415833bbbe8.jpg",
+        title: "Mùi Hoa Oải Hương(Single)",
+        actor: "Đỗ Minh Tuấn"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/2/2/0/f/220f6f7551957437d607fe5044f4701f.jpg",
+        title: "Tình Mong Manh(Single)",
+        actor: "Lala Trần"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/5/b/a/8/5ba85d49d18821b6e40c99380906a086.jpg",
+        title: "Em Là Thế Giới Của Anh",
+        actor: "Hồ Đăng Quý"
     },
 ]

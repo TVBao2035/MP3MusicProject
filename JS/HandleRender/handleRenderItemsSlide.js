@@ -1,4 +1,4 @@
-import { flexData_Top } from "../Data/slideData";
+
 
 export const handleRenderItemsSlide = (slideData) => {
     const itemSlide = document.querySelector('.list_image');
@@ -23,20 +23,58 @@ export const handleRenderItemsSlide = (slideData) => {
 
 
 export const handleRenderItemsTop = (flexData_Top) => {
-    const itemTop = document.querySelector('.list_top');
-    // cập nhật nội dung:
+    const itemTop = document.querySelector('#list_top');
+    
+    // Cập nhật nội dung:
     itemTop.innerHTML += flexData_Top.map((data) => `
-                    <div class="col p-0 item_list_top">
-                        <a href="" class="list_top_item_img">
-                            <img src="${data.img}" alt="">
-                            <div class="list_item_icon">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-play"></i>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                        </a>
-                        <p class="list_top_item_title">${data.title}</p>
-                        <p class="list_top_item_actor">${data.actor}</p>
-                    </div>
-                    `)
-}
+        <div class="col p-0 ps-3 item_list_top">
+            <a href="" class="list_top_item_img">
+                <img src="${data.img}" alt="">
+                <div class="list_top_item_icon">
+                    <i class='bx bx-heart text-white' style="font-size: 26px;"></i>
+                    <i class='bx bx-play-circle text-white' style="font-size: 46px; margin-left:10px;"></i>
+                    <i class='bx bx-dots-horizontal-rounded text-white' style="font-size: 26px; margin-left:10px;"></i>
+                </div>
+            </a>
+            <div class="d-flex flex-column justify-content-center" style="height: 100%; margin-top: 30px;">
+                <p class="list_top_item_title fw-bolder mb-1">${data.title}</p>
+                <p class="list_top_item_actor">${data.actor}</p>
+            </div>
+        </div>
+    `).join('');
+
+    // Xử lý tách diễn viên thành các phần tử <span> riêng biệt
+    document.querySelectorAll('.list_top_item_actor').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    });
+};
+
+
+
+export const handleRenderItemsAlbum = (flexData_Album) => {
+    const itemAlbum = document.querySelector('#list_album');
+    itemAlbum.innerHTML += flexData_Album.map((data) => `
+        <div class="col p-0 ps-3 item_list_top">
+            <a href="" class="list_top_item_img">
+                <img src="${data.img}" alt="">
+                <div class="list_top_item_icon">
+                    <i class='bx bx-heart text-white' style="font-size: 26px;"></i>
+                    <i class='bx bx-play-circle text-white' style="font-size: 46px; margin-left:10px;"></i>
+                    <i class='bx bx-dots-horizontal-rounded text-white' style="font-size: 26px; margin-left:10px;"></i>
+                </div>
+            </a>
+            <div class="d-flex flex-column justify-content-center" style="height: 100%; margin-top: 20px;">
+                <p class="list_top_item_title fw-bolder mb-1">${data.title}</p>
+                <p class="list_top_item_actor">${data.actor}</p>
+            </div>
+        </div>
+    `).join('');
+
+    // Xử lý tách diễn viên thành các phần tử <span> riêng biệt
+    document.querySelectorAll('.list_top_item_actor').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    });              
+    
+};
