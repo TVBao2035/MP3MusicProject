@@ -201,6 +201,7 @@
 
 .img-title:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* Actor details */

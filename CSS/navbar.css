@@ -1,21 +1,12 @@
 
 .left {
     width: 240px;
-    height:710px;
+    height:750px;
     color: var(--primary-color);
     background-color: var(--background-navbar);
     z-index: 2;
     position: fixed;
 }
-/* 
-.left {
-    width: 217px;
-    height: 710px;
-    color: var(--primary-color);
-    background-color: var(--background-navbar);
-    z-index: 2;
-    position: fixed;
-} */
 
 .img {
     height: 72px;
@@ -46,10 +37,10 @@
 .item{
     padding: 12px 21px;
     cursor: pointer;
-    color: white;
-    opacity: 0.6;
+    color: rgb(196, 193, 193);
+    
     font-size: 14px;
-    margin: 2px;  
+    margin: 4px;  
     border-left: 5px solid var(--background-navbar);
 }
 .item p {
@@ -60,7 +51,7 @@
 
 }
 .item:hover{
-    opacity: 1;
+   color: rgb(245, 235, 235);
    
 }
 .item:active{
@@ -71,13 +62,264 @@
 }
 .partition {
     margin: 12px 21px ;
-    border-top: #807f815d 1px solid;
+    border-top: rgb(59, 58, 58) 1px solid;
     width: 80%;
     align-items: center;
     justify-content: center;
     display: flex;
     margin-left: 15px;
 }
+
+.list_items-two {
+    height: 370px; /* Đặt chiều cao cố định cho phần tử */
+    overflow-y: hidden; /* Ẩn thanh cuộn mặc định */
+    scrollbar-width: thin; /* Đặt chiều rộng thanh cuộn cho Firefox */
+    scrollbar-color: #575656 transparent; /* Đặt màu cho thanh cuộn và đường dẫn thanh cuộn trong suốt */
+}
+
+.list_items-two:hover {
+    overflow-y:auto; /* Thêm thanh cuộn khi hover */
+}
+
+
+.box-title-left {
+    width: 190px;
+    height: 120px;
+    background: linear-gradient(to right, #6921e4,#6905c1,rgb(177, 83, 185));
+    margin-left: 27px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.title-box-left .title-box-nav {
+    font-size: 12px;
+    padding-top: 20px;
+    margin-left: 12px;
+}
+.custom-button {
+    width: 150px; /* Độ rộng của nút */
+    height: 30px; /* Độ cao của nút */
+    margin-left: 12px; /* Điều chỉnh vị trí từ trái sang phải */
+    border-radius: 20px; /* Độ cong viền */
+    font-size: 10px; /* Cỡ chữ */
+    border: none; /* Loại bỏ viền */
+}
+
+
+
+
+/* hover hiện icon play & chú thích kề bên */
+/* Kiểu cơ bản cho các biểu tượng phát */
+.icon-play-library, .icon-play-zingchart, .icon-play-bxh, .icon-play-favorite {
+    font-size: 20px;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-top: 35px;
+    margin-left: 170px;
+}
+
+/* Kiểu hiển thị biểu tượng phát khi di chuột */
+.title:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(61, 60, 60);
+    color: #fff;
+    text-align: center;
+    margin-top: -70px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    font-size: 12px;
+    width: 90px;
+    border: 2px solid white;
+}
+
+.toolTip::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) rotate(45deg);
+    border-color: 10px solid white transparent transparent transparent;
+}
+
+/* Hiển thị biểu tượng phát tương ứng khi di chuột */
+.list_items .item:nth-child(1):hover .icon-play-library {
+    display: flex;
+    opacity: 1;
+    color: white;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.list_items .item:nth-child(3):hover .icon-play-zingchart {
+    display: flex;
+    opacity: 1;
+    color: white;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.list_items-two .item:nth-child(1):hover .icon-play-bxh {
+    display: flex;
+    opacity: 1;
+    color: white;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.list_items-two .item:nth-child(6):hover .icon-play-favorite {
+    display: flex;
+    opacity: 1;
+    color: white;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 5px;
+    margin-top: -300px;
+    bottom:28%;
+}
+
+/* Ẩn các biểu tượng phát khác khi di chuột lên mục cụ thể */
+.list_items .item:hover ~ .item .icon-play-library,
+.list_items-two .item:hover ~ .item .icon-play-library,
+.list_items .item:hover .icon-play-zingchart,
+.list_items-two .item:hover .icon-play-zingchart,
+.list_items .item:hover ~ .item .icon-play-zingchart,
+.list_items-two .item:hover ~ .item .icon-play-zingchart,
+.list_items .item:hover .icon-play-bxh,
+.list_items-two .item:hover .icon-play-bxh,
+.list_items .item:hover ~ .item .icon-play-bxh,
+.list_items-two .item:hover ~ .item .icon-play-bxh,
+.list_items .item:hover .icon-play-favorite,
+.list_items-two .item:hover .icon-play-favorite,
+.list_items .item:hover ~ .item .icon-play-favorite,
+.list_items-two .item:hover ~ .item .icon-play-favorite {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* icon Nghe gần đây */
+.bg-icon--revision {
+    background-color: var(--primary-color);
+    width:25px;
+    height: 25px;
+    border-radius: 9px;
+}
+.bg-icon--revision .icon-revision {
+   margin-left: 5px;
+   margin-top: 5px;
+   color: white;
+}
+/* icon Bài Hát yêu thích */
+.bg-icon--heart {
+    background-color: rgba(105, 233, 248, 0.938);
+    width:25px;
+    height: 25px;
+    border-radius: 9px;
+}
+.bg-icon--heart .icon-heart {
+   margin-left: 6px;
+   margin-top: 5px;
+   color: white;
+}
+/* icon Playlist */
+.bg-icon--playlist {
+    background-color: rgba(249, 118, 11, 0.938);
+    width:25px;
+    height: 25px;
+    border-radius: 9px;
+}
+.bg-icon--playlist .icon-playlist {
+   margin-left: 6px;
+   margin-top: 5px;
+   font-size: 16px;
+   color: white;
+}
+/* icon Album */
+.bg-icon--album {
+    background-color: rgba(241, 51, 200, 0.938);
+    width:25px;
+    height: 25px;
+    border-radius: 9px;
+}
+.bg-icon--album .icon-album {
+   margin-left: 5px;
+   margin-top: 5px;
+   font-size: 16px;
+   color: white;
+}
+/* icon Đã tải lên */
+.bg-icon--upload {
+    background-color: rgba(247, 67, 17, 0.938);
+    width:25px;
+    height: 25px;
+    border-radius: 9px;
+}
+.bg-icon--upload .icon-upload {
+   margin-left: 5px;
+   margin-top: 5px;
+   font-size: 16px;
+   color: white;
+}
+
+
+
+
+
+
+
+.footter {
+    border-top: 0.1px solid rgb(59, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+}
+.footter p {
+    text-align: center;
+    color: rgb(196, 193, 193);
+}
+.footter p:hover {
+    color: white;
+}
+
+
+
+
 
 
 
