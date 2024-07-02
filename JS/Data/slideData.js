@@ -106,3 +106,253 @@ export const flexData_Album = [
         actor: "Hồ Đăng Quý"
     },
 ]
+
+export const RowData_One = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/7/7/6/b/776b2349ac4b22cd1962b42159f0b7a8.jpg",
+        title: "FOREVER",
+        actor: "BABYMONSTER",
+        date: "Hôm nay"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/e/9/3/1e93ba1e87d5d76b49710cd0291ab98a.jpg",
+        title: "Chưa",
+        actor: "Châu Khải Phong, Trúc Anh Babe",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/0/3/1/7/03178bb8b5de684b3454e3cd4130252e.jpg",
+        title: "Debut",
+        actor: "KATSEYE",
+        date: "3 ngày trước"
+    }
+]
+
+export const RowData_Two = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/2/8/e/428e5b2d5e093a037da09083b052b08f.jpg",
+        title: "Trái Đất Ôm Mặt Trời",
+        actor: "Kai Đinh, AMEE, GREY D",
+        date: "2 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/2/d/d/c2dd996a66fb041095180af6885d7566.jpg",
+        title: "Đón Bình Minh",
+        actor: "Phan Đinh Tùng, Thành Trung, Đỗ Hoàng Hiệp",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/6/8/8/168840c4e0474578c2de9abab16280ca.jpg",
+        title: "Hỏa Ca - Call Me By Fire",
+        actor: "Bằng Kiều, Tuấn Hưng, Tự Long, Hồng Sơn, ...",
+        date: "4 ngày trước"
+    }
+]
+
+export const RowData_Three = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/9/6/c/396c6cdfde68791bad958e2ba57a4b5c.jpg",
+        title: "Heavenly Hell (Ft.Ne-Yo)",
+        actor: "Steve Aoki, Ne-Yo",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/1/f/5/21f5713dbc64ee9146137971475b9f8c.jpg",
+        title: "Mỗi Khi Tôi Buồn",
+        actor: "Dương Edward",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/8/2/f/282f81752cf27269689abc25fecbcadb.jpg",
+        title: "Bài Hát Dành Cho Con",
+        actor: "Hồ Ngọc Hà, Nguyễn Hồng Thuận",
+        date: "3 ngày trước"
+    }
+]
+
+export const RowData_Four = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/7/c/f/5/7cf5fa06a339a2bcce213c7a4db9798d.jpg",
+        title: "Loyalty",
+        actor: "Remedius",
+        date: "5 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/6/8/b/a68b0bd411adc076ba6c3fb00203a1ee.jpg",
+        title: "Chạy Ngay Đi",
+        actor: "Sơn Tùng M-TP",
+        date: "12 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/b/a/8/aba802c863f5245b0897d880000d2653.jpg",
+        title: "Summertime Sadness",
+        actor: "LexMorris, Haluna",
+        date: "15 ngày trước"
+    }
+]
+
+// nút Việt Nam
+export const RowVNData_One = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/banner/3/0/9/e/309e129f362b26525e4d94a29071f434.jpg",
+        title: "Tiểu Thuyết Tình Yêu",
+        actor: "Host Nguyên Khang, Tăng Phúc",
+        date: "Hôm nay"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/8/3/2/c83247bc75a132fdd93982c10b2cc152.jpg",
+        title: "Đường Tôi Chở Em Về",
+        actor: "buitruonglinh",
+        date: "2 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/7/3/d/973d03520430d0965599061dcb2eda6f.jpg",
+        title: "Chỉ Muốn Bên Em Thật Gần (Remix)",
+        actor: "Yling",
+        date: "3 ngày trước"
+    }
+]
+
+export const RowVNData_Two = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/5/5/7/d/557d509a4299e8190d097a11102cd17d.jpg",
+        title: "Tây Kỳ Love",
+        actor: "JokeS Bii, Sinike",
+        date: "4 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/0/d/b/80db34aea4763fe8e0cae110e9cbf8c9.jpg",
+        title: "Muốn Nói Với Em",
+        actor: "T Team",
+        date: "4 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/f/9/f9c0475ec02716554fba3f63e5b4ac37_1504991428.jpg",
+        title: "Túy Âm",
+        actor: "Xesi, Masew, Nhật Nguyễn",
+        date: "5 ngày trước"
+    }
+]
+
+export const RowVNData_Three = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/7/c/e/a7ce3506b24cd90ab3012bff1dd9d7bb.jpg",
+        title: "Ít Nhưng Dài Lâu",
+        actor: "Yan Nguyễn",
+        date: "6 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/a/0/f/3a0f740014e55cdeac6d29009667d8cc.jpg",
+        title: "Duyên Trời Lấy 2",
+        actor: "Chung Thanh Duy",
+        date: "7 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/8/a/c/68ac38e54935d3a45463fe3ced8a7985.jpg",
+        title: "Tình Nhạt Phai",
+        actor: "Vicky Nhung",
+        date: "7 ngày trước"
+    }
+]
+
+export const RowVNData_Four = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/covers/0/8/0811e819eb072ff8a907d8d724260280_1488793045.jpg",
+        title: "Em Ơi Anh Phải Làm Sao",
+        actor: "Dương Minh Tuấn",
+        date: "9 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/1/9/9/619964de31327dbf8491d14d2c25533f.jpg",
+        title: "Hoa Cỏ Lau",
+        actor: "Phong Max",
+        date: "16 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/0/f/c/7/0fc79780bfccdd79616671ffa50187dc.jpg",
+        title: "Hư Không",
+        actor: "Kha",
+        date: "20 ngày trước"
+    }
+]
+//nút Quốc Tế
+export const RowQTData_One = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/2/4/f/c24f2bdc29f3cc1a1c1513ecd038f877.jpg",
+        title: "Creep",
+        actor: "Alosa, Haluna",
+        date: "Hôm nay"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/9/a/d/8/9ad8e639784cca5dc49f0f5921bca715.jpg",
+        title: "Supergirl",
+        actor: "DreamChaos, Della",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/f/8/1/2f81b58254eb283530f24a40ac227b31.jpg",
+        title: "Say My Name",
+        actor: "Le Bober, EMM",
+        date: "3 ngày trước"
+    }
+]
+export const RowQTData_Two = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/f/6/c/d/f6cdca4ee8fd198ca5318bef0c1bcdb1.jpg",
+        title: "Lovefool",
+        actor: "Max Martis, Andrea, Hamilton",
+        date: "2 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/e/0/3/3/e03338885aa4382a556bbe398d23b880.jpg",
+        title: "DJ Alex Man, Brittany Murphy",
+        actor: "DreamChaos, Della",
+        date: "4 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/c/8/e/9/c8e9b8b00bdc9c693bbc4db061f29982.jpg",
+        title: "Ain't Nobody (Lovers Me Better)",
+        actor: "Alosa, Margad",
+        date: "3 ngày trước"
+    }
+]
+export const RowQTData_Three = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/3/3/b/233bae9e49132746c95ec7a40a3d6e39.jpg",
+        title: "All Around The World",
+        actor: "Alosa, Jessica Chertock",
+        date: "5 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/5/8/c/858c82c1fb22ecc837dd719bf9a4419c.jpg",
+        title: "Hymn For The Weekend",
+        actor: "Cale, Haluna",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/0/7/7/60771de7938b1f9c88f5138b6645e41e.jpg",
+        title: "Snowman",
+        actor: "First to Eleven",
+        date: "3 ngày trước"
+    }
+]
+export const RowQTData_Four = [
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/7/0/0/2700457f840927b6487b3ec435c2044a.jpg",
+        title: "It's You",
+        actor: "Frank Rivers",
+        date: "6 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/0/7/a/c/07ac38434479288d557793d301a2ee47.jpg",
+        title: "Relax",
+        actor: "Deepest, AMHouse, Taylor Mosley",
+        date: "3 ngày trước"
+    },
+    {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/6/0/0/f/600f915d328e1cb3e87ae74cac05b725.jpg",
+        title: "Heart Attack",
+        actor: "Mary Levine",
+        date: "3 ngày trước"
+    }
+]
