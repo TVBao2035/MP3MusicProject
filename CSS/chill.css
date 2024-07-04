@@ -1,7 +1,5 @@
 
-.list {
-    background-color: var(--primary-color-strong);
-}
+
 .list_title {
     padding-bottom: 10px;
     
@@ -18,15 +16,11 @@
 
 .list_item_title{
     font-size: 18px;
-    text-align: left;
     padding-top: 10px;
     color: #959595;
-    display: flex;
     flex-wrap: wrap;
-    width: 200px;
 }
 .list_item_img {
-
     position: relative; 
 }
 .item_list_sing{
@@ -34,8 +28,7 @@
 }
 .list_item_img img {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -57,6 +50,7 @@
 .list_item_icon i {
     font-size: 40px;
     margin: 0 10px;
+    color: white;
 }
 
 .list_item_img:hover .list_item_icon {

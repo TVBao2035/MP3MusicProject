@@ -3,6 +3,7 @@ export const handleSearchInput = () => {
     let searchInput = document.querySelector(".search_input");
     let modelInput = document.querySelector('.model_search_input');
     let search = document.querySelector('.search');
+
     search.onclick = () => {
         modelInput.style.display = "block";
         searchInput.classList.add('search_input_onclick');
