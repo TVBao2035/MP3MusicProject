@@ -374,7 +374,10 @@ export const flexData_Chill = [
     {
         img:"https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/f/4/f/8/f4f86a8154d7632e4b1fa04b3050aff5.jpg",
         title:"Không ồn ã, không vội vàng cùng thư..."
-    },   
+    },  {
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/8/8/2/4/88247ce8f0f1aadb7062a7c9fda9292f.jpg",
+        title: "Khi những bản nhạc cũ được làm mới một cách đầy thi vị"
+    } 
 ]
 
 export const flexData_Remix = [
@@ -393,7 +396,10 @@ export const flexData_Remix = [
     {
         img:"https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/1/c/f/61cf3ae93569892b140b83cad1ba7415.jpg",
         title:"Những ca khúc V-pop remix tuy cũ nhưng..."
-    },
+    },{
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/d/5/c/ad5ce3b155734f6e87a1f2bb2dde69e4.jpg",
+        title: "Lên là lên là lên với các bản V-Pop Remix sôi động"
+    }
 ]
 
 export const flexData_GD = [
@@ -412,7 +418,10 @@ export const flexData_GD = [
     {
         img:"https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/6/d/a/b/6dabc50c35187c4a72ec2c21619b7a59.jpg",
         title:"Yêu thương gửi Mẹ - người phụ nữ tuyệt vời nhất"
-    },
+    },{
+        img: "https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/e/a/a/c/eaac593fdec1441052ead443a9f83fa0.jpg",
+        title: "Ngắm mưa rơi bên cạnh những giai điệu 'lâu phai' quen thuộc"
+    }
 ]
 
 

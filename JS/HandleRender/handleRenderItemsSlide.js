@@ -109,8 +109,8 @@ export function showInternat() {
 export const handleRenderItemsFlex = (containerID,flexData) => {
     const itemFlex  = document.getElementById(containerID);
     itemFlex.innerHTML += flexData.map((data) =>      `
-            <div class="col p-0 ps-4 item_list_sing">
-                        <a href="" class="list_item_img">
+            <div class="col p-0 item_list_sing ">
+                        <a href="" class="list_item_img d-flex  justify-content-center">
                             <img src="${data.img}" alt="">
                             <div class="list_item_icon">
                                 <i class="fa-regular fa-heart"></i>
@@ -121,6 +121,6 @@ export const handleRenderItemsFlex = (containerID,flexData) => {
                          
                         <p class="list_item_title">${data.title}</p>
                     </div>
-        ` )
+        ` ).join("");
 }
 
