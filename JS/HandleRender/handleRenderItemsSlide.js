@@ -21,6 +21,7 @@ export const handleRenderItemsSlide = (slideData) => {
                         ` )
 }
 
+
 // TOP 100 & Album Hot
 export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
     const itemData = document.querySelector(containerID);
@@ -103,3 +104,23 @@ export function showInternat() {
     document.getElementById('row_img_vn').style.display = 'none';
     document.getElementById('row_img_internat').style.display = 'block';
 }
+
+// Chill  + Nhạc Remix cực bốc + mưa tháng sáu
+export const handleRenderItemsFlex = (containerID,flexData) => {
+    const itemFlex  = document.getElementById(containerID);
+    itemFlex.innerHTML += flexData.map((data) =>      `
+            <div class="col p-0 ps-4 item_list_sing">
+                        <a href="" class="list_item_img">
+                            <img src="${data.img}" alt="">
+                            <div class="list_item_icon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </a> 
+                         
+                        <p class="list_item_title">${data.title}</p>
+                    </div>
+        ` )
+}
+

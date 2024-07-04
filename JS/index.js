@@ -1,22 +1,44 @@
+import { handleRenderItemsSlide, 
+        handleRenderItemsTopAlbum, 
+        handleRenderItemsRowImage,
+        showAll, 
+        showVn, 
+        showInternat, 
+        handleRenderItemsFlex 
+       } from "./HandleRender/handleRenderItemsSlide.js";
+import { slideData, 
+        flexData_Top, 
+        flexData_Album,
+        flexData_Chill,
+        flexData_Remix,
+        flexData_GD,
+        RowData_One,
+        RowData_Two,
+        RowData_Three,
+        RowData_Four,
+        RowVNData_One,
+        RowVNData_Two,
+        RowVNData_Three,
+        RowVNData_Four,
+        RowQTData_One,
+        RowQTData_Two,
+        RowQTData_Three,
+        RowQTData_Four
+       } from './Data/slideData.js';
 
 
-import { handleRenderItemsSlide, handleRenderItemsTopAlbum, handleRenderItemsRowImage,showAll, showVn, showInternat } from "./HandleRender/handleRenderItemsSlide.js";
-import { slideData, flexData_Top, flexData_Album,RowData_One,RowData_Two,RowData_Three,RowData_Four,RowVNData_One,RowVNData_Two,RowVNData_Three,RowVNData_Four,RowQTData_One,RowQTData_Two,RowQTData_Three,RowQTData_Four } from './Data/slideData.js';
-
-import { handleSearchInput } from "./HandleSearch/handleSearchInput.js";
-import { handleSlideRank } from "./HandleSlide/handleSlideRank.js";
-
-
+handleRenderItemsFlex("list_chill", flexData_Chill);
+handleRenderItemsFlex("list_remix",flexData_Remix);
+handleRenderItemsFlex("list_gd",flexData_GD);
 handleRenderItemsSlide(slideData);
 handleSearchInput();
 handleSlideRank();
 
 
+
 //top 100 & album hot
 handleRenderItemsTopAlbum(".list_top",flexData_Top);
 handleRenderItemsTopAlbum(".list_album", flexData_Album);
-
-
 
 // NÚT TẤT CẢ & VIỆT NAM & QUỐC TẾ
 document.getElementById('btn_all').addEventListener('click', showAll);
