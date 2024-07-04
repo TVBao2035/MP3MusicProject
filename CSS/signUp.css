@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --logoColor: #9b4de0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    width: 1px;
+}
+main 
+{
+    position: relative;
+}
+body {
+    background-color: rgb(176, 175, 175);
+    display: flex;
+    align-items: center;
+}
+
+.form_sign {
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 1px solid;
+}
+.form_contain--main{
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    color: var(--logoColor);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form_input{
+    height: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.form_input label{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.form_input input{
+    font-family: sans-serif;
+    font-weight: 400;
+    height: 35px;
+    outline: none;
+    border: black 1px solid;
+    width: 250px;
+}
+
+.form_input input:hover{
+    border: 2px solid rgb(0, 254, 68);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+#captcha {
+    border: 1px solid gray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   margin-left: -10px;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+}
+.regenerate_captcha {
+    background-color: var(--logoColor);
+    border:none;
+    color:white;
+    width:10%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px 30px;
+    margin-left: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#captchatext {
+    padding:12px 20px;
+    display:inline-block;
+    font-weight: 400;
+    height: 35px;
+    width: 250px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+#captchatext:hover {
+    border: 2px solid rgb(0, 254, 68);
+}
+
+.icon-captcha {
+   font-size: 24px;
+}
+
+
+
+.form_submit{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+.form_submit button{
+    background-color: var(--logoColor);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.form_submit button:active{
+    opacity: 0.7;
+}
+
+footer{
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+footer a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--logoColor);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a:hover{
+    color:  rgb(143, 31, 143);
+    text-decoration: none;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../photos/background.jpeg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.form_sign {
+    background: rgba(255, 255, 255, 0.9); /* Màu nền trắng và độ mờ cho form */
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+.btn--Submit:hover {
+    background-color:#8e45cd;
+    color:rgb(224, 219, 219);
+}
+.regenerate_captcha:hover {
+    background-color:#8e45cd;
+    color:rgb(224, 219, 219);
+}

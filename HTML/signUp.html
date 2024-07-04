@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="web icon" type="png" href="../photos/logo.png">
+    <link rel="stylesheet" href="../CSS/signUp.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div class="background"></div>
+    <form id="form" class="form_sign">
+        <div class="form-contain--main">
+            <header>
+                <span>Sign Up</span>
+            </header>
+            <main class="main_form--up">
+                <div class="form_input">
+                    <label for="input_email" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control item" id="input_email" name="email" placeholder="Enter email">
+                    <small></small>
+                </div>
+                <div class="form_input">
+                    <label for="username" class="form-label">User Name:</label>
+                    <input type="text" class="form-control item" id="username" name="name" placeholder="Enter username">
+                    <small></small>
+                </div>
+                <div class="form_input">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control item" id="password" name="password" placeholder="Enter password">
+                    <small></small>
+                </div>
+                <div class="form_input">
+                    <label for="confirm_password" class="form-label">Confirm Password:</label>
+                    <input type="password" class="form-control item" id="confirm_password" name="confirm_password" placeholder="Enter password">
+                    <small></small>
+                </div>
+                <div class="form_input">
+                    <div class="content">
+                        <div id="captcha"></div>
+                        <button type="button" class="regenerate_captcha" >
+                            <i class="bx bx-refresh icon-captcha" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="item form-control" id="captchatext" name="captchatext" placeholder="Enter captcha">
+                    <small></small>
+                </div>
+                <div class="form_submit">
+                    <button type="submit" class="btn--Submit">Submit</button>
+                </div>
+            </main>
+            <footer>
+                <a href="./signIn.html">Sign In</a>
+            </footer>
+        </div>
+    </form>
+    <script type="module" src="../JS/HandleForm/handleForm.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

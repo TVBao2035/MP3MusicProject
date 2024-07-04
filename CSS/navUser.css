@@ -10,6 +10,13 @@
 .btn_m:hover {
     background: #5a4c70;
     color: black;
+    
+}
+.no-underline {
+    text-decoration: none;
+  }
+.no-underline:hover{
+    text-decoration: none;
 }
 .dropdown-menu-2 {
     margin-top: 20px;

@@ -1,4 +1,22 @@
 
+/* Chữ TẤT CẢ */
+.card-subtitle {
+    display: flex;
+    align-items: center;
+}
+.card-subtitle .btn-text-all {
+    margin-left: 790px;
+    color: rgb(145, 143, 143);
+    text-decoration: none;
+    font-size: 15px;
+}
+.btn-text-all:hover {
+    color: var(--primary-color);
+}
+/* ---------------------- */
+
+
+
 .card {
     background: var(--primary-color-strong) !important;
     height: 500px;
@@ -13,32 +31,44 @@
     width: var(--width-main) !important;
     background: var(--primary-color-strong);
 }
+
+
+.card-subtitle button {
+    background-color: transparent;
+}
+
+.card-subtitle button.active {
+    background-color: var(--primary-color);
+    color: white; 
+}
+/* nút TẤT CẢ */
 .btn_all {
-    background: var(--primary-color);
+    background: var(--primary-color-strong);
     width: 100px;
     height: 25px;
     border-radius: 15px;
-    border: var(--primary-color-strong) 0px solid;
+    border: rgb(145, 143, 143) 0.1px solid;
 }
 .btn_all p {
     font-size: 14px;
     margin-top: 3px;
 }
 .btn_all:hover {
-    background: #8540c1;
+    background: var(--primary-color-strong);
 }
 .btn_all p:hover {
     color: rgb(197, 190, 190);
 }
+/* ---------------------- */
 
-
+/* nút VIỆT NAM */
 .btn_vn {
     margin-left: 12px;
     background: var(--primary-color-strong);
     width: 100px;
     height: 25px;
     border-radius: 15px;
-    border: var(--primary-color-strong) 0px solid;
+    border: gray 0.1px solid;
 }
 .btn_vn p {
     font-size: 14px;
@@ -50,15 +80,16 @@
 .btn_vn p:hover {
     color: rgb(197, 190, 190);
 }
+/* ---------------------- */
 
-
+/* nút QUỐC TẾ */
 .btn_internat {
     margin-left: 12px;
     background: var(--primary-color-strong);
     width: 100px;
     height: 25px;
     border-radius: 15px;
-    border: var(--primary-color-strong) 0px solid;
+    border: gray 0.1px solid;
 }
 .btn_internat p {
     font-size: 14px;
@@ -70,147 +101,149 @@
 .btn_internat p:hover {
     color: rgb(197, 190, 190);
 }
-.card-img .row {
-    display:flex;
-    
-}
-.card-img .col {
-    flex: 1;
-    padding: 5px;
-}
+/* ---------------------- */
 
-.box-first {
-    background:#36303e;
-    width:95%;
-    height:80px;
-    border-radius: 5px;
+
+/* General container for the row */
+.row-img--one {
     display: flex;
-    position: relative;
-   
+    width: 100%;
 }
-.img-container {
-    position: relative;
-    display: inline-block; /* Đảm bảo container bao bọc kích thước của ảnh */
+.row-img--two {
+    display: flex;
+    width: 100%;
 }
-
-.img-item-first {
-    display: block; /* Đảm bảo hình ảnh chiếm toàn bộ không gian của container */
-    opacity: 0.5; /* Làm mờ hình ảnh */
+.row-img--three {
+    display: flex;
+    width: 100%;
 }
-
-.play-icon {
-    position: absolute;
-    top: 50%; /* Đặt icon ở giữa theo chiều dọc */
-    left: 50%; /* Đặt icon ở giữa theo chiều ngang */
-    transform: translate(-50%, -50%); /* Dịch chuyển icon vào đúng giữa */
-    color: white; /* Màu của icon, có thể thay đổi theo ý muốn */
-    font-size: 2em; /* Kích thước của icon, điều chỉnh theo ý muốn */
-    pointer-events: none; /* Đảm bảo icon không chặn các sự kiện chuột trên hình ảnh */
-}
-.box:hover .play-icon-2 {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-size: 2em; 
-    pointer-events: none; 
-}
-.img-item {
-    display: block;
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
+.row-img--four {
+    display: flex;
+    width: 100%;
 }
 
-.img-item-first {
-    display: block;
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
+/* Individual columns for images */
+.col-img--one {
+    margin-left: -20px;
+    max-width: calc(33.333% - 20px); /* Ensure columns don't exceed one-third of the container's width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Container box for image and details */
 .box {
-    width:95%;
-    height: 80px;
+    width: 90%;
+    height: 90px;
     background: var(--primary-color-strong);
     border-radius: 5px;
     display: flex;
     margin-left: 0 !important;
-}
-.box:hover {
-    background:#36303e;
+    position: relative; /* Ensure the play icon positions correctly relative to the box */
 }
 
-.img-title{
-    margin-left: -6px;
-    position: relative; /* Đảm bảo các phần tử con có thể dựa vào vị trí này */
+.box:hover {
+    background: #36303e;
 }
-.title-1 {
+
+/* Image details section */
+.img-details {
+    margin-left: 10px;
+}
+
+/* Image itself */
+.img-item {
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Image container to position the play icon */
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Play icon */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    pointer-events: none; /* Ensure the icon doesn't block mouse events on the image */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+/* On hover, display the play icon and dim the image */
+.box:hover .play-icon {
+    opacity: 1;
+}
+
+.box:hover .img-item {
+    opacity: 0.5;
+}
+
+/* Title of the song */
+.img-title {
+    font-weight: 500;
+    margin-top: 10px;
     font-size: 14px;
-    color:white;
+    color: white;
 }
-.title-1:hover{
+
+.img-title:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
+
+/* Actor details */
 .tt {
     position: relative;
 }
 
-.title-2 {
+.img-actor {
+    margin-top: -10px;
     font-size: 12px;
-   padding-top: -55px;
+    padding-top: -55px;
     color: gray;
 }
-.title-2:hover{
-    color: var(--primary-color);
+.img-actor span {
+    text-decoration: none;
 }
-.title-2:hover .underline {
+
+.img-actor span:hover {
+    color: var(--primary-color);
+    cursor: pointer;
     text-decoration: underline;
 }
-.underline {
-    display: inline;
-}
 
-
-.title-3 {
-    font-size: 12px;
-    margin-top: -px;
-}
-
-.title-4 {
-    font-size: 13px;
-   padding-top: -65px;
+/* Date */
+.img-date {
     color: gray;
-}
-.title-4:hover{
-    color: var(--primary-color);
-}
-.title-4:hover .underline {
-    text-decoration: underline;
-}
-.underline {
-    display: inline;
+    font-size: 12px;
+    margin-top: -12px;
 }
 
-.title-5 {
-    font-size: 12px;
-    margin-top: -4px;
-}
+
+
 .icon-dots {
     font-size: 20px;
     display:none;
     opacity: 0;
     transition: opacity 0.3s;
     position: absolute;
-    right: 0px; /* Điều chỉnh theo layout của bạn */
+    left:220px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-}
-.icon-dots {
-    position: absolute;
-
 }
 
 .icon-dots:hover {
