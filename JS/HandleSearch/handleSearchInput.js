@@ -5,12 +5,14 @@ export const handleSearchInput = () => {
     let search = document.querySelector('.search');
 
     search.onclick = () => {
+        containerInput.style.display = "block";
         modelInput.style.display = "block";
         searchInput.classList.add('search_input_onclick');
         search.classList.add('search_onclick');
     }
     containerInput.onclick = (e) => {
         if(e.target === e.currentTarget){
+            containerInput.style.display = "none";
             modelInput.style.display = "none";
             searchInput.classList.remove('search_input_onclick');
             search.classList.remove('search_onclick');
