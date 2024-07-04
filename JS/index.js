@@ -6,6 +6,7 @@ import { handleRenderItemsSlide,
         showInternat, 
         handleRenderItemsFlex 
        } from "./HandleRender/handleRenderItemsSlide.js";
+
 import { slideData, 
         flexData_Top, 
         flexData_Album,
@@ -26,7 +27,8 @@ import { slideData,
         RowQTData_Four
        } from './Data/slideData.js';
 
-
+import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
+import {handleSlideRank} from './HandleSlide/handleSlideRank.js'
 handleRenderItemsFlex("list_chill", flexData_Chill);
 handleRenderItemsFlex("list_remix",flexData_Remix);
 handleRenderItemsFlex("list_gd",flexData_GD);
