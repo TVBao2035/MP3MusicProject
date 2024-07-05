@@ -38,10 +38,18 @@
 .audio_icon--action{
     width: 32px;
     height: 32px;
-    font-size: 26px;
+    font-size: 32px;
     padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 7px;
+}
+
+.audio_icon--action>span{
+    font-size: 25px;
+}
+
+.icon_play>span{
+    font-size: 50px;
 }
