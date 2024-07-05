@@ -1,0 +1,47 @@
+.block_audio--img{
+    margin-right: 10px;
+}
+.block_audio--img img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.block_audio--content{
+
+}
+
+.block_audio--content>p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.block_audio--content>span{
+    font-size: 12px;
+}
+
+.audio_icon{
+    width: 34px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-strong);
+    user-select: none;
+}
+
+.audio_icon:hover{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+.audio_icon--action{
+    width: 32px;
+    height: 32px;
+    font-size: 26px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+}

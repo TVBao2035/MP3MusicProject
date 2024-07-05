@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./CSS/rank.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./CSS/TOP100.css">
+    <link rel="stylesheet" href="./CSS/audio.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="web icon" type="png" href="./photos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -35,6 +36,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <header>
         <div class="left">
             <div class="img"></div>
@@ -411,7 +413,7 @@
 
     </header>
 
-    <main class="position-absolute ">
+    <main class="">
          <!-- Mới phát hành -->
          <div class="publication_new container p-0">
             <div class="card">
@@ -587,13 +589,57 @@
                 </div>
             </div>
         </div>
-
-
+        
     </main>
 
-    <footer>
-        
-    </footer>
+    
+    <footer class="d-flex">
+        <div class="d-flex justify-content-start align-items-center col-4 p-0">
+            <div class="block_audio--img">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/e/b/8/b/eb8b0a622fb165ca7c9c86dc214a8dbc.jpg" alt=""></div>
+            <div class="block_audio--content text-white d-flex flex-column justify-content-center">
+                <p class="m-0">Một Đường Nở Hoa (HM Remix)</p>
+                <span class="fw-lighter">Hàn Dung</span>
+            </div>
+            <div class="block_audio--icon text-white d-flex ">
+                <div class="audio_icon"><i class='bx bx-heart'></i></div>
+                <div class="audio_icon"><i class='bx bx-dots-horizontal-rounded' ></i></div>
+            </div>
+        </div>
+        <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex text-white justify-content-center">
+                <div class="audio_icon--action"><i class='bx bx-shuffle'></i></div>
+                <div class="audio_icon--action"><i class='bx bx-skip-previous' ></i></div>
+                <div class="audio_icon--action"><i class='bx bx-pause-circle' ></i></div>
+                <div class="audio_icon--action"><i class='bx bx-skip-next' ></i></div>
+                <div class="audio_icon--action"><i class='bx bx-repeat' ></i></div>
+            </div>
+            <div class="d-flex w-100 text-white">
+                <div><span>00:00</span></div>
+                <hr class="w-100">
+                <div><span>04:41</span></div>
+            </div>
+        </div>
+        <div class="col-4 p-0 text-white d-flex fw-lighter justify-content-end align-items-center">
+            <div class="audio_icon--action"><i class='bx bx-terminal  fw-lighter'></i></div>
+            <div class="audio_icon--action"><i class='bx bx-microphone' ></i></div>
+            <div class="audio_icon--action"><i class='bx bx-windows' ></i></div>
+            <div class="audio_icon--action"><i class='bx bx-volume-full' ></i></div>
+            <div><span>|</span></div>
+            <div class="audio_icon--action"><i class='bx bxs-playlist' ></i></div>
+        </div>    
+    </footer >
+        <audio class="audio" controls loop  autoplay>
+            <source src="https://vnso-zn-24-tf-a128-z3.zmdcdn.me/687ef1755b8433f6ecdb90846c5f8a79?authen=exp=1720327723~acl=/687ef1755b8433f6ecdb90846c5f8a79/*~hmac=90e072564993ba5cd58630d14946ae90" type="audio/mpeg">
+        </audio>
+        <style>
+            .audio{
+                margin-left: 400px;
+                position: fixed;
+                bottom: 100px;
+                z-index: 20;
+            }
+        </style>
 </body>
 
 </html>
