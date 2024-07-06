@@ -1,5 +1,20 @@
 export const slideData = [
     {
+        src: "https://vnso-zn-24-tf-a128-z3.zmdcdn.me/687ef1755b8433f6ecdb90846c5f8a79?authen=exp=1720327723~acl=/687ef1755b8433f6ecdb90846c5f8a79/*~hmac=90e072564993ba5cd58630d14946ae90",
+        img: "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/e/b/8/b/eb8b0a622fb165ca7c9c86dc214a8dbc.jpg",
+        title: "Một Đường Nở Hoa (HM Remix)",
+        actor: "Hàn Dung",
+        time: "04:42",
+        date: "04/07/2022"
+    },{
+        src: "https://vnso-pt-48-tf-a128-z3.zmdcdn.me/0e9473ae283e4a8df25fd6d73723045d?authen=exp=1720410984~acl=/0e9473ae283e4a8df25fd6d73723045d/*~hmac=bfda28d006232ceaa49b36d3961e6209",
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/8/2/9/1829df67aa2ae317a8a57fd323b881f7.jpg",
+        title: "Bỉ Ngạn Nở Hoa Người Chả Về",
+        actor: "Thiên Tú",
+        time: "03:15",
+        date: "24/03/2022"
+    },
+    {
         img:" https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/2/5/b/a25ba756e50de822f8d026b00ce99b03.jpg",
         title: "Sao Không Ở Lại",
         actor: "Lưu Hưng",

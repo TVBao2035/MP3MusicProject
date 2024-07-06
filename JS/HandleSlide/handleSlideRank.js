@@ -12,7 +12,7 @@ export const handleSlideRank = () => {
             if(index === -1) index = tabs -1;
             console.log(index);
             slide.style.transform = `translateX(${widthSlide*-1 * index++}px)`;
-        }, 2000);
+        }, 5000);
     }
 
     startSlide();

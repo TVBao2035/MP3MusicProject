@@ -28,7 +28,7 @@ import { slideData,
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
-
+import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
 
 handleRenderItemsFlex("list_chill", flexData_Chill);
 handleRenderItemsFlex("list_remix",flexData_Remix);
@@ -65,7 +65,6 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
 
 
-
-
-
-
+// Audio
+handleAudio();
+handleGetSong();

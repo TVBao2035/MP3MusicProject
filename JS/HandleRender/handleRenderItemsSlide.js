@@ -3,13 +3,13 @@
 export const handleRenderItemsSlide = (slideData) => {
     const itemSlide = document.querySelector('.list_image');
     itemSlide.innerHTML += slideData.map((data, index) => `
-                        <div class="d-flex item_slide align-items-center">
+                        <div class="d-flex item_slide align-items-center item_music--main">
                             <div class="image">
                                 <img src="${data.img}" alt="">
                             </div>
                             <div class="content w-100 ms-2">
                                 <div class="d-flex flex-column ">
-                                    <h6 class="text-white">${data.title}</h6>
+                                    <h6 class="text-white title_music--main">${data.title}</h6>
                                     <p class="text_content">${data.actor}</p>
                                 </div>
                                 <div class="rank_number w-100 d-flex justify-content-between align-items-end">
