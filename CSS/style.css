@@ -26,11 +26,12 @@ main{
 }
 footer{
     position: fixed;
-    z-index: 20;
+    z-index: 9;
     width: 100%;
     bottom: 0;
     height: 90px;
     background-color: var(--primary-color-strong);
     box-sizing: border-box;
     padding: 0 20px;
+    user-select: none;
 }

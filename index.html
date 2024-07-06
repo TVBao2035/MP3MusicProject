@@ -626,40 +626,46 @@
                     </span>
                   </div>
             </div>
-            <div class="d-flex w-100 text-white">
-                <div><span>00:00</span></div>
-                <hr class="w-100">
-                <div><span>04:41</span></div>
+            <div class="d-flex align-items-center w-100 text-white">
+                <div class="time_star block_time"><span class="time_minute">00</span>:<span class="time_second">00</span></div>
+                <div class="container_seekbar">
+                    <div class="seekbar">
+                        <div class="progress_tool">
+                        </div>
+                        <div class="progress_too--circle"></div>
+                    </div>
+                </div>
+
+                <div class="time_end block_time"><span>04:41</span></div>
             </div>
         </div>
         <div class="col-4 p-0 text-white d-flex fw-lighter justify-content-end align-items-center">
-            <div class="audio_icon--action"><span class="material-symbols-outlined">
-                web_asset
-                </span></div>
-            <div class="audio_icon--action"><span class="material-symbols-outlined">
-                mic_external_on
-                </span></div>
-            <div class="audio_icon--action"><span class="material-symbols-outlined">
-                branding_watermark
-                </span></div>
-            <div class="audio_icon--action"><span class="material-symbols-outlined">
-                volume_up
-                </span></div>
+            <div class="audio_icon--action">
+                <span class="material-symbols-outlined">web_asset</span>
+            </div>
+            <div class="audio_icon--action">
+                <span class="material-symbols-outlined">mic_external_on</span>
+            </div>
+            <div class="audio_icon--action">
+                <span class="material-symbols-outlined">branding_watermark</span>
+            </div>
+            <div class="audio_icon--action">
+                <span class="material-symbols-outlined">volume_up</span>
+            </div>
             <div><span>|</span></div>
-            <div class="audio_icon--action"><span class="material-symbols-outlined">
-                queue_music
-                </span></div>
+            <div class="audio_icon--action">
+                <span class="material-symbols-outlined">queue_music</span>
+            </div>
         </div>    
     </footer >
-        <audio class="audio" controls loop  autoplay>
-            <source src="https://vnso-zn-24-tf-a128-z3.zmdcdn.me/687ef1755b8433f6ecdb90846c5f8a79?authen=exp=1720327723~acl=/687ef1755b8433f6ecdb90846c5f8a79/*~hmac=90e072564993ba5cd58630d14946ae90" type="audio/mpeg">
+        <audio class="audio"  type="audio/mpeg" controls loop  autoplay >
         </audio>
         <style>
             .audio{
                 margin-left: 400px;
                 position: fixed;
-                bottom: 100px;
-                z-index: 20;
+                bottom: 0px;
+                z-index: 8;
             }
         </style>
 </body>

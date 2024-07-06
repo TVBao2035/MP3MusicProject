@@ -65,6 +65,6 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
 
 
+handleAudio(false);
 // Audio
-handleAudio();
 handleGetSong();
