@@ -32,7 +32,9 @@ import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
 import { GET_SONG } from "./localStorageKey.js";
 import { songData } from "./Data/songData.js";
 
-localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]))
+if(!localStorage.getItem(GET_SONG)){
+        localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]));
+}
 
 
 handleRenderItemsFlex("list_chill", flexData_Chill);
