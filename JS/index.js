@@ -29,6 +29,11 @@ import { slideData,
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
 import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
+import { GET_SONG } from "./localStorageKey.js";
+import { songData } from "./Data/songData.js";
+
+localStorage.setItem(GET_SONG, JSON.parse(songData[0]))
+
 
 handleRenderItemsFlex("list_chill", flexData_Chill);
 handleRenderItemsFlex("list_remix",flexData_Remix);
