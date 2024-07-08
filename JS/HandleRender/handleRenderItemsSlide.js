@@ -3,13 +3,13 @@
 export const handleRenderItemsSlide = (slideData) => {
     const itemSlide = document.querySelector('.list_image');
     itemSlide.innerHTML += slideData.map((data, index) => `
-                        <div class="d-flex item_slide align-items-center">
+                        <div class="d-flex item_slide align-items-center item_music--main">
                             <div class="image">
                                 <img src="${data.img}" alt="">
                             </div>
                             <div class="content w-100 ms-2">
                                 <div class="d-flex flex-column ">
-                                    <h6 class="text-white">${data.title}</h6>
+                                    <h6 class="text-white title_music--main">${data.title}</h6>
                                     <p class="text_content">${data.actor}</p>
                                 </div>
                                 <div class="rank_number w-100 d-flex justify-content-between align-items-end">
@@ -28,7 +28,7 @@ export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
     
     // Cập nhật nội dung:
     itemData.innerHTML += flexData_Top_Album.map((data) => `
-        <div class="col p-0 ps-3 item_list_top">
+        <div class="col  p-0 ps-3 item_list_top">
             <a href="" class="list_top_item_img">
                 <img src="${data.img}" alt="">
                 <div class="list_top_item_icon">
@@ -37,7 +37,7 @@ export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
                     <i class='bx bx-dots-horizontal-rounded text-white' style="font-size: 26px; margin-left:10px;"></i>
                 </div>
             </a>
-            <div class="d-flex flex-column justify-content-center" style="height: 100%; margin-top: 30px;">
+            <div class="d-flex flex-column " style=" margin-top: 6px;">
                 <p class="list_top_item_title fw-bolder mb-1">${data.title}</p>
                 <p class="list_top_item_actor">${data.actor}</p>
             </div>

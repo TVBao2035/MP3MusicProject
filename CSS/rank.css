@@ -44,7 +44,7 @@
 }
 
 .item_slide{
-    width: 390px;
+    width: 360px;
     height: 140px;
     background-color: hsla(0, 0%, 100%, 0.1);
     box-sizing: border-box;
@@ -53,7 +53,6 @@
 }
 .container_buttons{
     width: var(--width-main);
-    z-index: 2;
     height: 140px;
     position: absolute;
 }
@@ -66,4 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
+}
+.btn_arrow:active{
+    opacity: 0.7;
 }

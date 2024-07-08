@@ -2,7 +2,7 @@ export const handleSlideRank = () => {
     const listItems = document.querySelectorAll(".item_slide");
     const widthSlide = document.querySelector(".slide").offsetWidth;
     const slide = document.querySelector('.list_image');
-    const tabs = (listItems.length / 3).toFixed();
+    const tabs = (listItems.length % 3 !== 1 ? (listItems.length / 3) : (listItems.length / 3)+1).toFixed();
     console.log(tabs);
     let index = 0;
     var timerId 
@@ -12,7 +12,7 @@ export const handleSlideRank = () => {
             if(index === -1) index = tabs -1;
             console.log(index);
             slide.style.transform = `translateX(${widthSlide*-1 * index++}px)`;
-        }, 2000);
+        }, 5000);
     }
 
     startSlide();

@@ -35,12 +35,11 @@
     flex-direction: column;   
 }
 .item{
-    padding: 12px 21px;
+    padding: 10px 21px;
     cursor: pointer;
     color: rgb(196, 193, 193);
     
-    font-size: 14px;
-    margin: 4px;  
+    font-size: 14px; 
     border-left: 5px solid var(--background-navbar);
 }
 .item p {
@@ -71,7 +70,7 @@
 }
 
 .list_items-two {
-    height: 370px; /* Đặt chiều cao cố định cho phần tử */
+    height: 290px; /* Đặt chiều cao cố định cho phần tử */
     overflow-y: hidden; /* Ẩn thanh cuộn mặc định */
     scrollbar-width: thin; /* Đặt chiều rộng thanh cuộn cho Firefox */
     scrollbar-color: #575656 transparent; /* Đặt màu cho thanh cuộn và đường dẫn thanh cuộn trong suốt */

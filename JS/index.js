@@ -28,6 +28,13 @@ import { slideData,
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
+import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
+import { GET_SONG } from "./localStorageKey.js";
+import { songData } from "./Data/songData.js";
+
+if(!localStorage.getItem(GET_SONG)){
+        localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]));
+}
 
 
 handleRenderItemsFlex("list_chill", flexData_Chill);
@@ -65,7 +72,6 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
 
 
-
-
-
-
+handleAudio(false);
+// Audio
+handleGetSong();
