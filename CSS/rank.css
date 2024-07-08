@@ -67,4 +67,6 @@
     justify-content: center;
     z-index: 2;
 }
-
+.btn_arrow:active{
+    opacity: 0.7;
+}
