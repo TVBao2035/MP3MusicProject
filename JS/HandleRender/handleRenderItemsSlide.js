@@ -38,7 +38,7 @@ export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
                 </div>
             </a>
             <div class="d-flex flex-column " style=" margin-top: 6px;">
-                <p class="list_top_item_title fw-bolder mb-1">${data.title}</p>
+                <p class="list_top_item_title fw-bolder mb-1  title_music--main">${data.title}</p>
                 <p class="list_top_item_actor">${data.actor}</p>
             </div>
         </div>
@@ -57,7 +57,7 @@ export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
 export const handleRenderItemsRowImage = (containerID, RowData) => {
     const itemRowImage = document.querySelector(containerID);
     itemRowImage.innerHTML += RowData.map((data) => `
-        <div class="row row-img--one">
+        <div class="row row-img--one item_music--main">
             <div class="col col-img--one">
                 <div class="box">
                     <div class="img-container">
@@ -65,7 +65,7 @@ export const handleRenderItemsRowImage = (containerID, RowData) => {
                         <i class='bx bx-play play-icon'></i>
                     </div>
                     <div class="img-details">
-                        <p class="img-title">${data.title}</p>
+                        <p class="img-title title_music--main">${data.title}</p>
                         <div class="tt">
                             <p class="img-actor">${data.actor}</p>
                             <i class='bx bx-dots-horizontal-rounded icon-dots'>
