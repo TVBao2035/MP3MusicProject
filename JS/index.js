@@ -31,20 +31,32 @@ import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
 import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
 import { GET_SONG } from "./localStorageKey.js";
 import { songData } from "./Data/songData.js";
+import { handleSkip } from "./HandleAudio/handleSkip.js";
 
 if(!localStorage.getItem(GET_SONG)){
         localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]));
 }
 
+const pageFirst = document.getElementById('page_first');
+const pageSecond = document.getElementById('page_second');
+const pageThird = document.getElementById('page_third');
+
+const listItem = document.querySelectorAll(".list_items .item");
+listItem[1].classList.add('active_item');
+listItem.forEach( (item, index) => {
+        item.onclick = () => {
+                document.querySelector('.active_item').classList.remove('active_item');
+                item.classList.add('active_item')
+        }
+})
+console.log(listItem);
 
 handleRenderItemsFlex("list_chill", flexData_Chill);
 handleRenderItemsFlex("list_remix",flexData_Remix);
 handleRenderItemsFlex("list_gd",flexData_GD);
-handleRenderItemsSlide(slideData);
-handleSearchInput();
+
+handleRenderItemsSlide(songData);
 handleSlideRank();
-
-
 
 //top 100 & album hot
 handleRenderItemsTopAlbum(".list_top",flexData_Top);
@@ -75,3 +87,6 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 handleAudio(false);
 // Audio
 handleGetSong();
+
+handleSkip();
+handleSearchInput();

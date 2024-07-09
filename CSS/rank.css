@@ -39,7 +39,7 @@
     height: 140px;
 }
 .list_image{
-    transition: all 1s ease;
+    transition: all 0.4s ease;
     gap: 10px;
 }
 

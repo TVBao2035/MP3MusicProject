@@ -22,8 +22,19 @@ header{
     display: flex;
 }
 main{
-    padding: 18px 68px 86px 300px;
+    padding: 0px 68px 86px 300px;
     box-sizing: border-box;
+}
+.active_page{
+    display: block !important;
+}
+.page{
+    display: none;
+    margin-top: 80px;
+}
+#page_second{
+    width: 100%;
+    height: 100%;
 }
 footer{
     position: fixed;

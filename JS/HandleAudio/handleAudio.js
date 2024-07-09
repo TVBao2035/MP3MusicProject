@@ -1,6 +1,6 @@
 import { songData } from "../Data/songData.js";
 import { GET_SONG } from "../localStorageKey.js";
-export const handleAudio = (chooseOrherSong) => {
+export const handleAudio = (chooseOrtherSong) => {
     const dataLocalStorage = JSON.parse(localStorage.getItem(GET_SONG));
     const myAudio = document.querySelector('.audio');
     const seekBar = document.querySelector('.container_seekbar')
@@ -12,13 +12,18 @@ export const handleAudio = (chooseOrherSong) => {
     const songTitle = document.querySelector('.block_audio--content p');
     const imgBlock = document.querySelector('.block_audio--img img');
     const iconPlay = document.querySelector('.icon_play');
+
+
+  
+   
     let isPause = true;
-    if(chooseOrherSong) iconPlay.innerHTML = '<span class="material-symbols-outlined">pause_circle</span>';
+    if(chooseOrtherSong) iconPlay.innerHTML = '<span class="material-symbols-outlined">pause_circle</span>';
     else iconPlay.innerHTML = '<span class="material-symbols-outlined">play_circle</span>';
 
 
 
     if(dataLocalStorage && dataLocalStorage?.length !== 0){
+
         myAudio.src = dataLocalStorage[0]?.src;
         myAudio.load();
         endTimer.innerHTML =  dataLocalStorage[0]?.time;
@@ -58,7 +63,6 @@ export const handleAudio = (chooseOrherSong) => {
             minuteTimer.innerHTML = minute;
         
         }
-
 
     }
     

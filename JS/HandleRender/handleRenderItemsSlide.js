@@ -31,7 +31,7 @@ export const handleRenderItemsTopAlbum = (containerID,flexData_Top_Album) => {
         <div class="col  p-0 ps-3 item_list_top">
             <a href="" class="list_top_item_img">
                 <img src="${data.img}" alt="">
-                <div class="list_top_item_icon">
+                <div class="list_top_item_icon d-flex align-items-center justify-content-center gap-2">
                     <i class='bx bx-heart text-white' style="font-size: 26px;"></i>
                     <i class='bx bx-play-circle text-white' style="font-size: 46px; margin-left:10px;"></i>
                     <i class='bx bx-dots-horizontal-rounded text-white' style="font-size: 26px; margin-left:10px;"></i>

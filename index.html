@@ -417,6 +417,7 @@
     </header>
 
     <main class="">
+        <div class="page " id="page_first">
          <!-- Mới phát hành -->
          <div class="publication_new container p-0">
             <div class="card">
@@ -478,12 +479,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
         
       <!-- Chill  + Nhạc Remix cực bốc + mưa tháng sáu -->
         
         <!-- Chill -->
-         <div class="list_container">
+        <div class="list_container">
             <div class="list">
                 <div class="container p-0">
                     <div class="row list_title">
@@ -535,7 +536,8 @@
                     </div>  
                 </div>
             </div>
-         </div>
+            </div>
+        </div>
         
         <!-- BXH nhạc mới -->
         <div class=" container_rank">
@@ -592,7 +594,14 @@
                 </div>
             </div>
         </div>
-        
+    
+        </div>
+        <div class="page " id="page_second">
+            <h1 class="text-white">Làm ở here #Page 2</h1>
+        </div>
+        <div class="page active_page" id="page_third">
+            <h1 class="text-white">Làm ở here #Page 3</h1>
+        </div>
     </main>
 
     
@@ -614,11 +623,11 @@
                 <div class="audio_icon--action">  <span class="material-symbols-outlined">
                     shuffle
                     </span></div>
-                <div class="audio_icon--action"><i class='bx bx-skip-previous'></i></div>
+                <div class="audio_icon--action skip_previous"><i class='bx bx-skip-previous'></i></div>
                 <div class="audio_icon--action icon_play">
                     <span class="material-symbols-outlined">play_circle</span>
                 </div>
-                <div class="audio_icon--action">
+                <div class="audio_icon--action skip_next">
                     <i class='bx bx-skip-next' ></i></div>
                 <div class="audio_icon--action">
                     <span class="material-symbols-outlined">
@@ -627,7 +636,7 @@
                   </div>
             </div>
             <div class="d-flex align-items-center w-100 text-white">
-                <div class="time_star block_time"><span class="time_minute">00</span>:<span class="time_second">00</span></div>
+                <div class="time_start block_time"><span class="time_minute">00</span>:<span class="time_second">00</span></div>
                 <div class="container_seekbar">
                     <div class="seekbar">
                         <div class="progress_tool">
@@ -650,9 +659,16 @@
                 <span class="material-symbols-outlined">branding_watermark</span>
             </div>
             <div class="audio_icon--action">
-                <span class="material-symbols-outlined">volume_up</span>
+                <span class="material-symbols-outlined">volume_up</span>  
             </div>
-            <div><span>|</span></div>
+            <div class="container_volume">
+                <div class="seekbar">
+                    <div class="progress_tool">
+                    </div>
+                    <div class="progress_too--circle"></div>
+                </div>
+            </div>
+                <div><span>|</span></div>
             <div class="audio_icon--action">
                 <span class="material-symbols-outlined">queue_music</span>
             </div>

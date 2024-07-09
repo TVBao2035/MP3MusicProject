@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-color-strong);
+    background-color: var(--color-seekbar);
     user-select: none;
 }
 

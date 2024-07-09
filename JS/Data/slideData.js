@@ -63,14 +63,6 @@ export const slideData = [
         date: "19.6.2024"
     },
     {
-        src: "https://vnso-pt-48-tf-a128-z3.zmdcdn.me/24b0b76bf760ec6628d7ff97ee8c1d0b?authen=exp=1720510781~acl=/24b0b76bf760ec6628d7ff97ee8c1d0b/*~hmac=8ce6ab50e0fadaca33cc15314c1ff603",
-        time: "04:49",
-        img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/8/2/f/282f81752cf27269689abc25fecbcadb.jpg",
-        title: "Bài Hát Dành Cho Con",
-        actor: "Hồ Ngọc Hà, Nguyễn Hồng Thuận",
-        date: "21.6.2024"
-    },
-    {
         src: "https://vnso-pt-49-tf-a128-z3.zmdcdn.me/20ba0763961c3c5df853ed3143581d7e?authen=exp=1720510660~acl=/20ba0763961c3c5df853ed3143581d7e/*~hmac=0781203acc9e91d64476a9626f127e24",
         time: "03:53",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/9/b/1/19b1710b5010ea6efc3703f3cd3b1adb.jpg",
