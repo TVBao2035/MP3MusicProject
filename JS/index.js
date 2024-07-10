@@ -90,3 +90,11 @@ handleGetSong();
 
 handleSkip();
 handleSearchInput();
+
+
+//Radio
+import {handleRenderRadio} from "./HandleRender/handleRenderRadio.js";
+import {radioChannelData} from "./Data/radioData.js";
+handleRenderRadio(radioChannelData);
+import {handleSlideRadio} from "./HandleSlide/handleSlideRadio.js";
+handleSlideRadio();
