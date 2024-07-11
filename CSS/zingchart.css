@@ -1,0 +1,251 @@
+.box-row-suggest {
+    width: 100%;
+    height: 70px;
+    background: var(--primary-color-strong);
+    border-radius: 5px;
+    display: flex;
+    border-bottom: 0.5px rgb(32, 32, 32) solid;
+}
+.box-row-suggest:hover {
+    background: #36303e;
+}
+
+/* số thứ tự */
+.ordinal {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 17px;
+    width: 4%;
+    height: 100%;
+    text-align: center;
+}
+/* số 1 */
+.blue-ordinal {
+    color: blue;
+    font-size: 25px;
+    filter: drop-shadow(10px 10px 20px white);
+}
+/* số 2 */
+.green-ordinal {
+    color: green;
+    font-size: 25px;
+    filter: drop-shadow(1px 1px 20px white);
+}
+/* số 3 */
+.red-ordinal {
+    color: red;
+    font-size: 25px;
+    filter: drop-shadow(10px 10px 20px white);
+}
+
+/* hình ảnh */
+.image-itemm {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 35px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+/* Tựa bài hát và tên diễn viên */
+.image-row-details {
+    margin-left: 10px;
+    width: 230px;
+    height: 100%;
+}
+.image-titlee {
+    margin-top: 7px;
+    color: white;
+    font-weight: 500;
+}
+.image-titlee:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.image-actorr {
+    margin-top: -11px;
+    font-size: 13px;
+}
+.image-actorr span {
+    text-decoration: none;
+}
+.image-actorr span:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* tựa đề chi tiết */
+.title-details-suggest {
+    width: 350px;
+    height: 100%;
+    margin-left: 300px;
+}
+.image-titlee--details {
+    text-align:start;
+    line-height: 70px;
+    font-size: 14px;
+}
+.image-titlee--details:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* thời gian phát nhạc */
+.image-time {
+    width:10%;
+    height: 100%;
+}
+.image-timee {
+    text-align:end;
+    line-height: 70px;
+    font-size: 14px;
+}
+/* icon */
+.icon-titlee {
+    display: flex;
+    color: white;
+    width: 3%;
+    height: 100%;
+    margin-top: -10px;
+}
+
+/* Ban đầu ẩn các icon */
+.icon-titlee i {
+    visibility: hidden;
+}
+
+/* Hiển thị các icon khi hover vào .box-row-suggest */
+.box-row-suggest:hover .icon-titlee i {
+    visibility: visible;
+}
+
+/* Ẩn phần tử .image-timee khi hover vào .box-row-suggest */
+.box-row-suggest:hover .image-timee {
+    visibility: hidden;
+}
+
+.image-row-suggest {
+    position: relative;
+    display: inline-block;
+}
+
+.image-row-suggest img {
+    display: block;
+}
+
+.image-row-suggest .overlay {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-top: -50px;
+    margin-left: 35px;
+}
+
+.image-row-suggest .play-iconn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white; /* Màu của biểu tượng play */
+    font-size: 2em; /* Kích thước của biểu tượng play */
+}
+
+/* Hiển thị lớp phủ và biểu tượng play khi hover */
+.box-row-suggest:hover .image-row-suggest .overlay {
+    opacity: 1;
+}
+
+.box-row-suggest:hover .image-row-suggest .play-iconn {
+    opacity: 1;
+}
+
+.icon-micro,
+.icon-heartt,
+.icon-dotss {
+    line-height: 70px;
+    margin-top: 25px;
+    transition: opacity 0.3s, background-color 0.3s;
+    cursor: pointer;
+    border-radius: 100px; /* Làm bo góc tròn khi hover */
+    padding: 10px; /* Thêm padding để làm lớn nền */
+    height:40px;
+}
+
+.icon-micro {
+    margin-left: -120px;
+}
+
+.icon-heartt {
+    margin-left: 20px;
+}
+
+.icon-dotss {
+    margin-left: 20px;
+}
+
+.icon-titlee {
+    position: relative;
+    display: flex;
+    
+}
+
+.icon-titlee i {
+    position: relative;
+}
+
+.icon-titlee i:hover {
+    background-color: #4d4556; /* Màu nền khi hover */
+}
+
+.tooltipp,
+.tooltipp-microphone,
+.tooltipp-dots {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(35, 35, 35);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Định vị phía trên icon */
+    left: 50%;
+    margin-left: -60px; /* Dịch chuyển tooltip vào giữa icon */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 11px;
+}
+
+.tooltipp::after,
+.tooltipp-microphone::after,
+.tooltipp-dots::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Định vị mũi tên phía dưới tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(35, 35, 35) transparent transparent transparent;
+}
+
+.icon-titlee i:hover .tooltipp,
+.icon-titlee i:hover .tooltipp-microphone,
+.icon-titlee i:hover .tooltipp-dots {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipp-dots {
+    width: 50px;
+    margin-left: -25px; /* Điều chỉnh căn giữa cho width nhỏ hơn */
+}

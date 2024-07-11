@@ -124,3 +124,49 @@ export const handleRenderItemsFlex = (containerID,flexData) => {
         ` ).join("");
 }
 
+export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
+    const itemTop = document.querySelector(containerID);
+    itemTop.innerHTML += Row100TOPData.map((data) => `
+        <div class="row row-suggest">
+            <div class="box-row-suggest text-muted">
+                <div class="ordinal ${data.ordinal === '1' ? 'blue-ordinal' : data.ordinal === '2' ? 'green-ordinal' : data.ordinal === '3' ? 'red-ordinal' : ''}">
+                    <p>${data.ordinal}</p>
+                </div>
+                <div class="image-row-suggest">
+                    <img class="image-itemm" src="${data.img}" alt="">
+                    <div class="overlay">
+                        <i class='bx bx-play play-iconn'></i>
+                    </div>
+                </div>
+                <div class="image-row-details">
+                    <p class="image-titlee">${data.title}</p>
+                    <p class="image-actorr">${data.actor}</p>
+                </div>
+                <div class="title-details-suggest">
+                    <p class="image-titlee--details">${data.title_details}</p>
+                </div>
+                <div class="image-time">
+                    <p class="image-timee">${data.time}</p>
+                    
+                </div>
+                <div class="icon-titlee">
+                    <i class="bx bxs-microphone-alt icon-micro">
+                        <span class="tooltipp-microphone">Phát cùng lời bài hát</span>
+                    </i>
+                    <i class="bx bx-heart icon-heartt">
+                        <span class="tooltipp">Thêm vào thư viện</span>
+                    </i>
+                    <i class='bx bx-dots-horizontal-rounded icon-dotss'>
+                        <span class="tooltipp-dots">Khác</span>
+                    </i>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    document.querySelectorAll('.image-actorr').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    }); 
+}
+
