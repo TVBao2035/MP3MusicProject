@@ -5,7 +5,8 @@ import { handleRenderItemsSlide,
         showVn, 
         showInternat, 
         handleRenderItemsFlex,
-        handleRenderItems100TOP 
+        handleRenderItems100TOP ,
+        handleRenderItemsWeekRank
        } from "./HandleRender/handleRenderItemsSlide.js";
 
 import { slideData, 
@@ -26,7 +27,8 @@ import { slideData,
         RowQTData_Two,
         RowQTData_Three,
         RowQTData_Four,
-        Row100TOPData
+        Row100TOPData,
+        WeekRankVN
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
@@ -85,6 +87,7 @@ handleRenderItemsRowImage(".rownqt_img_three",RowQTData_Three);
 handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
 handleRenderItems100TOP(".row-100--top", Row100TOPData);
+handleRenderItemsWeekRank(".box-week-rank", WeekRankVN);
 
 handleAudio(false);
 // Audio

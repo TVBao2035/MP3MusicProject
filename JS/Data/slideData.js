@@ -622,3 +622,23 @@ export const Row100TOPData = [
     }
 ]
     
+export const WeekRankVN = [
+    {
+        
+        ordinal: "1",
+        img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/7/c/e/a7ce3506b24cd90ab3012bff1dd9d7bb.jpg",
+    },
+    {
+        ordinal: "2",
+    },
+    {
+        ordinal: "3",
+    },
+    {
+        ordinal: "4",
+    },
+    {
+        ordinal: "5",
+    }
+    
+]

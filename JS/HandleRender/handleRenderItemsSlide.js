@@ -127,7 +127,7 @@ export const handleRenderItemsFlex = (containerID,flexData) => {
 export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
     const itemTop = document.querySelector(containerID);
     itemTop.innerHTML += Row100TOPData.map((data) => `
-        <div class="row row-suggest">
+        <div class="row row-suggest item_music--main">
             <div class="box-row-suggest text-muted">
                 <div class="ordinal ${data.ordinal === '1' ? 'blue-ordinal' : data.ordinal === '2' ? 'green-ordinal' : data.ordinal === '3' ? 'red-ordinal' : ''}">
                     <p>${data.ordinal}</p>
@@ -139,7 +139,7 @@ export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
                     </div>
                 </div>
                 <div class="image-row-details">
-                    <p class="image-titlee">${data.title}</p>
+                    <p class="image-titlee title_music--main">${data.title}</p>
                     <p class="image-actorr">${data.actor}</p>
                 </div>
                 <div class="title-details-suggest">
@@ -170,3 +170,15 @@ export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
     }); 
 }
 
+export const handleRenderItemsWeekRank = (containerID, WeekRankData) => {
+    const itemRank = document.querySelector(containerID);
+    itemRank.innerHTML += WeekRankData.map((data) =>   `
+            <div class="ordinal-week-rank">
+                <p>${data.ordinal}</p>
+            </div>
+    `
+            
+                
+            
+    )
+}
