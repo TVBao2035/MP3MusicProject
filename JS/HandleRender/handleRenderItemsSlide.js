@@ -173,12 +173,42 @@ export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
 export const handleRenderItemsWeekRank = (containerID, WeekRankData) => {
     const itemRank = document.querySelector(containerID);
     itemRank.innerHTML += WeekRankData.map((data) =>   `
+        <div class="box-content-week-rank d-flex item_music--main">
             <div class="ordinal-week-rank">
                 <p>${data.ordinal}</p>
             </div>
-    `
+            <div class="image-week-rank">
+                <img class="image-itemm-week-rank" src="${data.img}" alt="">
+                <div class="overlay-wr">
+                    <i class='bx bx-play play-iconn-wr'></i>
+                </div>
+            </div>
+            <div class="image-details-week-rank">
+                <p class="image-titlee-week-rank title_music--main">${data.title}</p>
+                <p class="image-actorr-week-rank">${data.actor}</p>
+            </div>
+            <div class="image-time-week-rank">
+                <p class="image-timee-wr">${data.time}</p>
+            </div>
+            <div class="icon-titlee-wr">
+                <i class="bx bxs-microphone-alt icon-micro-wr">
+                    <span class="tooltipp-microphone-wr">Phát cùng lời bài hát</span>
+                </i>
+                <i class='bx bx-dots-horizontal-rounded icon-dotss-wr'>
+                    <span class="tooltipp-dots-wr">Khác</span>
+                </i>
+            </div>
             
-                
-            
-    )
+        </div>
+        
+    ` ).join('') + `
+        <div class="see-top--all text-white">
+            <p>Xem tất cả</p>
+        </div>
+    `;
+
+    document.querySelectorAll('.image-actorr-week-rank').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    });
 }

@@ -28,7 +28,9 @@ import { slideData,
         RowQTData_Three,
         RowQTData_Four,
         Row100TOPData,
-        WeekRankVN
+        WeekRankVN,
+        WeekRankQT,
+        WeekRankKPop
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
@@ -88,6 +90,8 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
 handleRenderItems100TOP(".row-100--top", Row100TOPData);
 handleRenderItemsWeekRank(".box-week-rank", WeekRankVN);
+handleRenderItemsWeekRank(".box-two-week-rank", WeekRankQT);
+handleRenderItemsWeekRank(".box-three-week-rank", WeekRankKPop);
 
 handleAudio(false);
 // Audio
