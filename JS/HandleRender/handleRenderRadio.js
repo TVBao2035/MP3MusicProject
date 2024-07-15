@@ -24,3 +24,23 @@ export const handleRenderRadio = (radioData) => {
                         ` )
 }
 
+//Time
+export const handleTime = (radioData) => {
+    const radioStream = document.querySelector('.radio_stream_time');
+    radioStream.innerHTML += radioData.map((data) => `
+                        <div class="radio_stream_time_hour">${data.time}</div>
+                        ` ).join("")
+}
+
+export const handleRenderRadioCalender = (radioData, idStream) => {
+    const radioStream = document.getElementById(idStream);
+    radioStream.innerHTML += radioData.map((data) => `
+                        <div class="radio_stream_calendar_item" style="width:${data.width}px">
+                                <img src="${data.img}" alt="">
+                                <div class="radio_stream_calendar_item_title">
+                                    <h3 style="font-size: 15px; font-weight: bold;">${data.title}</h3>
+                                    <p style="font-size: 12px;">${data.time}</p>
+                                </div>
+                            </div>
+                        ` ).join("")
+}

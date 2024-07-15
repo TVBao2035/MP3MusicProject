@@ -93,8 +93,12 @@ handleSearchInput();
 
 
 //Radio
-import {handleRenderRadio} from "./HandleRender/handleRenderRadio.js";
-import {radioChannelData} from "./Data/radioData.js";
+import {handleRenderRadio, handleRenderRadioCalender, handleTime} from "./HandleRender/handleRenderRadio.js";
+import {radioChannelData, radioStreamData1, radioStreamData2, radioStreamTime} from "./Data/radioData.js";
+handleTime(radioStreamTime);
 handleRenderRadio(radioChannelData);
-import {handleSlideRadio} from "./HandleSlide/handleSlideRadio.js";
+import {handleSlideRadio, handleSlideRadioCalendar} from "./HandleSlide/handleSlideRadio.js";
 handleSlideRadio();
+handleSlideRadioCalendar();
+handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
+handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
