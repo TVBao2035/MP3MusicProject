@@ -40,7 +40,9 @@
 }
 .list_image{
     transition: all 0.4s ease;
-    gap: 10px;
+    gap: 25px;
+    /* transform: translateX(9.5px); */
+    left: 9.5px;
 }
 
 .item_slide{

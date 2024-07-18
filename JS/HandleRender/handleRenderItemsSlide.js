@@ -18,7 +18,7 @@ export const handleRenderItemsSlide = (slideData) => {
                                 </div>
                             </div>
                          </div>
-                        ` )
+                        ` ).join("");
 }
 
 
@@ -124,3 +124,91 @@ export const handleRenderItemsFlex = (containerID,flexData) => {
         ` ).join("");
 }
 
+export const handleRenderItems100TOP = (containerID, Row100TOPData) => {
+    const itemTop = document.querySelector(containerID);
+    itemTop.innerHTML += Row100TOPData.map((data) => `
+        <div class="row row-suggest item_music--main">
+            <div class="box-row-suggest text-muted">
+                <div class="ordinal ${data.ordinal === '1' ? 'blue-ordinal' : data.ordinal === '2' ? 'green-ordinal' : data.ordinal === '3' ? 'red-ordinal' : ''}">
+                    <p>${data.ordinal}</p>
+                </div>
+                <div class="image-row-suggest">
+                    <img class="image-itemm" src="${data.img}" alt="">
+                    <div class="overlay">
+                        <i class='bx bx-play play-iconn'></i>
+                    </div>
+                </div>
+                <div class="image-row-details">
+                    <p class="image-titlee title_music--main">${data.title}</p>
+                    <p class="image-actorr">${data.actor}</p>
+                </div>
+                <div class="title-details-suggest">
+                    <p class="image-titlee--details">${data.title_details}</p>
+                </div>
+                <div class="image-time">
+                    <p class="image-timee">${data.time}</p>
+                    
+                </div>
+                <div class="icon-titlee">
+                    <i class="bx bxs-microphone-alt icon-micro">
+                        <span class="tooltipp-microphone">Phát cùng lời bài hát</span>
+                    </i>
+                    <i class="bx bx-heart icon-heartt">
+                        <span class="tooltipp">Thêm vào thư viện</span>
+                    </i>
+                    <i class='bx bx-dots-horizontal-rounded icon-dotss'>
+                        <span class="tooltipp-dots">Khác</span>
+                    </i>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    document.querySelectorAll('.image-actorr').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    }); 
+}
+
+export const handleRenderItemsWeekRank = (containerID, WeekRankData) => {
+    const itemRank = document.querySelector(containerID);
+    itemRank.innerHTML += WeekRankData.map((data) =>   `
+        <div class="box-content-week-rank d-flex item_music--main">
+            <div class="ordinal-week-rank">
+                <p>${data.ordinal}</p>
+            </div>
+            <div class="image-week-rank">
+                <img class="image-itemm-week-rank" src="${data.img}" alt="">
+                <div class="overlay-wr">
+                    <i class='bx bx-play play-iconn-wr'></i>
+                </div>
+            </div>
+            <div class="image-details-week-rank">
+                <p class="image-titlee-week-rank title_music--main">${data.title}</p>
+                <p class="image-actorr-week-rank">${data.actor}</p>
+            </div>
+            <div class="image-time-week-rank">
+                <p class="image-timee-wr">${data.time}</p>
+            </div>
+            <div class="icon-titlee-wr">
+                <i class="bx bxs-microphone-alt icon-micro-wr">
+                    <span class="tooltipp-microphone-wr">Phát cùng lời bài hát</span>
+                </i>
+                <i class='bx bx-dots-horizontal-rounded icon-dotss-wr'>
+                    <span class="tooltipp-dots-wr">Khác</span>
+                </i>
+            </div>
+            
+        </div>
+        
+    ` ).join('') + `
+        <div class="see-top--all text-white">
+            <p>Xem tất cả</p>
+        </div>
+    `;
+
+    document.querySelectorAll('.image-actorr-week-rank').forEach(actorElement => {
+        const actors = actorElement.innerText.split(',').map(actor => actor.trim());
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+    });
+}

@@ -17,7 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./CSS/TOP100.css">
     <link rel="stylesheet" href="./CSS/audio.css">
+
     <link rel="stylesheet" href="./CSS/radio.css">
+
+    <link rel="stylesheet" href="./CSS/zingchart.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="web icon" type="png" href="./photos/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -47,7 +51,7 @@
             <div class="list_items">
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-library icon' ></i>
+                        <span class="material-symbols-outlined">library_music</span>
                         <p>Thư Viện</p>
                         <i class="bx bx-play-circle icon-play-library">
                             <span class="toolTip">Thư viện</span>
@@ -57,13 +61,13 @@
                 
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-doughnut-chart icon'></i>
+                        <span class="material-symbols-outlined">adjust</span>
                         <p>Khám Phá</p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-pie-chart-alt icon' ></i>
+                        <span class="material-symbols-outlined">data_exploration</span>
                         <p>#zingchart</p>
                         <i class="bx bx-play-circle icon-play-zingchart">
                             <span class="toolTip">#zingchart</span>
@@ -72,24 +76,21 @@
                 </div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-podcast icon'></i>
+                        <span class="material-symbols-outlined">podcasts</span>
                         <p>Radio</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="partition"></div>
-            <div class="list_items-two">
+                <div class="partition"></div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-music icon'></i>
+                        <i class='bx bx-music icon' style="font-weight: 100;"></i>
                         <p>BXH Nhạc Mới</p>
                         <i class="bx bx-play-circle icon-play-bxh">
                             <span class="toolTip">BXH Nhạc Mới</span>
                         </i>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item">  
                     <div class="title">
                         <i class='bx bx-category-alt icon'></i>
                         <p>Chủ Đề & Thể Loại</p>
@@ -101,6 +102,9 @@
                         <p>Top 100</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="list_items-two">
                 <div class="box-title-left">
                     <div class="title-box-left">
                         <p class="text-white fw-bolder mb-3 title-box-nav" >Nghe nhạc không quảng cáo <br> cùng kho nhạc PREMIUM</p>
@@ -158,9 +162,6 @@
                 <p>+ Tạo playlist mới</p>
             </div>
         </div>
-
-
-
 
 
         <div class="action">
@@ -419,6 +420,7 @@
 
     <main class="">
         <div class="page " id="page_first">
+
          <!-- Mới phát hành -->
          <div class="publication_new container p-0">
             <div class="card">
@@ -555,12 +557,12 @@
                     <div class="btn_left--slide btn_arrow"><i class='bx bx-chevron-left fs-2' ></i></div>
                     <div class="btn_right--slide btn_arrow"><i class='bx bx-chevron-left fs-2 bx-flip-horizontal' ></i></div>
                 </div>
-               <div class="list_image position-absolute d-flex">
+                <div class="list_image position-absolute d-flex ">
                     
-               </div>
+                </div>
             </div>
         </div>
-
+        
         <!-- TOP 100 & Album Hot -->
         <div class="list_container_top">
             <!-- TOP 100 -->
@@ -597,12 +599,61 @@
         </div>
        
         </div>
-        <div class="page " id="page_second">
-            <h1 class="text-white">Làm ở here #Page 2</h1>
+        <div class="page active_page" id="page_second">
+            <div class="row row-100--top">
+                
+            </div>
+            <div class="see-top--100">
+                <p>Xem top 100</p>
+            </div>
+            <div class="background-top--100">
+                <div class="overlayy">
+                    <h1 class="text-white title-bxh mt-5 ml-5 fw-bold">Bảng Xếp Hạng Tuần</h1>
+                    <div class="row row-week-rank mt-4">
+                        <div class="col col-one-week-rank">
+                            <div class="over d-flex">
+                                <p class=" fw-bold title-rank">Việt Nam</p>
+                                <div class="background-icon-play--weekrank">
+                                    <i class='bx bx-play  play-week-rank'></i>
+                                </div>
+                            </div>
+                            <div class="box-week-rank">
+                                
+                            </div>
+                        </div>
+
+                        <div class="col col-two-week-rank">
+                            <div class="over d-flex">
+                                <p class=" fw-bold title-rank">US-UK</p>
+                                <div class="background-icon-play--weekrank">
+                                    <i class='bx bx-play  play-week-rank'></i>
+                                </div>
+                            </div>
+                            <div class="box-two-week-rank">
+                                
+                            </div>
+                        </div>
+
+                        <div class="col col-three-week-rank">
+                            <div class="over d-flex">
+                                <p class=" fw-bold title-rank">K-Pop</p>
+                                <div class="background-icon-play--weekrank">
+                                    <i class='bx bx-play  play-week-rank'></i>
+                                </div>
+                            </div>
+                            <div class="box-three-week-rank">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
+
         <!--------------------- RADIO --------------------------->
-        <div class="page active_page" id="page_third">
+        <div class="page" id="page_third">
             <h1 class="text-white">Radio</h1>
             <div class="radio_channel_wrapper">
                 <button class="prev_btn">&lt;</button>
@@ -641,7 +692,14 @@
             </div>
             
 
-            
+        <div class="page" id="page_four">
+            <h1 class="text-white">Làm ở here #Page 4</h1>
+        </div>
+        <div class="page" id="page_five">
+            <h1 class="text-white">Làm ở here #Page 5</h1>
+        </div>
+        <div class="page" id="page_six">
+            <h1 class="text-white">Làm ở here #Page 6</h1>
         </div>
     </main>
 
@@ -682,7 +740,7 @@
                     <div class="seekbar">
                         <div class="progress_tool">
                         </div>
-                        <div class="progress_too--circle"></div>
+                        <div class="progress_tool--circle"></div>
                     </div>
                 </div>
 
@@ -699,14 +757,14 @@
             <div class="audio_icon--action">
                 <span class="material-symbols-outlined">branding_watermark</span>
             </div>
-            <div class="audio_icon--action">
+            <div class="audio_icon--action audio_icon--volume">
                 <span class="material-symbols-outlined">volume_up</span>  
             </div>
             <div class="container_volume">
-                <div class="seekbar">
-                    <div class="progress_tool">
+                <div class="seekbar_volume">
+                    <div class="progress_tool--volume">
                     </div>
-                    <div class="progress_too--circle"></div>
+                    <div class="progress_tool_circle--volume"></div>
                 </div>
             </div>
                 <div><span>|</span></div>

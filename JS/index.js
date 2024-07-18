@@ -4,7 +4,9 @@ import { handleRenderItemsSlide,
         showAll, 
         showVn, 
         showInternat, 
-        handleRenderItemsFlex 
+        handleRenderItemsFlex,
+        handleRenderItems100TOP ,
+        handleRenderItemsWeekRank
        } from "./HandleRender/handleRenderItemsSlide.js";
 
 import { slideData, 
@@ -24,7 +26,11 @@ import { slideData,
         RowQTData_One,
         RowQTData_Two,
         RowQTData_Three,
-        RowQTData_Four
+        RowQTData_Four,
+        Row100TOPData,
+        WeekRankVN,
+        WeekRankQT,
+        WeekRankKPop
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
@@ -32,6 +38,7 @@ import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
 import { GET_SONG } from "./localStorageKey.js";
 import { songData } from "./Data/songData.js";
 import { handleSkip } from "./HandleAudio/handleSkip.js";
+import { handleVolume } from "./HandleAudio/handleVolume.js";
 
 if(!localStorage.getItem(GET_SONG)){
         localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]));
@@ -40,13 +47,43 @@ if(!localStorage.getItem(GET_SONG)){
 const pageFirst = document.getElementById('page_first');
 const pageSecond = document.getElementById('page_second');
 const pageThird = document.getElementById('page_third');
-
+const pageFour = document.getElementById('page_four');
+const pageFive = document.getElementById('page_five');
+const pageSix = document.getElementById('page_six');
 const listItem = document.querySelectorAll(".list_items .item");
 listItem[1].classList.add('active_item');
 listItem.forEach( (item, index) => {
         item.onclick = () => {
-                document.querySelector('.active_item').classList.remove('active_item');
-                item.classList.add('active_item')
+                document.querySelector('.active_item')?.classList.remove('active_item');
+                item.classList.add('active_item');
+                document.querySelector('.active_page')?.classList.remove('active_page');
+                switch(index){
+                        case 1: {
+                                pageFirst.classList.add('active_page');
+                                break;
+                        }
+                        case 2: {
+                                pageSecond.classList.add('active_page');
+                                break;
+                        }
+                        case 3: {
+                                pageThird.classList.add('active_page');
+                                break;
+                        }
+                        case 4: {
+                                pageFour.classList.add('active_page');
+                                break;
+                        }
+                        case 5: {
+                                pageFive.classList.add('active_page');
+                                break;
+                        }
+                        case 6: {
+                                pageSix.classList.add('active_page');
+                                break;
+                        }
+                        
+                }
         }
 })
 console.log(listItem);
@@ -82,14 +119,18 @@ handleRenderItemsRowImage(".rownqt_img_two",RowQTData_Two);
 handleRenderItemsRowImage(".rownqt_img_three",RowQTData_Three);
 handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
-
+handleRenderItems100TOP(".row-100--top", Row100TOPData);
+handleRenderItemsWeekRank(".box-week-rank", WeekRankVN);
+handleRenderItemsWeekRank(".box-two-week-rank", WeekRankQT);
+handleRenderItemsWeekRank(".box-three-week-rank", WeekRankKPop);
 
 handleAudio(false);
 // Audio
 handleGetSong();
-
+handleVolume();
 handleSkip();
 handleSearchInput();
+
 
 
 //Radio
@@ -102,3 +143,23 @@ handleSlideRadio();
 handleSlideRadioCalendar();
 handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
 handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
+
+// document.addEventListener("DOMContentLoaded", function() {
+//         // Select the element you want to double-click
+//         const zingChartElement = document.querySelector('.item .title i.bx-pie-chart-alt');
+        
+//         // Add double-click event listener
+//         zingChartElement.addEventListener('dblclick', function() {
+//             // Hide all pages
+//             const allPages = document.querySelectorAll('.page');
+//             allPages.forEach(page => {
+//                 page.classList.remove('active_page');
+//             });
+    
+//             // Show only the second page
+//             const secondPage = document.querySelector('#page_second');
+//             secondPage.classList.add('active_page');
+//         });
+//     });
+    
+
