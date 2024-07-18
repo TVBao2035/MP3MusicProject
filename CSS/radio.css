@@ -1,0 +1,208 @@
+
+
+:root {
+    --radio-stream: #2f2739;
+    --time: #6d6774;
+    --hoverText: #8d22c3;
+}
+
+.radio_channel {
+    display: flex;
+    transition: transform 0.5s ease; 
+}
+.radio_chanel_item{
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+.radio_chanel_item:last-child {
+    margin-right: 0;
+}
+.radio_channel_item_top{
+    position: relative;
+}
+.radio_channel_item_top-main {
+    width: 150px;
+    height: 150px;
+    overflow: hidden; 
+    border: 3px solid #ab1535;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio_channel_item_top-main img{
+    border-radius: 100%;
+    width: 100%;
+    transition: transform 0.5s ease; 
+}
+.radio_channel_item_top:hover .radio_channel_item_top-main img {
+    transform: scale(1.2);
+}
+.radio_channel_item_top-mini {
+    position: absolute;
+    bottom: 8px;
+    right: 0px;
+}
+.radio_channel_item_top-mini img {
+    width: 39px;
+    border-radius: 100%;
+}
+.radio_channel_item_top-like {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.radio_channel_item_bot h3 {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+.radio_channel_item_top-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    display: none;
+}
+.radio_channel_item_top:hover .radio_channel_item_top-play {
+    display: block;
+}
+.prev_btn, .next_btn {
+    z-index: 1;
+    background-color: #ffffff88;
+    color: #040404;
+    border-radius: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+}
+.prev_btn {
+    left: 0;
+}
+.next_btn {
+    right: 0;
+}
+.radio_channel_wrapper{
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    height: 220px;
+}
+
+
+/* live */
+.radio_stream_wrapper{
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.radio_stream_time{
+    color: white;
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+.radio_stream_time_hour{ 
+    width: 1200px;
+}
+
+
+.radio_stream_channel {
+    padding: 10px 30px;
+    height: 180px;
+    border-radius: 20px 0px;
+    background-color: var(--radio-stream);
+    margin-right: 10px;
+    margin-bottom: 15px;
+    
+
+}
+.radio_stream_channel img {
+    border-radius: 100%;
+    display: block;
+    width: 70px;
+    height: 70px;
+
+}
+
+.radio_stream_calendar{
+    margin-top: 20px;
+    color: white;
+    transition: transform 0.5s ease; 
+
+}
+.radio_stream_calendar-top, 
+.radio_stream_calendar-bot{
+    padding: 5px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+
+.radio_stream_calendar_item{
+    background-color: var(--radio-stream);
+    display: flex;
+    margin-right: 10px;
+    padding: 10px;
+    img{
+        width: 64px;
+        height: 64px;
+    }
+    p{
+        color: var(--time);
+    }
+}
+.radio_stream_calendar_item h3:hover{
+    color: var(--hoverText);
+}
+.radio_stream_calendar_item_title{
+    margin-left: 10px;
+}
+
+.radio_stream_calendar_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radio_stream_calendar {
+    overflow: hidden;
+    width: 100%;
+}
+
+.calendar_prev_btn, .calendar_next_btn {
+    z-index: 1;
+    background-color: #ffffff65;
+    color: #040404;
+    border-radius: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+}
+
+.calendar_prev_btn {
+    left: 0;
+}
+
+.calendar_next_btn {
+    left: 950px;
+}
+

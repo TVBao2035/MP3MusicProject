@@ -132,21 +132,34 @@ handleSkip();
 handleSearchInput();
 
 
-document.addEventListener("DOMContentLoaded", function() {
-        // Select the element you want to double-click
-        const zingChartElement = document.querySelector('.item .title i.bx-pie-chart-alt');
+
+//Radio
+import {handleRenderRadio, handleRenderRadioCalender, handleTime} from "./HandleRender/handleRenderRadio.js";
+import {radioChannelData, radioStreamData1, radioStreamData2, radioStreamTime} from "./Data/radioData.js";
+handleTime(radioStreamTime);
+handleRenderRadio(radioChannelData);
+import {handleSlideRadio, handleSlideRadioCalendar} from "./HandleSlide/handleSlideRadio.js";
+handleSlideRadio();
+handleSlideRadioCalendar();
+handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
+handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
+
+// document.addEventListener("DOMContentLoaded", function() {
+//         // Select the element you want to double-click
+//         const zingChartElement = document.querySelector('.item .title i.bx-pie-chart-alt');
         
-        // Add double-click event listener
-        zingChartElement.addEventListener('dblclick', function() {
-            // Hide all pages
-            const allPages = document.querySelectorAll('.page');
-            allPages.forEach(page => {
-                page.classList.remove('active_page');
-            });
+//         // Add double-click event listener
+//         zingChartElement.addEventListener('dblclick', function() {
+//             // Hide all pages
+//             const allPages = document.querySelectorAll('.page');
+//             allPages.forEach(page => {
+//                 page.classList.remove('active_page');
+//             });
     
-            // Show only the second page
-            const secondPage = document.querySelector('#page_second');
-            secondPage.classList.add('active_page');
-        });
-    });
+//             // Show only the second page
+//             const secondPage = document.querySelector('#page_second');
+//             secondPage.classList.add('active_page');
+//         });
+//     });
     
+

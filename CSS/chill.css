@@ -48,8 +48,8 @@
     width: 100%;
 }
 
-.list_item_icon i {
-    font-size: 40px;
+.list_item_icon i {    
+    font-size: 100%;
     margin: 0 10px;
     color: white;
 }
