@@ -4,7 +4,9 @@ import { handleRenderItemsSlide,
         showAll, 
         showVn, 
         showInternat, 
-        handleRenderItemsFlex 
+        handleRenderItemsFlex,
+        handleRenderItems100TOP ,
+        handleRenderItemsWeekRank
        } from "./HandleRender/handleRenderItemsSlide.js";
 
 import { slideData, 
@@ -24,7 +26,11 @@ import { slideData,
         RowQTData_One,
         RowQTData_Two,
         RowQTData_Three,
-        RowQTData_Four
+        RowQTData_Four,
+        Row100TOPData,
+        WeekRankVN,
+        WeekRankQT,
+        WeekRankKPop
        } from './Data/slideData.js';
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
@@ -113,7 +119,10 @@ handleRenderItemsRowImage(".rownqt_img_two",RowQTData_Two);
 handleRenderItemsRowImage(".rownqt_img_three",RowQTData_Three);
 handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 // -----------------------------------------------------------------------
-
+handleRenderItems100TOP(".row-100--top", Row100TOPData);
+handleRenderItemsWeekRank(".box-week-rank", WeekRankVN);
+handleRenderItemsWeekRank(".box-two-week-rank", WeekRankQT);
+handleRenderItemsWeekRank(".box-three-week-rank", WeekRankKPop);
 
 handleAudio(false);
 // Audio
@@ -121,3 +130,23 @@ handleGetSong();
 handleVolume();
 handleSkip();
 handleSearchInput();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+        // Select the element you want to double-click
+        const zingChartElement = document.querySelector('.item .title i.bx-pie-chart-alt');
+        
+        // Add double-click event listener
+        zingChartElement.addEventListener('dblclick', function() {
+            // Hide all pages
+            const allPages = document.querySelectorAll('.page');
+            allPages.forEach(page => {
+                page.classList.remove('active_page');
+            });
+    
+            // Show only the second page
+            const secondPage = document.querySelector('#page_second');
+            secondPage.classList.add('active_page');
+        });
+    });
+    
