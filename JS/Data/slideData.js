@@ -1,6 +1,6 @@
 export const slideData = [
     {
-        src: "https://vnso-zn-24-tf-a128-z3.zmdcdn.me/687ef1755b8433f6ecdb90846c5f8a79?authen=exp=1720507921~acl=/687ef1755b8433f6ecdb90846c5f8a79/*~hmac=10571de9bbe7fcb31ddd4f47c7416fd5",
+        src: "https://vnso-zn-24-tf-a128-z3.zmdcdn.me/413aa9a037f1c779cd638b1f5532963e?authen=exp=1720845842~acl=/413aa9a037f1c779cd638b1f5532963e/*~hmac=98d1dd29de918848aee295b3a22bf897",
         img: "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/e/b/8/b/eb8b0a622fb165ca7c9c86dc214a8dbc.jpg",
         title: "Một Đường Nở Hoa (HM Remix)",
         actor: "Hàn Dung",
