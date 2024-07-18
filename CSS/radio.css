@@ -73,7 +73,7 @@
 }
 .prev_btn, .next_btn {
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #ffffff88;
     color: #040404;
     border-radius: 100%;
     border: none;
@@ -83,6 +83,8 @@
     top: 35%;
     transform: translateY(-50%);
     opacity: 0.7;
+    width: 50px;
+    height: 50px;
 }
 .prev_btn {
     left: 0;
@@ -182,7 +184,7 @@
 
 .calendar_prev_btn, .calendar_next_btn {
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #ffffff65;
     color: #040404;
     border-radius: 100%;
     border: none;
@@ -192,6 +194,8 @@
     top: 60%;
     transform: translateY(-50%);
     opacity: 0.7;
+    width: 50px;
+    height: 50px;
 }
 
 .calendar_prev_btn {
@@ -199,6 +203,6 @@
 }
 
 .calendar_next_btn {
-    left: 625px;
+    left: 950px;
 }
 
