@@ -18,7 +18,7 @@ export const handleRenderItemsSlide = (slideData) => {
                                 </div>
                             </div>
                          </div>
-                        ` )
+                        ` ).join("");
 }
 
 

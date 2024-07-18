@@ -6,6 +6,7 @@
     background-color: var(--background-navbar);
     z-index: 4;
     position: fixed;
+    user-select: none;
 }
 
 .img {
@@ -40,7 +41,7 @@
     color: rgb(196, 193, 193);
     
     font-size: 14px; 
-    border-left: 5px solid var(--background-navbar);
+    border-left: 3px solid var(--background-navbar);
 }
 .item p {
     margin: 0;
@@ -76,7 +77,7 @@
 }
 
 .list_items-two {
-    height: 290px; /* Đặt chiều cao cố định cho phần tử */
+    height: 158px; /* Đặt chiều cao cố định cho phần tử */
     overflow-y: hidden; /* Ẩn thanh cuộn mặc định */
     scrollbar-width: thin; /* Đặt chiều rộng thanh cuộn cho Firefox */
     scrollbar-color: #575656 transparent; /* Đặt màu cho thanh cuộn và đường dẫn thanh cuộn trong suốt */

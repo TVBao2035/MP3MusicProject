@@ -46,7 +46,7 @@
             <div class="list_items">
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-library icon' ></i>
+                        <span class="material-symbols-outlined">library_music</span>
                         <p>Thư Viện</p>
                         <i class="bx bx-play-circle icon-play-library">
                             <span class="toolTip">Thư viện</span>
@@ -56,13 +56,13 @@
                 
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-doughnut-chart icon'></i>
+                        <span class="material-symbols-outlined">adjust</span>
                         <p>Khám Phá</p>
                     </div>
                 </div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-pie-chart-alt icon' ></i>
+                        <span class="material-symbols-outlined">data_exploration</span>
                         <p>#zingchart</p>
                         <i class="bx bx-play-circle icon-play-zingchart">
                             <span class="toolTip">#zingchart</span>
@@ -71,24 +71,21 @@
                 </div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-podcast icon'></i>
+                        <span class="material-symbols-outlined">podcasts</span>
                         <p>Radio</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="partition"></div>
-            <div class="list_items-two">
+                <div class="partition"></div>
                 <div class="item">
                     <div class="title">
-                        <i class='bx bx-music icon'></i>
+                        <i class='bx bx-music icon' style="font-weight: 100;"></i>
                         <p>BXH Nhạc Mới</p>
                         <i class="bx bx-play-circle icon-play-bxh">
                             <span class="toolTip">BXH Nhạc Mới</span>
                         </i>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item">  
                     <div class="title">
                         <i class='bx bx-category-alt icon'></i>
                         <p>Chủ Đề & Thể Loại</p>
@@ -100,6 +97,9 @@
                         <p>Top 100</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="list_items-two">
                 <div class="box-title-left">
                     <div class="title-box-left">
                         <p class="text-white fw-bolder mb-3 title-box-nav" >Nghe nhạc không quảng cáo <br> cùng kho nhạc PREMIUM</p>
@@ -157,9 +157,6 @@
                 <p>+ Tạo playlist mới</p>
             </div>
         </div>
-
-
-
 
 
         <div class="action">
@@ -417,7 +414,7 @@
     </header>
 
     <main class="">
-        <div class="page " id="page_first">
+        <div class="page active_page" id="page_first">
          <!-- Mới phát hành -->
          <div class="publication_new container p-0">
             <div class="card">
@@ -554,12 +551,12 @@
                     <div class="btn_left--slide btn_arrow"><i class='bx bx-chevron-left fs-2' ></i></div>
                     <div class="btn_right--slide btn_arrow"><i class='bx bx-chevron-left fs-2 bx-flip-horizontal' ></i></div>
                 </div>
-               <div class="list_image position-absolute d-flex">
+                <div class="list_image position-absolute d-flex ">
                     
-               </div>
+                </div>
             </div>
         </div>
-
+        
         <!-- TOP 100 & Album Hot -->
         <div class="list_container_top">
             <!-- TOP 100 -->
@@ -599,8 +596,18 @@
         <div class="page " id="page_second">
             <h1 class="text-white">Làm ở here #Page 2</h1>
         </div>
-        <div class="page active_page" id="page_third">
+        <div class="page " id="page_third">
             <h1 class="text-white">Làm ở here #Page 3</h1>
+        </div>
+
+        <div class="page" id="page_four">
+            <h1 class="text-white">Làm ở here #Page 4</h1>
+        </div>
+        <div class="page" id="page_five">
+            <h1 class="text-white">Làm ở here #Page 5</h1>
+        </div>
+        <div class="page" id="page_six">
+            <h1 class="text-white">Làm ở here #Page 6</h1>
         </div>
     </main>
 
@@ -641,7 +648,7 @@
                     <div class="seekbar">
                         <div class="progress_tool">
                         </div>
-                        <div class="progress_too--circle"></div>
+                        <div class="progress_tool--circle"></div>
                     </div>
                 </div>
 
@@ -658,14 +665,14 @@
             <div class="audio_icon--action">
                 <span class="material-symbols-outlined">branding_watermark</span>
             </div>
-            <div class="audio_icon--action">
+            <div class="audio_icon--action audio_icon--volume">
                 <span class="material-symbols-outlined">volume_up</span>  
             </div>
             <div class="container_volume">
-                <div class="seekbar">
-                    <div class="progress_tool">
+                <div class="seekbar_volume">
+                    <div class="progress_tool--volume">
                     </div>
-                    <div class="progress_too--circle"></div>
+                    <div class="progress_tool_circle--volume"></div>
                 </div>
             </div>
                 <div><span>|</span></div>

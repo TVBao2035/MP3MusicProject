@@ -20,7 +20,7 @@ export const handleSkip = () => {
         let getSongFormLocaStorage = JSON.parse(localStorage.getItem(GET_SONG));
         console.log(getSongFormLocaStorage);
         let indexOfSong = songData.findIndex((song) => song.title.toLocaleLowerCase() === getSongFormLocaStorage[0]?.title?.toLocaleLowerCase());
-        localStorage.setItem(GET_SONG, JSON.stringify([songData[++indexOfSong]]));
+        localStorage.setItem(GET_SONG, JSON.stringify([songData[--indexOfSong]]));
         handleAudio(true);
         console.log("index>>", indexOfSong);
         console.log("song >>", songData[--indexOfSong]);

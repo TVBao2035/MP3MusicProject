@@ -32,6 +32,7 @@ import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
 import { GET_SONG } from "./localStorageKey.js";
 import { songData } from "./Data/songData.js";
 import { handleSkip } from "./HandleAudio/handleSkip.js";
+import { handleVolume } from "./HandleAudio/handleVolume.js";
 
 if(!localStorage.getItem(GET_SONG)){
         localStorage.setItem(GET_SONG, JSON.stringify([songData[0]]));
@@ -40,13 +41,43 @@ if(!localStorage.getItem(GET_SONG)){
 const pageFirst = document.getElementById('page_first');
 const pageSecond = document.getElementById('page_second');
 const pageThird = document.getElementById('page_third');
-
+const pageFour = document.getElementById('page_four');
+const pageFive = document.getElementById('page_five');
+const pageSix = document.getElementById('page_six');
 const listItem = document.querySelectorAll(".list_items .item");
 listItem[1].classList.add('active_item');
 listItem.forEach( (item, index) => {
         item.onclick = () => {
-                document.querySelector('.active_item').classList.remove('active_item');
-                item.classList.add('active_item')
+                document.querySelector('.active_item')?.classList.remove('active_item');
+                item.classList.add('active_item');
+                document.querySelector('.active_page')?.classList.remove('active_page');
+                switch(index){
+                        case 1: {
+                                pageFirst.classList.add('active_page');
+                                break;
+                        }
+                        case 2: {
+                                pageSecond.classList.add('active_page');
+                                break;
+                        }
+                        case 3: {
+                                pageThird.classList.add('active_page');
+                                break;
+                        }
+                        case 4: {
+                                pageFour.classList.add('active_page');
+                                break;
+                        }
+                        case 5: {
+                                pageFive.classList.add('active_page');
+                                break;
+                        }
+                        case 6: {
+                                pageSix.classList.add('active_page');
+                                break;
+                        }
+                        
+                }
         }
 })
 console.log(listItem);
@@ -87,6 +118,6 @@ handleRenderItemsRowImage(".rownqt_img_four",RowQTData_Four);
 handleAudio(false);
 // Audio
 handleGetSong();
-
+handleVolume();
 handleSkip();
 handleSearchInput();
