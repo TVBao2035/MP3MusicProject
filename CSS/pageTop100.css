@@ -1,0 +1,36 @@
+.image-top_100{
+    width: 213px;
+    height: 213px;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.8s all ease;
+}
+.image-top_100 img{
+    width: 213px;
+    height: 213px;
+    transition: 0.8s all ease;
+    object-fit: contain;
+}
+.cart_top_100{
+    width: 213px;
+}
+.cart_top_100 .atrist-name{
+    font-size: 12px;
+    color: #959595;
+}
+.container-image-top-100{
+    width: 213px;
+}
+.modal-cart-top-100{
+    background-color: rgba(0, 0, 0, 0.485);
+    z-index: 3;
+    width: 213px;
+    height: 213px;
+    display: none;
+}
+.image-top_100:hover .modal-cart-top-100{
+    display: block;   
+}
+.image-top_100:hover img{
+    scale: 1.13;
+}
