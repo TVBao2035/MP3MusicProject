@@ -143,6 +143,14 @@ handleSlideRadio();
 handleSlideRadioCalendar();
 handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
 handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
+// page Chủ đề và thể loại:
+import { handleRenderThemeKind,handleRenderMood,handleRenderListTheme } from "./HandleRender/handleRenderpageTheme&Kind.js";
+import {NB,QG,TT,List} from "./Data/pageTheme&Kind.js";
+handleRenderThemeKind(".container_NB",NB);
+handleRenderThemeKind(".container_QG",QG);
+handleRenderListTheme(".container_Bolero",List);
+
+ handleRenderMood(".container_TT",TT);
 
 // document.addEventListener("DOMContentLoaded", function() {
 //         // Select the element you want to double-click
