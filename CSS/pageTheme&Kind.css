@@ -43,7 +43,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     text-align: center;
     width: 100%;
     color: white;
@@ -96,7 +95,7 @@
     display: flex;
     justify-content: center;
     gap: 5px; /* Khoảng cách giữa các hình ảnh nhỏ */
-    z-index: 10; /* Đảm bảo rằng hình ảnh nhỏ nằm trên hình ảnh lớn */
+    z-index: 3; /* Đảm bảo rằng hình ảnh nhỏ nằm trên hình ảnh lớn */
     margin-top: 80px;
     margin-left: -70px;
 }
@@ -107,7 +106,7 @@
     
 }
 .title-TT {
-    z-index: 10;
+    z-index: 3;
     top: 45px; /* Điều chỉnh vị trí của tiêu đề nếu cần */
     left: 15px;
 }

@@ -18,7 +18,7 @@ export const handleRenderMood = (containerID, NB_QG) => {
     const itemKind = document.querySelector(containerID);
     // Render các phần tử ban đầu
     itemKind.innerHTML = NB_QG.map((data) =>  
-        `<div class="cart_TT overflow-hidden mb-1 d-flex align-items-center justify-content-center ">
+        `<div class="cart_TT overflow-hidden mb-1 d-flex flex-column gap-2 align-items-center justify-content-center ">
             <div class="container-image-TT position-relative">
                 <p class="text-white fw-bolder fs-5 position-absolute title-TT">${data.title}</p>
                 <div class="img-litle-TT position-absolute">
