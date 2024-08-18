@@ -145,12 +145,23 @@ handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
 handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
 // page Chủ đề và thể loại:
 import { handleRenderThemeKind,handleRenderMood,handleRenderListTheme } from "./HandleRender/handleRenderpageTheme&Kind.js";
-import {NB,QG,TT,List} from "./Data/pageTheme&Kind.js";
+import {NB,QG,TT,List,Dance,Remix,HipHop,NhacPhim,NhacThieuNhi,NhacKhongLoi,Trinh,Rock,Indie} from "./Data/pageTheme&Kind.js";
 handleRenderThemeKind(".container_NB",NB);
 handleRenderThemeKind(".container_QG",QG);
+handleRenderMood(".container_TT",TT);
 handleRenderListTheme(".container_Bolero",List);
+handleRenderListTheme(".container_Dance",Dance);
+handleRenderListTheme(".container_Remix",Remix);
+handleRenderListTheme(".container_HipHop",HipHop);
+handleRenderListTheme(".container_NhacPhim",NhacPhim);
+handleRenderListTheme(".container_ThieuNhi",NhacThieuNhi);
+handleRenderListTheme(".container_KhongLoi",NhacKhongLoi);
+handleRenderListTheme(".container_Trinh",Trinh);
+handleRenderListTheme(".container_Rock",Rock);
+handleRenderListTheme(".container_Indie",Indie);
 
- handleRenderMood(".container_TT",TT);
+
+ 
 
 // document.addEventListener("DOMContentLoaded", function() {
 //         // Select the element you want to double-click

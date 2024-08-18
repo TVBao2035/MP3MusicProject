@@ -18,7 +18,7 @@ export const handleRenderMood = (containerID, NB_QG) => {
     const itemKind = document.querySelector(containerID);
     // Render các phần tử ban đầu
     itemKind.innerHTML = NB_QG.map((data) =>  
-        `<div class="cart_TT overflow-hidden mb-1 d-flex align-items-center justify-content-center">
+        `<div class="cart_TT overflow-hidden mb-1 d-flex align-items-center justify-content-center ">
             <div class="container-image-TT position-relative">
                 <p class="text-white fw-bolder fs-5 position-absolute title-TT">${data.title}</p>
                 <div class="img-litle-TT position-absolute">
@@ -104,9 +104,9 @@ export const handleRenderListTheme = (containerID, NB_QG) => {
                 <p class="m-0 artist-name flex-wrap overflow-hidden d-flex w-75">${data.artist}</p>
             </div>
         </div>
-    `);
+    `).join('');
     document.querySelectorAll('.artist-name').forEach(actorElement => {
         const actors = actorElement.innerText.split(',').map(actor => actor.trim());
-        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(', ');
+        actorElement.innerHTML = actors.map(actor => `<span>${actor}</span>`).join(' , ');
     });
 }

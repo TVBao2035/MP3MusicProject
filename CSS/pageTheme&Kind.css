@@ -84,8 +84,11 @@
 }
 .container-image-TT {
     position: relative;
+    
 }
-
+.cart_TT {
+    width: 276px;
+}
 .img-litle-TT {
     top: 0;
     left: 0;
@@ -150,7 +153,7 @@
 }
 
 .cart-List {
-    width: 213px;
+    width: 223px;
 }
 
 .cart-List .artist-name {
