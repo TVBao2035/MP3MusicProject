@@ -32,6 +32,8 @@ import { slideData,
         WeekRankQT,
         WeekRankKPop
        } from './Data/slideData.js';
+//Page 5 BXH 
+
 import {handleSearchInput} from './HandleSearch/handleSearchInput.js';
 import {handleSlideRank} from './HandleSlide/handleSlideRank.js';
 import { handleAudio, handleGetSong } from "./HandleAudio/handleAudio.js";
@@ -143,6 +145,14 @@ handleSlideRadio();
 handleSlideRadioCalendar();
 handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
 handleRenderRadioCalender(radioStreamData2, "radio_stream_calendar_bot");
+
+
+// page 5 BXH
+import {bxhData} from './Data/bxhData.js';
+import {handleRenderBXH} from "./HandleRender/handleRenderBXH.js";
+handleRenderBXH(bxhData);
+
+
 
 // document.addEventListener("DOMContentLoaded", function() {
 //         // Select the element you want to double-click

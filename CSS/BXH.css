@@ -1,0 +1,117 @@
+.bxh-title{
+   color: white;
+   i{
+    font-size: 35px;
+   }
+}
+.bxh{
+    color: white;
+    h4{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 13px;
+        color: rgb(125, 128, 130);
+        font-weight: bolder;
+    }
+}
+
+.bxh-li-left h4:hover{
+    color: var(--primary-color);
+}
+.bxh-li-left p:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.bxh-li-left-top{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.bxh-li-status{
+    margin: 0px 10px;
+    p{
+        font-size: 12px;
+        color: #FFFFFF80;
+    }
+    .fa-up-long{
+        font-size: 15px;
+        color: #1dc186;
+    }
+    .fa-down-long{
+        font-size: 15px;
+        color: #e35050;
+    }
+}
+
+.bxh-li-song{
+    img{
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+}
+
+.bxh-li-right{
+    text-align: right;
+}
+.bxh-li-left-top{
+    width: 50px;
+}
+.bxh-li{
+
+    padding-top: 5px;
+
+}
+.bxh-li:hover{
+    background-color: #36303e;
+}
+
+.bxh-li-song-img {
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.bxh-li-icon {
+    position: absolute;
+    top: 15%;
+    display: none;
+}
+
+.bxh-li:hover .bxh-li-icon {
+    display: block;
+}
+
+
+.bxh-li-right-icon {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    display: none; 
+    position: absolute; 
+    right: 0;
+    top: 0;
+}
+
+.bxh-li:hover .bxh-li-right-icon {
+    display: flex; 
+}
+
+.bxh-li:hover .bxh-li-time {
+    display: none;
+}
+
+.color-top1{
+    color: #4a90e2;
+}
+.color-top2{
+    color: #50e3c2;
+}
+.color-top3{
+    color: #e35050;
+}
