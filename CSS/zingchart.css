@@ -582,22 +582,3 @@
     text-decoration: underline;
 }
 
-.see-top--all {
-    width:100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.see-top--all p {
-    border: 1px solid white;
-    width:120px;
-    height: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-.see-top--all p:hover {
-    background-color:rgba(62, 55, 72, 0.7);
-}
