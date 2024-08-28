@@ -8,7 +8,9 @@ import { handleRenderItemsSlide,
         handleRenderItems100TOP ,
         handleRenderItemsWeekRank
        } from "./HandleRender/handleRenderItemsSlide.js";
-
+import {
+        handleRenderItemsTop100
+} from './HandleRender/handleRenderItemsTop100.js';
 import { slideData, 
         flexData_Top, 
         flexData_Album,
@@ -139,6 +141,7 @@ import {radioChannelData, radioStreamData1, radioStreamData2, radioStreamTime} f
 handleTime(radioStreamTime);
 handleRenderRadio(radioChannelData);
 import {handleSlideRadio, handleSlideRadioCalendar} from "./HandleSlide/handleSlideRadio.js";
+import { NhacAsia, NhacCM, NhacVM, NoiBat } from "./Data/pageTop100.js";
 handleSlideRadio();
 handleSlideRadioCalendar();
 handleRenderRadioCalender(radioStreamData1, "radio_stream_calendar_top");
@@ -181,4 +184,7 @@ handleRenderListTheme(".container_Indie",Indie);
 //         });
 //     });
     
-
+handleRenderItemsTop100(NoiBat, '.container_NB');
+handleRenderItemsTop100(NhacVM, '.container_VN');
+handleRenderItemsTop100(NhacAsia, '.container_asia')
+handleRenderItemsTop100(NhacCM, '.container_CM')
