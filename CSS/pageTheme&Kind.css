@@ -1,0 +1,202 @@
+.img-coffe {
+    top: 0;
+    left: 0;
+    width: 1160px;
+    height: 350px;
+    background: url('../photos/caphe.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    margin-top: 90px;
+    align-items: center;
+}
+
+.page.active_page {
+    position: relative;
+}
+.space {
+    margin-top: 50px;
+}
+
+.image-NB_QG {
+    width: 260px;
+    height: 150px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    transition: 0.8s all ease;
+    border-radius: 15px;
+}
+.image-NB_QG img {
+    width: 260px;
+    height: 150px;
+    transition: 0.8s all ease;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.image-NB_QG:hover img {
+    scale: 1.13;
+    border-radius: 15px;
+}
+.title-NB_QG {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+
+.image-TT {
+    width: 260px;
+    height: 150px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    transition: 0.8s all ease;
+    border-radius: 15px;
+}
+.image-TT img {
+    width: 260px;
+    height: 150px;
+    transition: 0.8s all ease;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(60%); /* Điều chỉnh độ sáng của hình ảnh lớn */
+}
+
+.image-TT:hover img {
+    scale: 1.13;
+    border-radius: 15px;
+}
+
+
+
+.img-litle-TT img {
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    border-radius: 5px;
+}
+.container-image-TT {
+    position: relative;
+    
+}
+.cart_TT {
+    width: 276px;
+}
+.img-litle-TT {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Khoảng cách giữa các hình ảnh nhỏ */
+    z-index: 3; /* Đảm bảo rằng hình ảnh nhỏ nằm trên hình ảnh lớn */
+    margin-top: 80px;
+    margin-left: -70px;
+}
+
+.image-TT img {
+    display: block;
+    width: 100%; /* Đảm bảo rằng hình ảnh lớn chiếm toàn bộ khối chứa */
+    
+}
+.title-TT {
+    z-index: 3;
+    top: 45px; /* Điều chỉnh vị trí của tiêu đề nếu cần */
+    left: 15px;
+}
+
+.all-TT {
+    width:100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.all-TT p {
+    border: 1px solid rgb(51, 50, 50);
+    width:100px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 12px;   
+}
+.all-TT p:hover {
+    background-color:rgba(62, 55, 72, 0.7);
+}
+
+
+.image-List {
+    width: 213px;
+    height: 213px;
+    z-index: 2;
+    overflow: hidden;
+    transition: transform 0.8s ease; 
+    position: relative;
+    border-radius: 10px;
+}
+
+.image-List img {
+    width: 213px;
+    height: 213px;
+    transition: transform 0.8s ease;
+    object-fit: contain;
+}
+
+.cart-List {
+    width: 223px;
+}
+
+.cart-List .artist-name {
+    font-size: 12px;
+    color: gray;
+}
+
+.container-img-List {
+    width: 213px;
+    height: 213px;
+    position: relative;
+}
+
+.modal-cart-List {
+    background-color: rgba(0, 0, 0, 0.485); /* Điều chỉnh cú pháp để có độ trong suốt */
+    z-index: 3;
+    width: 213px;
+    height: 213px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.image-List:hover .modal-cart-List {
+    opacity: 1;
+}
+
+.image-List:hover img {
+    transform: scale(1.13); /* Sử dụng transform để có hiệu ứng phóng to mượt mà */
+}
+.title-List {
+    color: white;
+}
+.title-List:hover {
+    color: #9b4de0;
+    cursor: pointer;
+}
+.artist-name span {
+    text-decoration: none;
+}
+.artist-name span:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
