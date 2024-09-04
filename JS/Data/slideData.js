@@ -1,6 +1,6 @@
 export const slideData = [
     {
-        src: "https://tvbao2035.github.io/music/wednesday.mp3",
+        src: "https://tvbao2035.github.io/music/mot-duong-no-hoa.mp3",
         img: "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/e/b/8/b/eb8b0a622fb165ca7c9c86dc214a8dbc.jpg",
         title: "Một Đường Nở Hoa (HM Remix)",
         actor: "Hàn Dung",
