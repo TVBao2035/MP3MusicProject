@@ -7,7 +7,7 @@ export const slideData = [
         time: "04:42",
         date: "04.07.2022"
     },{
-        src: "https://vnso-pt-48-tf-a128-z3.zmdcdn.me/0e9473ae283e4a8df25fd6d73723045d?authen=exp=1720410984~acl=/0e9473ae283e4a8df25fd6d73723045d/*~hmac=bfda28d006232ceaa49b36d3961e6209",
+        src: "https://tvbao2035.github.io/music/bi-ngan-no-hoa-nguoi-chang-ve.mp3",
         img: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/8/2/9/1829df67aa2ae317a8a57fd323b881f7.jpg",
         title: "Bỉ Ngạn Nở Hoa Người Chả Về",
         actor: "Thiên Tú",
@@ -15,7 +15,7 @@ export const slideData = [
         date: "24.03.2022"
     },
     {
-        src: "https://vnso-pt-49-tf-a128-z3.zmdcdn.me/5f09831d81c33e93f66dd0760b21e687?authen=exp=1720509164~acl=/5f09831d81c33e93f66dd0760b21e687/*~hmac=26f0fc3e91776e26c10ad88a9db808c3",
+        src: "https://tvbao2035.github.io/music/sao-khong-o-lai.mp3",
         img:" https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/a/2/5/b/a25ba756e50de822f8d026b00ce99b03.jpg",
         title: "Sao Không Ở Lại",
         actor: "Lưu Hưng",
@@ -23,7 +23,7 @@ export const slideData = [
         date: "19.6.2024"
     },
     {
-        src: "https://vnso-pt-48-tf-a128-z3.zmdcdn.me/edd2f32b428fcb9dd6365af732fb9206?authen=exp=1720509529~acl=/edd2f32b428fcb9dd6365af732fb9206/*~hmac=c099def71c58dcd13aa80c209c96ae9d",
+        src: "https://tvbao2035.github.io/music/do-song-do-bien.mp3",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/5/0/9/1/509166020c61b2b83228a74534e590ef.jpg",
         title: "Đổ Sông Đổ Biển",
         actor: "Khang Việt",
@@ -31,7 +31,7 @@ export const slideData = [
         date: "16.6.2024"
     },
     {
-        src: "https://vnso-pt-49-tf-a128-z3.zmdcdn.me/3af9eda5b57a21bd603849e9d74544b6?authen=exp=1720509330~acl=/3af9eda5b57a21bd603849e9d74544b6/*~hmac=654504db1f3c7e91928932465f16a335",
+        src: "https://tvbao2035.github.io/music/ngay-mai-toi-se-viet-sach.mp3",
         time: "06:02",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/b/8/9/0/b8903b1ad10d36f5eb44c8f25cb90b49.jpg",
         title: "Ngày Mai Tôi Sẽ Viết Sách",
@@ -39,7 +39,7 @@ export const slideData = [
         date: "14.6.2024"
     },
     {
-        src: "https://vnso-pt-48-tf-a128-z3.zmdcdn.me/86f44e9f595d3fd99860242e9f85ed55?authen=exp=1720509665~acl=/86f44e9f595d3fd99860242e9f85ed55/*~hmac=b82791ca7abf9d1947f3ba38a82434ea",
+        src: "https://tvbao2035.github.io/music/cai-ten-khac-sau-trong-tim.mp3",
         time: "04:27",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/8/3/a/7/83a7a35a5ed4b3b658c7fb39164c0cd4.jpg",
         title: "Cái Tên Khắc Sâu Trong Tim",
@@ -47,7 +47,7 @@ export const slideData = [
         date: "21.6.2024"
     },
     {
-        src: "https://vnso-zn-15-tf-a128-z3.zmdcdn.me/74e8844e1cb299e39bac80cbb215b191?authen=exp=1720509787~acl=/74e8844e1cb299e39bac80cbb215b191/*~hmac=2ea424260fe53cd2998e0e02dd7aa3cb",
+        src: "https://tvbao2035.github.io/music/tu-em-sai.mp3",
         time: "03:57",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/6/3/e/463efdaa10eb3142d3459d40ad15c8bb.jpg",
         title: "Tự Em Sai",
@@ -55,7 +55,7 @@ export const slideData = [
         date: "13.6.2024"
     },
     {
-        src: "https://vnso-zn-23-tf-a128-z3.zmdcdn.me/ff76fc188224ebb7675691f47ca175f0?authen=exp=1720510158~acl=/ff76fc188224ebb7675691f47ca175f0/*~hmac=6fdca644181139d11dff4a78d6287d46",
+        src: "https://tvbao2035.github.io/music/le-phi-cuoc-doi.mp3",
         time: "06:09",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/1/d/d/41dd1e486daa839514003c7d133f1a11.jpg",
         title: "Lệ Phí Cuộc Đời",
@@ -63,7 +63,7 @@ export const slideData = [
         date: "19.6.2024"
     },
     {
-        src: "https://vnso-pt-49-tf-a128-z3.zmdcdn.me/20ba0763961c3c5df853ed3143581d7e?authen=exp=1720510660~acl=/20ba0763961c3c5df853ed3143581d7e/*~hmac=0781203acc9e91d64476a9626f127e24",
+        src: "https://tvbao2035.github.io/music/han-la-yeu.mp3",
         time: "03:53",
         img:"https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/9/b/1/19b1710b5010ea6efc3703f3cd3b1adb.jpg",
         title: "Hẳn Là Yêu",
